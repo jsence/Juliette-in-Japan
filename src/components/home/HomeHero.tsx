@@ -53,29 +53,37 @@ export function HomeHero() {
       <div className="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
         <div className="absolute inset-0 bg-gradient-to-b from-paper-50/40 via-transparent to-transparent dark:from-sumi-light/25" />
 
-        {/* Seigaiha — thin bottom band, soft fade upward */}
+        {/* Seigaiha — full hero texture, soft mask (faint behind copy, denser at edges) */}
         <motion.div
-          className="absolute inset-x-0 bottom-0 h-[120px] text-ai opacity-[0.07] [mask-image:linear-gradient(to_top,black_20%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_top,black_20%,transparent_100%)] dark:opacity-[0.05]"
-          style={reduceMotion ? undefined : { y: patternY }}
+          className="absolute inset-0 text-ink opacity-[0.04] dark:text-paper-100 dark:opacity-[0.035]"
+          style={{
+            ...(reduceMotion ? {} : { y: patternY }),
+            WebkitMaskImage:
+              "radial-gradient(ellipse 115% 95% at 22% 46%, transparent 0%, rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.72) 72%, black 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)",
+            WebkitMaskComposite: "source-in",
+            maskImage:
+              "radial-gradient(ellipse 115% 95% at 22% 46%, transparent 0%, rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.72) 72%, black 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)",
+            maskComposite: "intersect",
+          }}
         >
-          <svg className="h-full w-full" preserveAspectRatio="xMidYMax slice">
+          <svg className="h-full w-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
             <defs>
-              <pattern id="hero-seigaiha-band" width="56" height="28" patternUnits="userSpaceOnUse">
+              <pattern id="hero-seigaiha" width="48" height="24" patternUnits="userSpaceOnUse">
                 <path
-                  d="M0 28 C14 10 28 10 42 28 S70 46 84 28"
+                  d="M0 24 C12 8 24 8 36 24 S60 40 72 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="1"
+                  strokeWidth="0.65"
                 />
                 <path
-                  d="M-28 28 C-14 10 0 10 14 28 S42 46 56 28"
+                  d="M-24 24 C-12 8 0 8 12 24 S36 40 48 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="1"
+                  strokeWidth="0.65"
                 />
               </pattern>
             </defs>
-            <rect width="100%" height="100%" fill="url(#hero-seigaiha-band)" />
+            <rect width="100%" height="100%" fill="url(#hero-seigaiha)" />
           </svg>
         </motion.div>
       </div>
