@@ -30,6 +30,12 @@ const config: Config = {
           dark: "#8f2820",
           light: "#c85b50",
         },
+        // Muted indigo (藍) for secondary accents
+        ai: {
+          DEFAULT: "#4a5d7a",
+          muted: "#5c6f8c",
+          light: "#7a8fad",
+        },
         // Dark mode surfaces
         sumi: {
           DEFAULT: "#1c1a17",
