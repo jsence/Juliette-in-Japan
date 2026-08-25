@@ -2,20 +2,20 @@ import type { Metadata } from "next";
 import { PostList } from "@/components/PostList";
 
 export const metadata: Metadata = {
-  title: "Culture",
-  description: "Short, dated notes on history, traditions, regions and food — what I learned this week.",
+  title: "Culture & History",
+  description: "Dated entries on Japanese traditions, regions, food and history.",
 };
 
 export default function CulturePage() {
   return (
     <PostList
       collection="culture"
-      title="Culture"
+      title="Culture & History"
       glyph="文"
       intro={
         <p>
-          Short, dated notes on history, traditions, regions and food. These are
-          &ldquo;what I learned this week&rdquo; entries — not an encyclopedia, and not exhaustive.
+          Dated entries on Japanese traditions, regions, food and history. Each entry covers a
+          single topic rather than aiming to be exhaustive.
         </p>
       }
     />

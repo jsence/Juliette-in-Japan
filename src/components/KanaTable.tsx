@@ -1,4 +1,6 @@
 import type { Kana } from "@/types/content";
+import { LearnedToggle } from "./LearnedToggle";
+import { glass } from "@/lib/ui";
 
 interface KanaTableGroup {
   group: string;
@@ -23,8 +25,16 @@ export function KanaTable({ groups }: KanaTableProps) {
             {row.items.map((k) => (
               <li
                 key={`${k.script}-${k.char}`}
-                className="flex flex-col items-center rounded-lg border border-paper-300 bg-paper-50 p-3 text-center shadow-sm dark:border-sumi-border dark:bg-sumi-light"
+                className={"relative flex flex-col items-center rounded-lg p-3 text-center " + glass}
               >
+                <div className="absolute right-1.5 top-1.5">
+                  <LearnedToggle
+                    module="kana"
+                    itemId={`${k.script}:${k.char}`}
+                    label={`${k.script} ${k.char}`}
+                    variant="dot"
+                  />
+                </div>
                 <span className="font-jp text-3xl leading-none text-ink dark:text-paper-100">
                   {k.char}
                 </span>

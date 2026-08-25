@@ -3,42 +3,42 @@
     "name": "Genki I & II",
     "url": "https://genki3.japantimes.co.jp/en/",
     "category": "Textbook",
-    "comment": "My backbone for structured grammar. I do the exercises by hand, not just read them — the writing is where it sticks.",
+    "comment": "A widely used beginner textbook series that introduces grammar systematically alongside reading, writing and listening exercises.",
     "free": false
   },
   {
     "name": "Tae Kim's Guide to Japanese",
     "url": "https://guidetojapanese.org/learn/",
     "category": "Grammar reference",
-    "comment": "Free and blunt about how the language actually works. I use it as a second angle whenever Genki's explanation doesn't click.",
+    "comment": "A free online grammar guide that explains Japanese from its own internal logic, useful as a second explanation alongside a textbook.",
     "free": true
   },
   {
     "name": "NHK News Web Easy",
     "url": "https://www3.nhk.or.jp/news/easy/",
     "category": "Reading",
-    "comment": "Real news rewritten with furigana. Humbling, but it's honest reading practice with sentences I didn't make up.",
+    "comment": "Simplified NHK news articles with furigana and audio — a source of authentic, level-appropriate reading practice.",
     "free": true
   },
   {
     "name": "WaniKani",
     "url": "https://www.wanikani.com/",
     "category": "SRS (kanji & vocab)",
-    "comment": "Radicals → kanji → vocab with spaced repetition. I keep reviews small and daily so they never pile into a wall.",
+    "comment": "A spaced-repetition system that teaches kanji and vocabulary through radicals, building up in ordered levels.",
     "free": false
   },
   {
     "name": "JLPT Official Practice Workbook",
     "url": "https://www.jlpt.jp/e/samples/forlearners.html",
     "category": "Exam practice",
-    "comment": "The official sample questions from jlpt.jp. The only source I fully trust for what the real test feels like.",
+    "comment": "Official sample questions from jlpt.jp, useful for seeing the format and level of the actual examination.",
     "free": true
   },
   {
     "name": "Jisho.org",
     "url": "https://jisho.org/",
     "category": "Dictionary",
-    "comment": "My everyday dictionary. It surfaces JMdict definitions and KANJIDIC2 readings, which is exactly what I want this site to mirror.",
+    "comment": "An online Japanese-English dictionary that surfaces JMdict definitions and KANJIDIC2 readings.",
     "free": true
   }
 ]

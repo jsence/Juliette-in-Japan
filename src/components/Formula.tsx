@@ -23,7 +23,7 @@ export function Formula({ tokens }: FormulaProps) {
               "rounded-md border px-2.5 py-1 text-sm " +
               (hasJapanese(token)
                 ? "border-hanko/40 bg-hanko/5 font-jp text-ink dark:border-hanko-light/40 dark:text-paper-100"
-                : "border-paper-300 bg-paper-100 font-serif italic text-ink-light dark:border-sumi-border dark:bg-sumi dark:text-paper-200")
+                : "border-white/50 bg-white/40 font-serif italic text-ink-light dark:border-white/10 dark:bg-white/5 dark:text-paper-200")
             }
           >
             {token}

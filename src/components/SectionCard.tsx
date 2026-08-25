@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Hanko } from "./Hanko";
+import { glass, glassHover } from "@/lib/ui";
 
 interface SectionCardProps {
   href: string;
@@ -13,7 +14,7 @@ export function SectionCard({ href, title, description, glyph }: SectionCardProp
   return (
     <Link
       href={href}
-      className="group flex items-start gap-4 rounded-xl border border-paper-300 bg-paper-50 p-5 shadow-sm transition hover:border-hanko/50 hover:shadow-md dark:border-sumi-border dark:bg-sumi-light"
+      className={"group flex items-start gap-4 rounded-xl p-5 " + glass + " " + glassHover}
     >
       <Hanko size="md" className="transition group-hover:animate-seal-in">
         {glyph}

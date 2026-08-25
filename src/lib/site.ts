@@ -9,21 +9,14 @@ export interface NavItem {
 
 export const site = {
   name: "Juliette in Japan",
-  /** Three-line pitch shown on the home page. */
+  /** Short neutral tagline. */
+  tagline: "A documentation site on the Japanese language, culture, and working life.",
+  /** Descriptive lines shown on the home page. */
   pitch: [
-    "A working log of one honest attempt to reach Japan — not a polished course.",
-    "I curate resources I actually use, track real progress, and study N5 from open, human-verified data.",
-    "No invented Japanese. Every reading, definition and grammar note comes from sources I can point to.",
+    "A documentation site covering the Japanese language, Japanese culture and history, and working life in Japan.",
+    "The N5 study material — kana, kanji, grammar organised by function, vocabulary and flashcard drills — is built from open, human-verified data sources.",
+    "Kanji readings follow KANJIDIC2 and word definitions follow JMdict; example sentences come only from established corpora.",
   ],
-  /** The day the study log began (ISO date). */
-  studyStartDate: "2026-01-06",
-  /** JLPT target: level and sitting date (ISO date). */
-  jlptTarget: {
-    level: "N5",
-    date: "2026-12-06",
-  },
-  /** Honestly self-assessed current level. */
-  currentLevel: "Upper beginner — comfortable with kana, building N5 grammar and kanji.",
   links: {
     linkedin: "https://www.linkedin.com/in/juliette",
     email: "juliette@example.com",

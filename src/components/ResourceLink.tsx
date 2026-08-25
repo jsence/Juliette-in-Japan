@@ -1,13 +1,14 @@
 import type { Resource } from "@/types/content";
+import { glass } from "@/lib/ui";
 
 interface ResourceLinkProps {
   resource: Resource;
 }
 
-/** An external study resource with Juliette's own comment. */
+/** An external study resource with a short neutral description. */
 export function ResourceLink({ resource }: ResourceLinkProps) {
   return (
-    <article className="rounded-lg border border-paper-300 bg-paper-50 p-4 shadow-sm dark:border-sumi-border dark:bg-sumi-light">
+    <article className={"rounded-lg p-4 " + glass}>
       <div className="flex flex-wrap items-center gap-2">
         <a
           href={resource.url}
@@ -17,7 +18,7 @@ export function ResourceLink({ resource }: ResourceLinkProps) {
         >
           {resource.name}
         </a>
-        <span className="rounded-full bg-paper-200 px-2 py-0.5 text-xs text-ink-muted dark:bg-sumi dark:text-paper-300">
+        <span className="rounded-full border border-white/50 bg-white/40 px-2 py-0.5 text-xs text-ink-muted dark:border-white/10 dark:bg-white/5 dark:text-paper-300">
           {resource.category}
         </span>
         <span
@@ -31,9 +32,7 @@ export function ResourceLink({ resource }: ResourceLinkProps) {
           {resource.free ? "Free" : "Paid"}
         </span>
       </div>
-      <p className="mt-2 text-sm italic text-ink-light dark:text-paper-200">
-        &ldquo;{resource.comment}&rdquo;
-      </p>
+      <p className="mt-2 text-sm text-ink-light dark:text-paper-200">{resource.comment}</p>
     </article>
   );
 }

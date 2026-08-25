@@ -24,7 +24,7 @@ export function KanaExplorer({ hiragana, katakana }: KanaExplorerProps) {
     "rounded-md px-4 py-2 text-sm font-medium transition " +
     (active
       ? "bg-hanko text-paper-50"
-      : "border border-paper-300 text-ink-light hover:bg-paper-200 dark:border-sumi-border dark:text-paper-200 dark:hover:bg-sumi-light");
+      : "border border-white/50 bg-white/30 text-ink-light backdrop-blur hover:bg-white/50 dark:border-white/10 dark:bg-white/5 dark:text-paper-200 dark:hover:bg-white/10");
 
   return (
     <div className="space-y-6">

@@ -46,8 +46,9 @@ src/
     about/                        About + CV / contact
   components/          Small, reusable UI (KanjiCard, VocabTable, GrammarPoint,
                        GrammarCard, Formula, Ruby, GrammarExamples, AddToFlashcards,
-                       ReviewDeck, LessonList, LessonDrill, FlashcardBadge, …)
-  lib/                data loaders, site config, SRS (SM-2), flashcard/lesson stores
+                       ReviewDeck, LessonList, LessonDrill, ModuleProgress, LearnedToggle, …)
+  lib/                data loaders, site config, SRS (SM-2), flashcard/lesson/module stores,
+                       ui.ts (glassmorphism class fragments)
   types/              Shared content types
 mdx-components.tsx    Required by @next/mdx (App Router)
 ```
@@ -84,8 +85,23 @@ frontmatter: `title`, `date`, `tags`, `summary`.
   `localStorage`.
 - **Flashcards** (`/language/n5/review`) use an **SM-2** spaced-repetition scheduler with per-card
   intervals in `localStorage`. Four study modes — JP→EN recognition, EN→JP recall, kanji reading,
-  and cloze on grammar examples — plus deck selection by category/tag/"due today", a session
-  summary listing missed cards, a daily streak, and a cards-due badge in the nav.
+  and cloze on grammar examples — plus deck selection by category/tag/"due today" and a session
+  summary listing missed cards.
+- **Progress tracking** lives only inside `/language/n5`, as per-module completion bars (kana,
+  kanji, grammar, vocabulary) driven by "learned" toggles stored in `localStorage`. There are no
+  global counters, points, levels, streaks or badges.
+
+### Tone
+
+Site copy is descriptive and neutral; headings name content rather than narrate feelings.
+First-person writing is confined to the `/journal` section.
+
+### Visual design
+
+A warm paper texture and ink palette with serif headings, overlaid with **glassmorphism**:
+cards, the nav bar and panels use semi-transparent backgrounds with `backdrop-blur`, thin light
+borders and a soft layered shadow (see `src/lib/ui.ts`). The glass sits on top of the paper
+background so the texture shows through; text colours keep AA contrast over the blurred surfaces.
 
 > Sourcing note: example sentences are only ever drawn from open corpora (Tatoeba / NHK Easy),
 > never generated. The reference grammar points ship with real, simple Tatoeba-style sentences;
@@ -97,8 +113,8 @@ frontmatter: `title`, `date`, `tags`, `summary`.
 The task was scaffolded with two fully-built reference pages that the rest of the site
 follows:
 
-- **`/`** — home: three-line pitch, live progress counters (days studying, kanji learned,
-  JLPT target countdown), latest journal entries, and section links.
+- **`/`** — home: a short descriptive intro, a "What's inside" set of navigation cards
+  (Language, Culture & History, Working in Japan), and the latest journal entries.
 - **`/language/n5/kana`** — the complete hiragana & katakana tables (stroke counts,
   dakuten/handakuten, yōon) plus notes on stroke order, sokuon and long vowels.
 - **`/language/n5/grammar`** (category index) and **`/language/n5/grammar/basics/desu`** (a full

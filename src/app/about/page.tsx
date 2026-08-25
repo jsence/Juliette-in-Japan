@@ -3,11 +3,12 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { site } from "@/lib/site";
+import { glass } from "@/lib/ui";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Background, professional skills, and why this profile fits the Japanese market — with CV, LinkedIn and contact.",
+    "Background, professional skills, and relevance to the Japanese market, with CV, LinkedIn and contact details.",
 };
 
 const skills = [
@@ -18,9 +19,9 @@ const skills = [
 ];
 
 const fit = [
-  "A genuine, sustained commitment to learning the language — not a one-off enthusiasm.",
-  "Experience working across time zones and cultures, comfortable with ambiguity.",
-  "A builder's habit of documenting and sharing what I learn.",
+  "A sustained, structured commitment to learning the language.",
+  "Experience working across time zones and cultures.",
+  "A habit of documenting and sharing learning.",
 ];
 
 export default function AboutPage() {
@@ -31,8 +32,8 @@ export default function AboutPage() {
         glyph="私"
         intro={
           <p>
-            I&apos;m Juliette. This site is the public, honest record of my path toward working in
-            Japan — the study, the culture I&apos;m absorbing, and the professional groundwork.
+            Background, professional skills and contact details for Juliette, and the aims of this
+            documentation site.
           </p>
         }
       />
@@ -40,14 +41,14 @@ export default function AboutPage() {
       <ScrollReveal as="section" className="space-y-3">
         <h2 className="font-serif text-2xl font-semibold text-ink dark:text-paper-100">Background</h2>
         <p className="max-w-2xl text-ink-light dark:text-paper-200">
-          I come from a technical background and I&apos;m preparing, deliberately and in the open,
-          to relocate and work in Japan. Rather than another private study routine, I&apos;m keeping
-          everything here: sources I trust, progress I can prove, and reflections I can look back on.
+          Juliette has a technical background and is preparing to relocate and work in Japan. This
+          site documents that preparation: Japanese-language study, notes on Japanese culture and
+          history, and material on working life in Japan.
         </p>
       </ScrollReveal>
 
       <section className="grid gap-4 sm:grid-cols-2">
-        <ScrollReveal className="rounded-lg border border-paper-300 bg-paper-50 p-5 dark:border-sumi-border dark:bg-sumi-light">
+        <ScrollReveal className={"rounded-lg p-5 " + glass}>
           <h2 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">Professional skills</h2>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-ink-light dark:text-paper-200">
             {skills.map((s) => (
@@ -55,8 +56,8 @@ export default function AboutPage() {
             ))}
           </ul>
         </ScrollReveal>
-        <ScrollReveal index={1} className="rounded-lg border border-paper-300 bg-paper-50 p-5 dark:border-sumi-border dark:bg-sumi-light">
-          <h2 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">Why my profile fits</h2>
+        <ScrollReveal index={1} className={"rounded-lg p-5 " + glass}>
+          <h2 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">Relevance to the Japanese market</h2>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-ink-light dark:text-paper-200">
             {fit.map((f) => (
               <li key={f}>{f}</li>
@@ -76,13 +77,13 @@ export default function AboutPage() {
           href={site.links.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-md border border-paper-300 px-5 py-2.5 font-medium text-ink transition hover:bg-paper-200 dark:border-sumi-border dark:text-paper-100 dark:hover:bg-sumi-light"
+          className={"rounded-md px-5 py-2.5 font-medium text-ink dark:text-paper-100 " + glass}
         >
           LinkedIn
         </a>
         <a
           href={`mailto:${site.links.email}`}
-          className="rounded-md border border-paper-300 px-5 py-2.5 font-medium text-ink transition hover:bg-paper-200 dark:border-sumi-border dark:text-paper-100 dark:hover:bg-sumi-light"
+          className={"rounded-md px-5 py-2.5 font-medium text-ink dark:text-paper-100 " + glass}
         >
           Contact
         </a>

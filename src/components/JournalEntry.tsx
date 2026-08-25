@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import type { Post } from "@/types/content";
 import { formatDate } from "@/lib/progress";
+import { glass } from "@/lib/ui";
 
 interface JournalEntryProps {
   post: Post;
@@ -14,12 +15,7 @@ export function JournalEntry({ post, compact = false }: JournalEntryProps) {
   const href = `/${post.collection}/${post.slug}`;
 
   return (
-    <article
-      className={
-        "rounded-lg border border-paper-300 bg-paper-50 shadow-sm dark:border-sumi-border dark:bg-sumi-light " +
-        (compact ? "p-4" : "p-5")
-      }
-    >
+    <article className={"rounded-lg " + glass + " " + (compact ? "p-4" : "p-5")}>
       <time
         dateTime={post.date}
         className="text-xs font-medium uppercase tracking-wide text-hanko dark:text-hanko-light"
@@ -39,7 +35,7 @@ export function JournalEntry({ post, compact = false }: JournalEntryProps) {
           {post.tags.map((tag) => (
             <li
               key={tag}
-              className="rounded-full bg-paper-200 px-2 py-0.5 text-xs text-ink-muted dark:bg-sumi dark:text-paper-300"
+              className="rounded-full border border-white/50 bg-white/40 px-2 py-0.5 text-xs text-ink-muted dark:border-white/10 dark:bg-white/5 dark:text-paper-300"
             >
               #{tag}
             </li>
