@@ -1,0 +1,171 @@
+[
+  {
+    "char": "日",
+    "meanings": ["day", "sun"],
+    "onyomi": ["ニチ", "ジツ"],
+    "kunyomi": ["ひ", "-び", "-か"],
+    "strokes": 4,
+    "words": [
+      { "word": "日本", "reading": "にほん", "meaning": "Japan" },
+      { "word": "毎日", "reading": "まいにち", "meaning": "every day" },
+      { "word": "日曜日", "reading": "にちようび", "meaning": "Sunday" }
+    ]
+  },
+  {
+    "char": "本",
+    "meanings": ["book", "origin", "main"],
+    "onyomi": ["ホン"],
+    "kunyomi": ["もと"],
+    "strokes": 5,
+    "words": [
+      { "word": "本", "reading": "ほん", "meaning": "book" },
+      { "word": "日本", "reading": "にほん", "meaning": "Japan" },
+      { "word": "本当", "reading": "ほんとう", "meaning": "truth, reality" }
+    ]
+  },
+  {
+    "char": "人",
+    "meanings": ["person"],
+    "onyomi": ["ジン", "ニン"],
+    "kunyomi": ["ひと"],
+    "strokes": 2,
+    "words": [
+      { "word": "人", "reading": "ひと", "meaning": "person" },
+      { "word": "日本人", "reading": "にほんじん", "meaning": "Japanese person" },
+      { "word": "三人", "reading": "さんにん", "meaning": "three people" }
+    ]
+  },
+  {
+    "char": "月",
+    "meanings": ["month", "moon"],
+    "onyomi": ["ゲツ", "ガツ"],
+    "kunyomi": ["つき"],
+    "strokes": 4,
+    "words": [
+      { "word": "月", "reading": "つき", "meaning": "moon" },
+      { "word": "月曜日", "reading": "げつようび", "meaning": "Monday" },
+      { "word": "一月", "reading": "いちがつ", "meaning": "January" }
+    ]
+  },
+  {
+    "char": "水",
+    "meanings": ["water"],
+    "onyomi": ["スイ"],
+    "kunyomi": ["みず"],
+    "strokes": 4,
+    "words": [
+      { "word": "水", "reading": "みず", "meaning": "water" },
+      { "word": "水曜日", "reading": "すいようび", "meaning": "Wednesday" }
+    ]
+  },
+  {
+    "char": "火",
+    "meanings": ["fire"],
+    "onyomi": ["カ"],
+    "kunyomi": ["ひ"],
+    "strokes": 4,
+    "words": [
+      { "word": "火", "reading": "ひ", "meaning": "fire" },
+      { "word": "火曜日", "reading": "かようび", "meaning": "Tuesday" },
+      { "word": "花火", "reading": "はなび", "meaning": "fireworks" }
+    ]
+  },
+  {
+    "char": "木",
+    "meanings": ["tree", "wood"],
+    "onyomi": ["モク", "ボク"],
+    "kunyomi": ["き"],
+    "strokes": 4,
+    "words": [
+      { "word": "木", "reading": "き", "meaning": "tree" },
+      { "word": "木曜日", "reading": "もくようび", "meaning": "Thursday" }
+    ]
+  },
+  {
+    "char": "金",
+    "meanings": ["gold", "money", "metal"],
+    "onyomi": ["キン", "コン"],
+    "kunyomi": ["かね"],
+    "strokes": 8,
+    "words": [
+      { "word": "お金", "reading": "おかね", "meaning": "money" },
+      { "word": "金曜日", "reading": "きんようび", "meaning": "Friday" }
+    ]
+  },
+  {
+    "char": "土",
+    "meanings": ["earth", "soil"],
+    "onyomi": ["ド", "ト"],
+    "kunyomi": ["つち"],
+    "strokes": 3,
+    "words": [
+      { "word": "土", "reading": "つち", "meaning": "soil, earth" },
+      { "word": "土曜日", "reading": "どようび", "meaning": "Saturday" }
+    ]
+  },
+  {
+    "char": "山",
+    "meanings": ["mountain"],
+    "onyomi": ["サン"],
+    "kunyomi": ["やま"],
+    "strokes": 3,
+    "words": [
+      { "word": "山", "reading": "やま", "meaning": "mountain" },
+      { "word": "富士山", "reading": "ふじさん", "meaning": "Mount Fuji" }
+    ]
+  },
+  {
+    "char": "川",
+    "meanings": ["river"],
+    "onyomi": ["セン"],
+    "kunyomi": ["かわ"],
+    "strokes": 3,
+    "words": [
+      { "word": "川", "reading": "かわ", "meaning": "river" }
+    ]
+  },
+  {
+    "char": "大",
+    "meanings": ["big", "large"],
+    "onyomi": ["ダイ", "タイ"],
+    "kunyomi": ["おお-", "おお.きい"],
+    "strokes": 3,
+    "words": [
+      { "word": "大きい", "reading": "おおきい", "meaning": "big" },
+      { "word": "大学", "reading": "だいがく", "meaning": "university" }
+    ]
+  },
+  {
+    "char": "小",
+    "meanings": ["small", "little"],
+    "onyomi": ["ショウ"],
+    "kunyomi": ["ちい.さい", "こ-", "お-"],
+    "strokes": 3,
+    "words": [
+      { "word": "小さい", "reading": "ちいさい", "meaning": "small" },
+      { "word": "小学校", "reading": "しょうがっこう", "meaning": "elementary school" }
+    ]
+  },
+  {
+    "char": "上",
+    "meanings": ["above", "up"],
+    "onyomi": ["ジョウ"],
+    "kunyomi": ["うえ", "あ.げる", "のぼ.る"],
+    "strokes": 3,
+    "words": [
+      { "word": "上", "reading": "うえ", "meaning": "above, top" },
+      { "word": "上手", "reading": "じょうず", "meaning": "skillful" }
+    ]
+  },
+  {
+    "char": "下",
+    "meanings": ["below", "down"],
+    "onyomi": ["カ", "ゲ"],
+    "kunyomi": ["した", "さ.げる", "くだ.る"],
+    "strokes": 3,
+    "words": [
+      { "word": "下", "reading": "した", "meaning": "below, under" },
+      { "word": "地下", "reading": "ちか", "meaning": "underground" }
+    ]
+  }
+]

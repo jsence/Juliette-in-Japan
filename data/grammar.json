@@ -1,0 +1,162 @@
+[
+  {
+    "id": "desu",
+    "title": "です (polite copula)",
+    "structure": "Noun / な-adjective + です",
+    "explanation": "です is the polite form of the copula, roughly \"to be\". It attaches to nouns and な-adjectives to make polite statements. The plain-form equivalent is だ.",
+    "category": "copula",
+    "exampleSentences": []
+  },
+  {
+    "id": "da",
+    "title": "だ (plain copula)",
+    "structure": "Noun / な-adjective + だ",
+    "explanation": "だ is the plain (casual) form of the copula. It is used in casual speech and in many grammatical constructions. It is often dropped in casual questions.",
+    "category": "copula",
+    "exampleSentences": []
+  },
+  {
+    "id": "particle-wa",
+    "title": "は (topic particle)",
+    "structure": "Noun + は + comment",
+    "explanation": "は marks the topic of the sentence — what the sentence is about. It is written with the hiragana は but pronounced \"wa\". It often contrasts with が, which introduces new or focused information.",
+    "category": "particles",
+    "exampleSentences": []
+  },
+  {
+    "id": "particle-ga",
+    "title": "が (subject particle)",
+    "structure": "Noun + が",
+    "explanation": "が marks the grammatical subject and typically introduces new information or identifies the specific thing performing an action. It contrasts with the topic particle は.",
+    "category": "particles",
+    "exampleSentences": []
+  },
+  {
+    "id": "particle-wo",
+    "title": "を (object particle)",
+    "structure": "Noun + を + transitive verb",
+    "explanation": "を marks the direct object of a transitive verb. It is written with the hiragana を but pronounced \"o\".",
+    "category": "particles",
+    "exampleSentences": []
+  },
+  {
+    "id": "particle-ni",
+    "title": "に (target / time particle)",
+    "structure": "Noun + に",
+    "explanation": "に marks a point in time, a destination, a location of existence (with ある/いる), or an indirect object. It answers \"when\" or \"to where\".",
+    "category": "particles",
+    "exampleSentences": []
+  },
+  {
+    "id": "particle-de",
+    "title": "で (place of action / means particle)",
+    "structure": "Noun + で",
+    "explanation": "で marks the place where an action happens, or the means/tool by which something is done.",
+    "category": "particles",
+    "exampleSentences": []
+  },
+  {
+    "id": "particle-he",
+    "title": "へ (direction particle)",
+    "structure": "Noun + へ",
+    "explanation": "へ marks the direction of movement. It is written with the hiragana へ but pronounced \"e\". It overlaps with に for destinations, but emphasises direction rather than a precise target.",
+    "category": "particles",
+    "exampleSentences": []
+  },
+  {
+    "id": "particle-to",
+    "title": "と (with / and particle)",
+    "structure": "Noun + と + Noun / Noun + と",
+    "explanation": "と joins nouns in an exhaustive list (\"A and B\") and marks the person you do something with.",
+    "category": "particles",
+    "exampleSentences": []
+  },
+  {
+    "id": "particle-mo",
+    "title": "も (also particle)",
+    "structure": "Noun + も",
+    "explanation": "も means \"also\" or \"too\" and replaces は, が, or を. Repeated, it can mean \"both … and …\".",
+    "category": "particles",
+    "exampleSentences": []
+  },
+  {
+    "id": "i-adjectives",
+    "title": "い-adjectives",
+    "structure": "い-adjective + Noun / い-adjective + です",
+    "explanation": "い-adjectives end in い and conjugate directly (e.g. negative 〜くない, past 〜かった). They do not take な before a noun.",
+    "category": "adjectives",
+    "exampleSentences": []
+  },
+  {
+    "id": "na-adjectives",
+    "title": "な-adjectives",
+    "structure": "な-adjective + な + Noun",
+    "explanation": "な-adjectives behave like nouns and require な when modifying a following noun. They use です/だ and conjugate like nouns.",
+    "category": "adjectives",
+    "exampleSentences": []
+  },
+  {
+    "id": "masu-form",
+    "title": "ます form (polite verb)",
+    "structure": "Verb stem + ます",
+    "explanation": "The ます form is the polite present/future form of verbs. Negative is 〜ません, past is 〜ました, past negative is 〜ませんでした.",
+    "category": "verb-forms",
+    "exampleSentences": []
+  },
+  {
+    "id": "te-form",
+    "title": "て form",
+    "structure": "Verb (て-form)",
+    "explanation": "The て form connects clauses, forms requests (〜てください), and combines with helper verbs. Its formation depends on the verb group.",
+    "category": "verb-forms",
+    "exampleSentences": []
+  },
+  {
+    "id": "ta-form",
+    "title": "た form (plain past)",
+    "structure": "Verb (た-form)",
+    "explanation": "The た form is the plain past tense. It shares its formation rules with the て form (replace て/で with た/だ).",
+    "category": "verb-forms",
+    "exampleSentences": []
+  },
+  {
+    "id": "nai-form",
+    "title": "ない form (plain negative)",
+    "structure": "Verb (ない-form)",
+    "explanation": "The ない form is the plain negative. For る-verbs, drop る and add ない; for う-verbs, change the final -u sound to -a and add ない (with う → わ).",
+    "category": "verb-forms",
+    "exampleSentences": []
+  },
+  {
+    "id": "aru-iru",
+    "title": "ある / いる (existence)",
+    "structure": "Place + に + thing + が + ある/いる",
+    "explanation": "ある states the existence of inanimate things; いる states the existence of animate things (people, animals). Both usually pair with the particle に for the location.",
+    "category": "existence",
+    "exampleSentences": []
+  },
+  {
+    "id": "comparatives",
+    "title": "Comparatives (より / のほうが)",
+    "structure": "A のほうが B より + adjective",
+    "explanation": "より marks the standard of comparison (\"than\"), and のほうが marks the item that has more of the quality. Together they express \"A is more … than B\".",
+    "category": "comparison",
+    "exampleSentences": []
+  },
+  {
+    "id": "tai-form",
+    "title": "〜たい (want to do)",
+    "structure": "Verb stem + たい",
+    "explanation": "〜たい attaches to a verb stem to express the speaker's desire to do something. It conjugates like an い-adjective (〜たくない, 〜たかった).",
+    "category": "desire",
+    "exampleSentences": []
+  },
+  {
+    "id": "kara-node",
+    "title": "から / ので (because)",
+    "structure": "Reason + から / ので + result",
+    "explanation": "から and ので both give a reason (\"because\"). から is more subjective/direct; ので is softer and more polite, and attaches to the plain form (with な after nouns and な-adjectives).",
+    "category": "reason",
+    "exampleSentences": []
+  }
+]
