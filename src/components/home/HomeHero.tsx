@@ -55,7 +55,7 @@ export function HomeHero() {
 
         {/* Seigaiha — full hero texture, soft mask (faint behind copy, denser at edges) */}
         <motion.div
-          className="absolute inset-0 text-ink opacity-[0.04] dark:text-paper-100 dark:opacity-[0.035]"
+          className="absolute inset-0 text-ink opacity-[0.09] dark:text-paper-100 dark:opacity-[0.08]"
           style={{
             ...(reduceMotion ? {} : { y: patternY }),
             WebkitMaskImage:
@@ -68,18 +68,18 @@ export function HomeHero() {
         >
           <svg className="h-full w-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
             <defs>
-              <pattern id="hero-seigaiha" width="48" height="24" patternUnits="userSpaceOnUse">
+              <pattern id="hero-seigaiha" width="72" height="36" patternUnits="userSpaceOnUse">
                 <path
-                  d="M0 24 C12 8 24 8 36 24 S60 40 72 24"
+                  d="M0 36 C18 12 36 12 54 36 S90 60 108 36"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.65"
+                  strokeWidth="0.85"
                 />
                 <path
-                  d="M-24 24 C-12 8 0 8 12 24 S36 40 48 24"
+                  d="M-36 36 C-18 12 0 12 18 36 S54 60 72 36"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.65"
+                  strokeWidth="0.85"
                 />
               </pattern>
             </defs>
@@ -88,13 +88,13 @@ export function HomeHero() {
         </motion.div>
       </div>
 
-      {/* Watermark — viewport right, never clipped by content width */}
+      {/* Watermark — right third of viewport, bleeding off the right edge */}
       <motion.p
         className="pointer-events-none absolute right-0 top-1/2 z-[1] hidden select-none font-jp text-[min(72vh,22rem)] font-semibold leading-none tracking-tight text-ink opacity-[0.10] [writing-mode:vertical-rl] sm:block dark:text-paper-100 dark:opacity-[0.08]"
         style={
           reduceMotion
-            ? { x: "22%", y: "-50%" }
-            : { x: "22%", y: watermarkY }
+            ? { x: "32%", y: "-50%" }
+            : { x: "32%", y: watermarkY }
         }
         lang="ja"
         aria-hidden="true"
@@ -102,8 +102,8 @@ export function HomeHero() {
         日本
       </motion.p>
 
-      <div className="relative z-10 mx-auto flex min-h-[85dvh] max-w-5xl flex-col justify-center px-4 py-14">
-        <div className="flex max-w-2xl items-stretch gap-5 sm:gap-7">
+      <div className="relative z-10 mx-auto flex min-h-[85dvh] w-full max-w-5xl flex-col justify-center px-4 py-14">
+        <div className="flex w-full max-w-xl items-stretch gap-5 sm:max-w-2xl sm:gap-7 lg:max-w-2xl">
           <aside className="hidden shrink-0 sm:flex sm:items-center" aria-hidden="true">
             <p
               className="border-l border-ai/35 pl-4 font-jp text-[0.8125rem] leading-relaxed tracking-[0.42em] text-ai-muted [writing-mode:vertical-rl] dark:border-ai-light/25 dark:text-ai-light/70"
