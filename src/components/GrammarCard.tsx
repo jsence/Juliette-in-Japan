@@ -10,7 +10,7 @@ interface GrammarCardProps {
 
 /** Compact grammar point card linking to its detail page (used in listings). */
 export function GrammarCard({ point }: GrammarCardProps) {
-  const href = `/language/n5/grammar/${point.category}/${point.slug}`;
+  const href = `/language/grammar/${point.category}/${point.slug}`;
   return (
     <Link
       href={href}

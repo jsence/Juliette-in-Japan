@@ -1,24 +1,25 @@
 import type { Metadata } from "next";
 
-import { PostList } from "@/components/PostList";
+import { SectionIndex } from "@/components/SectionIndex";
+import { getSection } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Working in Japan",
+  title: "Work",
   description:
-    "Notes on workplace hierarchy, meeting etiquette, business keigo, the hiring process, visa types, and breakdowns of real job postings.",
+    "How Japanese workplaces operate, from hierarchy and meetings to keigo and communication norms.",
 };
+
+const section = getSection("work")!;
 
 export default function WorkPage() {
   return (
-    <PostList
-      collection="work"
-      title="Working in Japan"
-      glyph="働"
+    <SectionIndex
+      section={section}
       intro={
         <p>
-          Notes on working life in Japan: workplace hierarchy, meeting etiquette, business{" "}
-          <span className="font-jp">keigo</span>, the hiring process, visa types, and analyses of
-          real job postings.
+          Notes on working life in Japan: organisational hierarchy, meeting culture, business{" "}
+          <span className="font-jp">keigo</span> and the unwritten rules of professional
+          communication.
         </p>
       }
     />

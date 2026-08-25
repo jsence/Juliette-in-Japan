@@ -1,7 +1,7 @@
 /**
  * Shared content types for the "Juliette in Japan" study data.
  *
- * Sourcing rules (see /language/n5 source note):
+ * Sourcing rules (see /language source note):
  *  - Kanji readings and stroke counts follow KANJIDIC2.
  *  - Word definitions follow JMdict.
  *  - Example sentences must come from established corpora (Tatoeba, NHK Easy).
@@ -290,7 +290,7 @@ export interface Resource {
   free: boolean;
 }
 
-/** Frontmatter shared by MDX posts (journal / culture / work). */
+/** Frontmatter shared by MDX posts (culture / work). */
 export interface PostFrontmatter {
   title: string;
   /** ISO date string, e.g. "2026-08-24". */
@@ -307,7 +307,7 @@ export interface Post extends PostFrontmatter {
   content: string;
 }
 
-export type PostCollection = "journal" | "culture" | "work";
+export type PostCollection = "culture" | "work";
 
 /** A flashcard shape used by the review/SRS feature. */
 export interface Flashcard {

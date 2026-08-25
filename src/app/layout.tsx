@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`,
   },
   description:
-    "A personal travel-journal-style site documenting the journey toward working in Japan: honest progress, curated resources, and N5 study material from open, human-verified data.",
+    "A documentation site on the Japanese language, culture, and working life in Japan — with N5 study material from open, human-verified data.",
   metadataBase: new URL("https://juliette-in-japan.vercel.app"),
   openGraph: {
     title: site.name,
     description:
-      "Honest progress, curated resources, and N5 study material from open, human-verified data.",
+      "Japanese language, culture, life and work — with N5 study material from open, human-verified data.",
     type: "website",
   },
 };

@@ -14,10 +14,10 @@ interface ModuleTotals {
 }
 
 const MODULES: { key: ModuleKey; label: string; href: string }[] = [
-  { key: "kana", label: "Kana", href: "/language/n5/kana" },
-  { key: "kanji", label: "Kanji", href: "/language/n5/kanji" },
-  { key: "grammar", label: "Grammar", href: "/language/n5/grammar" },
-  { key: "vocabulary", label: "Vocabulary", href: "/language/n5/vocabulary" },
+  { key: "kana", label: "Kana", href: "/language/kana" },
+  { key: "kanji", label: "Kanji", href: "/language/kanji" },
+  { key: "grammar", label: "Grammar", href: "/language/grammar" },
+  { key: "vocabulary", label: "Vocabulary", href: "/language/vocabulary" },
 ];
 
 /**

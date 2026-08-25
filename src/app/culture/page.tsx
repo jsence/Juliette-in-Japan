@@ -1,21 +1,23 @@
 import type { Metadata } from "next";
-import { PostList } from "@/components/PostList";
+
+import { SectionIndex } from "@/components/SectionIndex";
+import { getSection } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Culture & History",
-  description: "Dated entries on Japanese traditions, regions, food and history.",
+  title: "Culture",
+  description: "History, beliefs, seasonal customs and the arts that shape everyday life in Japan.",
 };
+
+const section = getSection("culture")!;
 
 export default function CulturePage() {
   return (
-    <PostList
-      collection="culture"
-      title="Culture & History"
-      glyph="文"
+    <SectionIndex
+      section={section}
       intro={
         <p>
-          Dated entries on Japanese traditions, regions, food and history. Each entry covers a
-          single topic rather than aiming to be exhaustive.
+          Notes on Japanese history, spiritual traditions, seasonal customs and the arts. Each
+          sub-section covers a distinct topic rather than aiming to be exhaustive.
         </p>
       }
     />

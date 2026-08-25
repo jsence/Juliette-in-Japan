@@ -14,7 +14,7 @@ export function Footer() {
           established corpora (Tatoeba, NHK Easy). No Japanese prose here is machine-generated.
         </p>
         <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1">
-          <Link href="/about" className="hover:text-hanko dark:hover:text-hanko-light">About</Link>
+          <Link href="/project" className="hover:text-hanko dark:hover:text-hanko-light">Project</Link>
           <a
             href={site.links.linkedin}
             target="_blank"
