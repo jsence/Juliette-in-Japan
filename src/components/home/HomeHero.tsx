@@ -148,8 +148,8 @@ export function HomeHero() {
               Start with N5
             </Link>
           </motion.div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
 
       <motion.a
         href="#inside-heading"
