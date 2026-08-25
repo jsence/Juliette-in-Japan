@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink antialiased;
+    background-image:
+      radial-gradient(circle at 25% 15%, rgba(179, 53, 43, 0.035) 0%, transparent 42%),
+      radial-gradient(circle at 82% 65%, rgba(43, 38, 32, 0.045) 0%, transparent 48%);
+    background-attachment: fixed;
+  }
+
+  .dark body {
+    @apply bg-sumi text-paper-100;
+    background-image:
+      radial-gradient(circle at 25% 15%, rgba(200, 91, 80, 0.05) 0%, transparent 42%),
+      radial-gradient(circle at 82% 65%, rgba(255, 255, 255, 0.03) 0%, transparent 48%);
+  }
+
+  ::selection {
+    @apply bg-hanko/20 text-ink;
+  }
+
+  /* Keep furigana readable and tidy in <ruby> tags. */
+  ruby > rt {
+    font-size: 0.55em;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer utilities {
+  /* Faint paper-fiber texture layered over the background. */
+  .paper-grain {
+    position: relative;
+  }
+  .paper-grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.35;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+}
