@@ -11,7 +11,7 @@ export default function HomePage() {
   const latest = getLatestPages(3);
 
   return (
-    <div className="-mt-10 space-y-28 pb-8 pt-0">
+    <div className="-mt-10 space-y-24 pb-8 pt-0">
       <HomeHero />
 
       <section aria-labelledby="inside-heading" className="scroll-mt-24 space-y-8">
