@@ -28,7 +28,7 @@ const staggerItem: Variants = {
   },
 };
 
-/** Hero — single left-aligned column on the page background. */
+/** Hero — full-bleed background, left-aligned content column. */
 export function HomeHero() {
   const reduceMotion = useReducedMotion();
   const ref = useRef<HTMLElement>(null);
@@ -37,6 +37,7 @@ export function HomeHero() {
     offset: ["start start", "end start"],
   });
   const patternY = useTransform(scrollYProgress, [0, 1], ["0%", "4%"]);
+  const watermarkY = useTransform(scrollYProgress, [0, 1], ["-50%", "-38%"]);
 
   const enter = reduceMotion
     ? {}
@@ -46,16 +47,15 @@ export function HomeHero() {
     <section
       ref={ref}
       aria-label="Introduction"
-      className="relative -mx-4 min-h-[85dvh] overflow-hidden border-b border-ink/10 dark:border-paper-300/10"
+      className="relative left-1/2 min-h-[85dvh] w-screen max-w-[100vw] -translate-x-1/2"
     >
-      {/* Background — full bleed within the main column */}
-      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#fdfbf7] via-paper-50 to-paper-200 dark:from-sumi-light dark:via-sumi dark:to-[#141210]" />
-        <div className="paper-grain absolute inset-0 opacity-25" />
+      {/* Full-bleed overlays — fade to transparent, no panel edges */}
+      <div className="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
+        <div className="absolute inset-0 bg-gradient-to-b from-paper-50/40 via-transparent to-transparent dark:from-sumi-light/25" />
 
-        {/* Seigaiha — thin bottom band, fades upward */}
+        {/* Seigaiha — thin bottom band, soft fade upward */}
         <motion.div
-          className="absolute inset-x-0 bottom-0 h-[120px] text-ai opacity-[0.07] [mask-image:linear-gradient(to_top,black_30%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_top,black_30%,transparent_100%)] dark:opacity-[0.05]"
+          className="absolute inset-x-0 bottom-0 h-[120px] text-ai opacity-[0.07] [mask-image:linear-gradient(to_top,black_20%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_top,black_20%,transparent_100%)] dark:opacity-[0.05]"
           style={reduceMotion ? undefined : { y: patternY }}
         >
           <svg className="h-full w-full" preserveAspectRatio="xMidYMax slice">
@@ -78,18 +78,24 @@ export function HomeHero() {
             <rect width="100%" height="100%" fill="url(#hero-seigaiha-band)" />
           </svg>
         </motion.div>
-
-        {/* Far-right margin watermark */}
-        <p
-          className="absolute right-3 top-1/2 hidden -translate-y-1/2 select-none font-jp text-[clamp(5rem,14vw,9rem)] leading-none tracking-tight text-ai opacity-[0.04] [writing-mode:vertical-rl] sm:block dark:text-ai-light dark:opacity-[0.03]"
-          lang="ja"
-        >
-          日本
-        </p>
       </div>
 
+      {/* Watermark — viewport right, never clipped by content width */}
+      <motion.p
+        className="pointer-events-none absolute right-0 top-1/2 z-[1] hidden select-none font-jp text-[min(72vh,22rem)] font-semibold leading-none tracking-tight text-ink opacity-[0.10] [writing-mode:vertical-rl] sm:block dark:text-paper-100 dark:opacity-[0.08]"
+        style={
+          reduceMotion
+            ? { x: "22%", y: "-50%" }
+            : { x: "22%", y: watermarkY }
+        }
+        lang="ja"
+        aria-hidden="true"
+      >
+        日本
+      </motion.p>
+
       <div className="relative z-10 mx-auto flex min-h-[85dvh] max-w-5xl flex-col justify-center px-4 py-14">
-        <div className="flex items-stretch gap-5 sm:gap-7">
+        <div className="flex max-w-2xl items-stretch gap-5 sm:gap-7">
           <aside className="hidden shrink-0 sm:flex sm:items-center" aria-hidden="true">
             <p
               className="border-l border-ai/35 pl-4 font-jp text-[0.8125rem] leading-relaxed tracking-[0.42em] text-ai-muted [writing-mode:vertical-rl] dark:border-ai-light/25 dark:text-ai-light/70"
@@ -102,7 +108,7 @@ export function HomeHero() {
           <motion.div
             {...enter}
             variants={staggerContainer}
-            className="min-w-0 flex-1"
+            className="relative min-w-0 flex-1"
           >
             <motion.div variants={staggerItem} className="flex items-center gap-3">
               <span className="h-px w-10 shrink-0 bg-ai/50 dark:bg-ai-light/40" />
