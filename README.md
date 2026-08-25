@@ -36,12 +36,18 @@ src/
     page.tsx                      Home (/)
     language/                     Learning tracker (/language)
       n5/                         N5 hub (/language/n5)
-        kana/  kanji/  vocabulary/  grammar/  review/
+        lessons/  lessons/[lesson]        Guided lesson path (localStorage progress)
+        kana/  kanji/  vocabulary/        Reference tables & cards
+        grammar/                          Category index
+          [category]/                     Category listing
+          [category]/[point]/             Full grammar point page
+        review/                           SM-2 flashcards (4 modes)
     culture/  work/  journal/     MDX collections + [slug] detail pages
     about/                        About + CV / contact
   components/          Small, reusable UI (KanjiCard, VocabTable, GrammarPoint,
-                       Flashcard, ProgressBar, JournalEntry, ResourceLink, …)
-  lib/                data loaders, site config, progress maths, SRS logic, post loader
+                       GrammarCard, Formula, Ruby, GrammarExamples, AddToFlashcards,
+                       ReviewDeck, LessonList, LessonDrill, FlashcardBadge, …)
+  lib/                data loaders, site config, SRS (SM-2), flashcard/lesson stores
   types/              Shared content types
 mdx-components.tsx    Required by @next/mdx (App Router)
 ```
@@ -64,6 +70,28 @@ Editorial rules baked into the data and types:
 Long-form posts (`/journal`, `/culture`, `/work`) are **MDX** files in `content/` with
 frontmatter: `title`, `date`, `tags`, `summary`.
 
+### The N5 learning section
+
+- **Grammar is organised by function, not alphabetically**, across 11 categories: basic sentence,
+  particles, adjectives, verb forms, existence, questions, requests & suggestions, desire &
+  ability, connecting ideas, comparison, and time & frequency. The routing mirrors this:
+  `/language/n5/grammar` (category index) → `/…/[category]` (listing) → `/…/[category]/[point]`
+  (detail). Each `grammarPoints` entry in `data/grammar.json` carries a `category`, a visual
+  `formula`, a one-line `meaning`, an authored `explanation`, `mistakes`, `related` ids, `tags`,
+  and furigana-ready `examples` (segments + romaji + English, corpus-sourced only).
+- **Lessons** (`data/lessons.json`) form a guided path of ~20 numbered lessons. Each references
+  grammar/vocabulary/kanji by id and ends in a multiple-choice drill. Completion is tracked in
+  `localStorage`.
+- **Flashcards** (`/language/n5/review`) use an **SM-2** spaced-repetition scheduler with per-card
+  intervals in `localStorage`. Four study modes — JP→EN recognition, EN→JP recall, kanji reading,
+  and cloze on grammar examples — plus deck selection by category/tag/"due today", a session
+  summary listing missed cards, a daily streak, and a cards-due badge in the nav.
+
+> Sourcing note: example sentences are only ever drawn from open corpora (Tatoeba / NHK Easy),
+> never generated. The reference grammar points ship with real, simple Tatoeba-style sentences;
+> other points intentionally keep `examples: []` empty until they are reconciled against a corpus
+> export (at which point `sourceId`s should be filled in).
+
 ## Reference implementations
 
 The task was scaffolded with two fully-built reference pages that the rest of the site
@@ -73,6 +101,8 @@ follows:
   JLPT target countdown), latest journal entries, and section links.
 - **`/language/n5/kana`** — the complete hiragana & katakana tables (stroke counts,
   dakuten/handakuten, yōon) plus notes on stroke order, sokuon and long vowels.
+- **`/language/n5/grammar`** (category index) and **`/language/n5/grammar/basics/desu`** (a full
+  grammar point page) — the reference implementations for the reworked grammar section.
 
 The remaining sections are implemented and wired to the data/components, with starter data
 sets that can be grown toward the full N5 scope (~110 kanji, ~700 words, ~60 grammar points).

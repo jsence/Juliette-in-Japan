@@ -1,29 +1,21 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { PageHeader } from "@/components/PageHeader";
 import { N5SubNav } from "@/components/N5SubNav";
-import { GrammarPoint } from "@/components/GrammarPoint";
+import { Hanko } from "@/components/Hanko";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { getGrammarByCategory } from "@/lib/data";
+import { getGrammarCategories } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "N5 grammar",
-  description: "N5 grammar points with structures and human-written explanations.",
+  description:
+    "N5 grammar organised by function across 11 categories — from the basic sentence to time and frequency.",
 };
 
-const categoryLabels: Record<string, string> = {
-  copula: "The copula (です・だ)",
-  particles: "Particles",
-  adjectives: "Adjectives",
-  "verb-forms": "Verb forms",
-  existence: "Existence (ある・いる)",
-  comparison: "Comparatives",
-  desire: "Desire (〜たい)",
-  reason: "Reason (から・ので)",
-};
-
-export default function GrammarPage() {
-  const groups = getGrammarByCategory();
+export default function GrammarIndexPage() {
+  const categories = getGrammarCategories();
+  const total = categories.reduce((sum, c) => sum + c.items.length, 0);
 
   return (
     <div className="space-y-8">
@@ -33,27 +25,39 @@ export default function GrammarPage() {
         glyph="文"
         intro={
           <p>
-            The core N5 grammar, grouped by function. Every explanation here is written by hand —
-            never generated. Example sentences are added only from established corpora.
+            Organised by <strong>function, not alphabetically</strong>: {total} points across 11
+            categories, so related patterns sit together. Start at the basic sentence and work
+            downward, or jump to whatever you&apos;re wrestling with. Every explanation is written
+            by hand; example sentences come only from open corpora.
           </p>
         }
       />
-      {groups.map((group, gi) => (
-        <section key={group.category} className="space-y-4">
-          <ScrollReveal>
-            <h2 className="font-serif text-xl font-semibold text-ink dark:text-paper-100">
-              {categoryLabels[group.category] ?? group.category}
-            </h2>
+
+      <div className="grid gap-4 sm:grid-cols-2">
+        {categories.map((cat, i) => (
+          <ScrollReveal key={cat.meta.slug} index={i}>
+            <Link
+              href={`/language/n5/grammar/${cat.meta.slug}`}
+              className="group flex h-full items-start gap-4 rounded-xl border border-paper-300 bg-paper-50 p-5 shadow-sm transition hover:border-hanko/50 hover:shadow-md dark:border-sumi-border dark:bg-sumi-light"
+            >
+              <Hanko size="md" className="transition group-hover:animate-seal-in">
+                {cat.meta.glyph}
+              </Hanko>
+              <div className="flex-1">
+                <div className="flex items-baseline justify-between gap-2">
+                  <h2 className="font-serif text-lg font-semibold text-ink group-hover:text-hanko dark:text-paper-100 dark:group-hover:text-hanko-light">
+                    {cat.meta.label}
+                  </h2>
+                  <span className="shrink-0 text-xs text-ink-muted dark:text-paper-300">
+                    {cat.items.length} {cat.items.length === 1 ? "point" : "points"}
+                  </span>
+                </div>
+                <p className="mt-1 text-sm text-ink-light dark:text-paper-200">{cat.meta.blurb}</p>
+              </div>
+            </Link>
           </ScrollReveal>
-          <div className="grid gap-4 md:grid-cols-2">
-            {group.items.map((point, i) => (
-              <ScrollReveal key={point.id} index={i}>
-                <GrammarPoint point={point} />
-              </ScrollReveal>
-            ))}
-          </div>
-        </section>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

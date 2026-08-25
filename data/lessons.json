@@ -1,0 +1,509 @@
+[
+  {
+    "number": 1,
+    "id": "lesson-01",
+    "title": "Introducing yourself",
+    "summary": "Say who you are with the topic particle は and the polite copula です.",
+    "grammarIds": ["desu", "particle-wa"],
+    "vocabWords": ["友達", "家族"],
+    "kanjiChars": ["人"],
+    "drill": [
+      {
+        "id": "l1-q1",
+        "prompt": "Which particle marks the topic of a sentence?",
+        "choices": ["は", "を", "が", "に"],
+        "answer": 0,
+        "explain": "は marks the topic — spelled は, pronounced \"wa\"."
+      },
+      {
+        "id": "l1-q2",
+        "prompt": "です attaches to which of these?",
+        "choices": ["A plain-form verb", "A noun or な-adjective", "An い-adjective's stem", "The て form"],
+        "answer": 1,
+        "explain": "です follows nouns and な-adjectives; verbs use the ます form instead."
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "id": "lesson-02",
+    "title": "It is / it is not",
+    "summary": "Link nouns with の and make negative statements with じゃありません.",
+    "grammarIds": ["particle-no", "desu-negative"],
+    "vocabWords": ["学校", "会社", "店"],
+    "kanjiChars": ["本"],
+    "drill": [
+      {
+        "id": "l2-q1",
+        "prompt": "How do you say \"my book\" — where does の go?",
+        "choices": ["本の わたし", "わたしの 本", "わたし 本の", "本 わたしの"],
+        "answer": 1,
+        "explain": "The possessor comes first: わたし の 本."
+      },
+      {
+        "id": "l2-q2",
+        "prompt": "The polite negative copula is…",
+        "choices": ["ですない", "じゃありません", "くないです", "ませんでした"],
+        "answer": 1,
+        "explain": "じゃありません (or ではありません) replaces です entirely."
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "id": "lesson-03",
+    "title": "Casual statements & simple questions",
+    "summary": "Meet the plain copula だ and turn statements into questions with か.",
+    "grammarIds": ["da", "ka"],
+    "vocabWords": ["一", "二", "三", "四", "五"],
+    "kanjiChars": ["大", "小"],
+    "drill": [
+      {
+        "id": "l3-q1",
+        "prompt": "What do you add to the end of a statement to make it a question?",
+        "choices": ["か", "の", "を", "も"],
+        "answer": 0,
+        "explain": "か at the end turns a statement into a question; word order stays the same."
+      },
+      {
+        "id": "l3-q2",
+        "prompt": "だ is the … form of the copula.",
+        "choices": ["polite", "plain / casual", "negative", "past"],
+        "answer": 1,
+        "explain": "だ is the plain copula; です is its polite counterpart."
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "id": "lesson-04",
+    "title": "Subjects & question words",
+    "summary": "Use が for the subject and the core question words なに・だれ・どこ.",
+    "grammarIds": ["particle-ga", "question-words"],
+    "vocabWords": ["六", "七", "八", "九", "十"],
+    "kanjiChars": ["上", "下"],
+    "drill": [
+      {
+        "id": "l4-q1",
+        "prompt": "Which particle usually marks the subject of a question word (e.g. \"who\")?",
+        "choices": ["は", "が", "を", "の"],
+        "answer": 1,
+        "explain": "Question-word subjects take が: だれが…, not だれは."
+      },
+      {
+        "id": "l4-q2",
+        "prompt": "\"Where\" is…",
+        "choices": ["だれ", "なに", "どこ", "いつ"],
+        "answer": 2,
+        "explain": "どこ = where; だれ = who; なに = what; いつ = when."
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "id": "lesson-05",
+    "title": "Doing things (polite)",
+    "summary": "Mark the object with を and use the polite ます form.",
+    "grammarIds": ["particle-wo", "masu-form"],
+    "vocabWords": ["食べる", "飲む", "ご飯", "お茶"],
+    "kanjiChars": ["山", "川"],
+    "drill": [
+      {
+        "id": "l5-q1",
+        "prompt": "Which particle marks the direct object of a transitive verb?",
+        "choices": ["を", "が", "で", "へ"],
+        "answer": 0,
+        "explain": "を marks the direct object; it is written を but pronounced \"o\"."
+      },
+      {
+        "id": "l5-q2",
+        "prompt": "The polite form of のむ is…",
+        "choices": ["のむます", "のみます", "のまます", "のんます"],
+        "answer": 1,
+        "explain": "う-verb のむ → stem のみ + ます = のみます."
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "id": "lesson-06",
+    "title": "Where and how",
+    "summary": "に for destinations and times, で for the place of an action and the means.",
+    "grammarIds": ["particle-ni", "particle-de"],
+    "vocabWords": ["電車", "車", "駅", "飛行機"],
+    "kanjiChars": ["日", "月"],
+    "drill": [
+      {
+        "id": "l6-q1",
+        "prompt": "\"I study at school.\" Which particle marks 学校 (the place of the action)?",
+        "choices": ["に", "で", "を", "へ"],
+        "answer": 1,
+        "explain": "で marks where an action happens; に marks existence or destination."
+      },
+      {
+        "id": "l6-q2",
+        "prompt": "Which particle marks the means of transport (\"by train\")?",
+        "choices": ["を", "に", "で", "の"],
+        "answer": 2,
+        "explain": "電車で = by train — で marks the means."
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "id": "lesson-07",
+    "title": "Going places, doing things with people",
+    "summary": "へ for direction, と for \"and\" between nouns and \"with\" a person.",
+    "grammarIds": ["particle-he", "particle-to"],
+    "vocabWords": ["行く", "来る"],
+    "kanjiChars": ["火", "水"],
+    "drill": [
+      {
+        "id": "l7-q1",
+        "prompt": "The particle へ (direction) is pronounced…",
+        "choices": ["he", "e", "we", "ye"],
+        "answer": 1,
+        "explain": "へ is written \"he\" but pronounced \"e\" as a particle."
+      },
+      {
+        "id": "l7-q2",
+        "prompt": "To list \"coffee and tea\" exhaustively, use…",
+        "choices": ["と", "も", "の", "か"],
+        "answer": 0,
+        "explain": "と joins a complete list of nouns (for a partial list, use や)."
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "id": "lesson-08",
+    "title": "Also, and there is",
+    "summary": "も for \"also\", and ある for things that exist.",
+    "grammarIds": ["particle-mo", "aru"],
+    "vocabWords": ["水", "肉", "魚", "野菜"],
+    "kanjiChars": ["木", "金"],
+    "drill": [
+      {
+        "id": "l8-q1",
+        "prompt": "も replaces which particles?",
+        "choices": ["only に", "は, が or を", "の and で", "か and と"],
+        "answer": 1,
+        "explain": "も means \"also\" and replaces は, が or を (never stacks with them)."
+      },
+      {
+        "id": "l8-q2",
+        "prompt": "Which verb of existence is used for inanimate things?",
+        "choices": ["いる", "ある", "です", "する"],
+        "answer": 1,
+        "explain": "ある is for inanimate things; いる is for living things."
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "id": "lesson-09",
+    "title": "There is (living things) & dictionary form",
+    "summary": "いる for people and animals, and the verb groups behind the dictionary form.",
+    "grammarIds": ["iru", "dictionary-form"],
+    "vocabWords": ["見る", "読む", "話す", "する"],
+    "kanjiChars": ["土"],
+    "drill": [
+      {
+        "id": "l9-q1",
+        "prompt": "Which verb of existence is used for people and animals?",
+        "choices": ["ある", "いる", "です", "だ"],
+        "answer": 1,
+        "explain": "いる is for animate beings; ある is for inanimate things."
+      },
+      {
+        "id": "l9-q2",
+        "prompt": "Which of these is an う-verb despite ending in る?",
+        "choices": ["食べる", "見る", "帰る", "寝る"],
+        "answer": 2,
+        "explain": "帰る is an う-verb (帰ります). The others are る-verbs."
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "id": "lesson-10",
+    "title": "Describing things",
+    "summary": "い-adjectives that conjugate themselves and な-adjectives that need な.",
+    "grammarIds": ["i-adjectives", "na-adjectives"],
+    "vocabWords": ["大きい", "小さい", "新しい", "古い"],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l10-q1",
+        "prompt": "How do you connect a な-adjective to a following noun (\"a quiet room\")?",
+        "choices": ["静か 部屋", "静かな 部屋", "静かい 部屋", "静かの 部屋"],
+        "answer": 1,
+        "explain": "な-adjectives take な before a noun: 静かな部屋."
+      },
+      {
+        "id": "l10-q2",
+        "prompt": "い-adjectives before a noun take…",
+        "choices": ["な", "の", "nothing", "だ"],
+        "answer": 2,
+        "explain": "い-adjectives attach directly: 大きい車 (no particle)."
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "id": "lesson-11",
+    "title": "Not, and was",
+    "summary": "Negate and past-tense adjectives: 〜くない / 〜じゃない and 〜かった / でした.",
+    "grammarIds": ["adjective-negative", "adjective-past"],
+    "vocabWords": ["良い", "静か", "有名", "元気"],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l11-q1",
+        "prompt": "The negative of the い-adjective たかい is…",
+        "choices": ["たかいじゃない", "たかくない", "たかない", "たかでない"],
+        "answer": 1,
+        "explain": "Drop い, add くない: たか + くない."
+      },
+      {
+        "id": "l11-q2",
+        "prompt": "The past of the い-adjective たかい is…",
+        "choices": ["たかいでした", "たかかった", "たかった", "たかくた"],
+        "answer": 1,
+        "explain": "Drop い, add かった: たかかった (polite: たかかったです)."
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "id": "lesson-12",
+    "title": "Saying no (verbs)",
+    "summary": "Polite ません and the plain ない form.",
+    "grammarIds": ["masu-negative", "nai-form"],
+    "vocabWords": ["家"],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l12-q1",
+        "prompt": "The polite past negative of a verb is…",
+        "choices": ["〜ませんかった", "〜ませんでした", "〜なかったです", "〜ませんだ"],
+        "answer": 1,
+        "explain": "Polite past negative = 〜ませんでした."
+      },
+      {
+        "id": "l12-q2",
+        "prompt": "The plain negative of かう is…",
+        "choices": ["かあない", "かわない", "からない", "かない"],
+        "answer": 1,
+        "explain": "う-verbs shift う → わ before ない: かう → かわない."
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "id": "lesson-13",
+    "title": "The て form & requests",
+    "summary": "Build the て form and make polite requests with 〜てください.",
+    "grammarIds": ["te-form", "te-kudasai"],
+    "vocabWords": ["父", "母"],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l13-q1",
+        "prompt": "The て form of かく is…",
+        "choices": ["かきて", "かいて", "かって", "かんで"],
+        "answer": 1,
+        "explain": "く → いて: かく → かいて (いく is the exception → いって)."
+      },
+      {
+        "id": "l13-q2",
+        "prompt": "\"Please don't do (it)\" uses…",
+        "choices": ["〜てください", "〜ないでください", "〜てはいけない", "〜なくてください"],
+        "answer": 1,
+        "explain": "Negative request = ない form + でください."
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "id": "lesson-14",
+    "title": "Linking actions & the plain past",
+    "summary": "Chain actions with the て form and meet the plain past た form.",
+    "grammarIds": ["te-connecting", "ta-form"],
+    "vocabWords": ["兄", "姉"],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l14-q1",
+        "prompt": "When chaining clauses with the て form, which clause carries the tense?",
+        "choices": ["The first one", "Every clause", "The final verb", "None of them"],
+        "answer": 2,
+        "explain": "Only the final verb marks tense; earlier clauses use the て form."
+      },
+      {
+        "id": "l14-q2",
+        "prompt": "The plain past of のむ is…",
+        "choices": ["のみた", "のんだ", "のむた", "のみました"],
+        "answer": 1,
+        "explain": "む/ぶ/ぬ verbs → んだ: のむ → のんだ."
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "id": "lesson-15",
+    "title": "Wanting",
+    "summary": "Want to do (〜たい) and want to have (〜がほしい).",
+    "grammarIds": ["tai", "hoshii"],
+    "vocabWords": [],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l15-q1",
+        "prompt": "〜たい attaches to…",
+        "choices": ["the dictionary form", "the ます stem", "the て form", "the ない form"],
+        "answer": 1,
+        "explain": "〜たい attaches to the ます-stem: たべ + たい = たべたい."
+      },
+      {
+        "id": "l15-q2",
+        "prompt": "With ほしい, the wanted thing is marked with…",
+        "choices": ["を", "が", "に", "で"],
+        "answer": 1,
+        "explain": "〜がほしい: the desired thing takes が."
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "id": "lesson-16",
+    "title": "Can do, let's do",
+    "summary": "Ability with 〜ことができる and suggestions with 〜ましょう.",
+    "grammarIds": ["koto-ga-dekiru", "mashou"],
+    "vocabWords": [],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l16-q1",
+        "prompt": "〜ことができる follows which verb form?",
+        "choices": ["ます form", "dictionary form", "て form", "た form"],
+        "answer": 1,
+        "explain": "Dictionary form + ことができる: 話すことができる."
+      },
+      {
+        "id": "l16-q2",
+        "prompt": "\"Let's go\" is…",
+        "choices": ["いきます", "いきましょう", "いきませんか", "いってください"],
+        "answer": 1,
+        "explain": "〜ましょう proposes a shared action: いきましょう."
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "id": "lesson-17",
+    "title": "Inviting & giving reasons",
+    "summary": "Polite invitations with 〜ませんか and reasons with から.",
+    "grammarIds": ["masenka", "kara-reason"],
+    "vocabWords": ["今日", "明日", "昨日"],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l17-q1",
+        "prompt": "〜ませんか is used to…",
+        "choices": ["give a reason", "politely invite someone", "state the past", "compare two things"],
+        "answer": 1,
+        "explain": "〜ませんか is a soft invitation (\"won't you…?\")."
+      },
+      {
+        "id": "l17-q2",
+        "prompt": "から meaning \"because\" comes…",
+        "choices": ["before the reason", "after the reason clause", "at the very start", "after the result"],
+        "answer": 1,
+        "explain": "Reason + から + result: the reason comes first."
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "id": "lesson-18",
+    "title": "Softer reasons & contrast",
+    "summary": "ので for softer reasons and が for \"but\".",
+    "grammarIds": ["node", "ga-but"],
+    "vocabWords": ["今", "時間"],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l18-q1",
+        "prompt": "After a noun, ので links with…",
+        "choices": ["だ", "な", "の", "nothing"],
+        "answer": 1,
+        "explain": "Noun/な-adjective + な + ので: 学生なので."
+      },
+      {
+        "id": "l18-q2",
+        "prompt": "As a conjunction, が means…",
+        "choices": ["because", "but / although", "and then", "or"],
+        "answer": 1,
+        "explain": "Clause + が + clause expresses a mild contrast (\"but\")."
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "id": "lesson-19",
+    "title": "Comparing",
+    "summary": "Comparatives with より / のほうが and superlatives with いちばん.",
+    "grammarIds": ["yori", "ichiban"],
+    "vocabWords": [],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l19-q1",
+        "prompt": "In a comparison, より marks…",
+        "choices": ["the winner", "the standard compared against (\"than\")", "the group", "the question"],
+        "answer": 1,
+        "explain": "より marks the thing compared against; のほうが marks the one with more."
+      },
+      {
+        "id": "l19-q2",
+        "prompt": "The group in a superlative (いちばん) is marked with…",
+        "choices": ["より", "で / の中で", "から", "まで"],
+        "answer": 1,
+        "explain": "Superlatives use で or の中で for the group."
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "id": "lesson-20",
+    "title": "Time & frequency",
+    "summary": "Spans with 〜から〜まで, approximation with ごろ/ぐらい, and frequency adverbs.",
+    "grammarIds": ["kara-made", "goro-gurai", "frequency-adverbs"],
+    "vocabWords": ["朝", "夜"],
+    "kanjiChars": [],
+    "drill": [
+      {
+        "id": "l20-q1",
+        "prompt": "\"From 9 to 5\" uses…",
+        "choices": ["から … まで", "まで … から", "に … で", "の … も"],
+        "answer": 0,
+        "explain": "から marks the start, まで the end: 9時から5時まで."
+      },
+      {
+        "id": "l20-q2",
+        "prompt": "For \"about 3 o'clock\" (a point in time) use…",
+        "choices": ["ぐらい", "ごろ", "まで", "など"],
+        "answer": 1,
+        "explain": "ごろ = around a point in time; ぐらい = about an amount/duration."
+      },
+      {
+        "id": "l20-q3",
+        "prompt": "Which adverbs require a negative verb?",
+        "choices": ["いつも・よく", "あまり・ぜんぜん", "ときどき・よく", "いつも・ときどき"],
+        "answer": 1,
+        "explain": "あまり and ぜんぜん pair with a negative verb (not much / not at all)."
+      }
+    ]
+  }
+]

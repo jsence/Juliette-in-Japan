@@ -6,6 +6,7 @@ import { useState } from "react";
 
 import { nav, site } from "@/lib/site";
 import { Hanko } from "./Hanko";
+import { FlashcardBadge } from "./FlashcardBadge";
 
 /** Top navigation bar with active-route highlighting and a mobile menu. */
 export function Navigation() {
@@ -25,18 +26,21 @@ export function Navigation() {
           </span>
         </Link>
 
-        <button
-          type="button"
-          className="rounded-md border border-paper-300 p-2 text-ink md:hidden dark:border-sumi-border dark:text-paper-100"
-          aria-expanded={open}
-          aria-controls="primary-menu"
-          aria-label="Toggle navigation menu"
-          onClick={() => setOpen((o) => !o)}
-        >
-          <span className="block h-0.5 w-5 bg-current" />
-          <span className="mt-1 block h-0.5 w-5 bg-current" />
-          <span className="mt-1 block h-0.5 w-5 bg-current" />
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <FlashcardBadge />
+          <button
+            type="button"
+            className="rounded-md border border-paper-300 p-2 text-ink dark:border-sumi-border dark:text-paper-100"
+            aria-expanded={open}
+            aria-controls="primary-menu"
+            aria-label="Toggle navigation menu"
+            onClick={() => setOpen((o) => !o)}
+          >
+            <span className="block h-0.5 w-5 bg-current" />
+            <span className="mt-1 block h-0.5 w-5 bg-current" />
+            <span className="mt-1 block h-0.5 w-5 bg-current" />
+          </button>
+        </div>
 
         <ul className="hidden items-center gap-1 md:flex">
           {nav.map((item) => (
@@ -55,6 +59,9 @@ export function Navigation() {
               </Link>
             </li>
           ))}
+          <li className="ml-1">
+            <FlashcardBadge />
+          </li>
         </ul>
       </nav>
 
