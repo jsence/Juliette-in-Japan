@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import { nav, site } from "@/lib/site";
+import { glassNav } from "@/lib/ui";
 import { Hanko } from "./Hanko";
-import { FlashcardBadge } from "./FlashcardBadge";
 
 /** Top navigation bar with active-route highlighting and a mobile menu. */
 export function Navigation() {
@@ -17,7 +17,7 @@ export function Navigation() {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-paper-300/70 bg-paper-100/85 backdrop-blur dark:border-sumi-border dark:bg-sumi/85">
+    <header className={"sticky top-0 z-40 " + glassNav}>
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3" aria-label="Primary">
         <Link href="/" className="flex items-center gap-2">
           <Hanko size="sm">日</Hanko>
@@ -26,21 +26,18 @@ export function Navigation() {
           </span>
         </Link>
 
-        <div className="flex items-center gap-2 md:hidden">
-          <FlashcardBadge />
-          <button
-            type="button"
-            className="rounded-md border border-paper-300 p-2 text-ink dark:border-sumi-border dark:text-paper-100"
-            aria-expanded={open}
-            aria-controls="primary-menu"
-            aria-label="Toggle navigation menu"
-            onClick={() => setOpen((o) => !o)}
-          >
-            <span className="block h-0.5 w-5 bg-current" />
-            <span className="mt-1 block h-0.5 w-5 bg-current" />
-            <span className="mt-1 block h-0.5 w-5 bg-current" />
-          </button>
-        </div>
+        <button
+          type="button"
+          className="rounded-md border border-white/40 bg-white/40 p-2 text-ink backdrop-blur md:hidden dark:border-white/10 dark:bg-black/20 dark:text-paper-100"
+          aria-expanded={open}
+          aria-controls="primary-menu"
+          aria-label="Toggle navigation menu"
+          onClick={() => setOpen((o) => !o)}
+        >
+          <span className="block h-0.5 w-5 bg-current" />
+          <span className="mt-1 block h-0.5 w-5 bg-current" />
+          <span className="mt-1 block h-0.5 w-5 bg-current" />
+        </button>
 
         <ul className="hidden items-center gap-1 md:flex">
           {nav.map((item) => (
@@ -52,21 +49,18 @@ export function Navigation() {
                   "rounded-md px-3 py-2 text-sm font-medium transition " +
                   (isActive(item.href)
                     ? "bg-hanko/10 text-hanko dark:text-hanko-light"
-                    : "text-ink-light hover:bg-paper-200 dark:text-paper-200 dark:hover:bg-sumi-light")
+                    : "text-ink-light hover:bg-white/50 dark:text-paper-200 dark:hover:bg-white/10")
                 }
               >
                 {item.label}
               </Link>
             </li>
           ))}
-          <li className="ml-1">
-            <FlashcardBadge />
-          </li>
         </ul>
       </nav>
 
       {open && (
-        <ul id="primary-menu" className="border-t border-paper-300 px-4 py-2 md:hidden dark:border-sumi-border">
+        <ul id="primary-menu" className="border-t border-white/40 bg-white/50 px-4 py-2 backdrop-blur-md md:hidden dark:border-white/10 dark:bg-black/30">
           {nav.map((item) => (
             <li key={item.href}>
               <Link

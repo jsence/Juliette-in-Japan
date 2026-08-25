@@ -46,6 +46,12 @@ const config: Config = {
         "paper-texture":
           "radial-gradient(circle at 25% 15%, rgba(179,53,43,0.03) 0%, transparent 40%), radial-gradient(circle at 80% 60%, rgba(43,38,32,0.04) 0%, transparent 45%)",
       },
+      boxShadow: {
+        // Soft, layered shadow for glass surfaces (light)
+        glass: "0 1px 2px rgba(43,38,32,0.06), 0 12px 28px -14px rgba(43,38,32,0.30)",
+        // Deeper layered shadow for glass surfaces (dark)
+        "glass-dark": "0 1px 2px rgba(0,0,0,0.45), 0 14px 34px -14px rgba(0,0,0,0.65)",
+      },
       keyframes: {
         "seal-in": {
           "0%": { opacity: "0", transform: "scale(1.4) rotate(-8deg)" },

@@ -15,11 +15,11 @@ import {
   type GradeKey,
 } from "@/lib/srs";
 import { GRAMMAR_CATEGORIES, grammar } from "@/lib/data";
+import { glass } from "@/lib/ui";
 import {
   readSchedule,
   saveCardState,
   readStarred,
-  recordStudyToday,
   resetSchedule,
 } from "@/lib/flashcardStore";
 
@@ -74,7 +74,6 @@ export function ReviewDeck() {
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [results, setResults] = useState<Result[]>([]);
-  const [streakRecorded, setStreakRecorded] = useState(false);
 
   useEffect(() => setReady(true), []);
 
@@ -122,7 +121,6 @@ export function ReviewDeck() {
       setIndex(0);
       setRevealed(false);
       setResults([]);
-      setStreakRecorded(false);
       setPhase("studying");
     },
     []
@@ -137,11 +135,6 @@ export function ReviewDeck() {
       const next = schedule(store[card.id], quality);
       saveCardState(card.id, next);
 
-      if (!streakRecorded) {
-        recordStudyToday();
-        setStreakRecorded(true);
-      }
-
       setResults((r) => [...r, { card, correct: quality >= 3 }]);
 
       if (index + 1 >= session.length) {
@@ -151,7 +144,7 @@ export function ReviewDeck() {
         setRevealed(false);
       }
     },
-    [session, index, streakRecorded]
+    [session, index]
   );
 
   if (!ready) {
@@ -177,7 +170,7 @@ export function ReviewDeck() {
                   "rounded-lg border px-4 py-3 text-left text-sm font-medium transition " +
                   (mode === m
                     ? "border-hanko bg-hanko/10 text-hanko dark:text-hanko-light"
-                    : "border-paper-300 text-ink-light hover:bg-paper-200 dark:border-sumi-border dark:text-paper-200 dark:hover:bg-sumi-light")
+                    : "border-white/50 bg-white/30 text-ink-light hover:bg-white/50 dark:border-white/10 dark:bg-white/5 dark:text-paper-200 dark:hover:bg-white/10")
                 }
               >
                 {MODE_LABELS[m]}
@@ -201,7 +194,7 @@ export function ReviewDeck() {
                   "rounded-full px-3 py-1.5 text-sm font-medium transition " +
                   (deck === d
                     ? "bg-hanko text-paper-50"
-                    : "border border-paper-300 text-ink-light hover:bg-paper-200 dark:border-sumi-border dark:text-paper-200 dark:hover:bg-sumi-light")
+                    : "border border-white/50 bg-white/30 text-ink-light hover:bg-white/50 dark:border-white/10 dark:bg-white/5 dark:text-paper-200 dark:hover:bg-white/10")
                 }
               >
                 {d === "due" ? "Due today" : d === "all" ? "All" : "Starred"}
@@ -211,7 +204,7 @@ export function ReviewDeck() {
               value={deckOptions.includes(deck) ? deck : ""}
               onChange={(e) => e.target.value && setDeck(e.target.value)}
               aria-label="Choose a deck by category or theme"
-              className="rounded-full border border-paper-300 bg-paper-50 px-3 py-1.5 text-sm text-ink-light dark:border-sumi-border dark:bg-sumi-light dark:text-paper-200"
+              className="rounded-full border border-white/50 bg-white/40 px-3 py-1.5 text-sm text-ink-light backdrop-blur-md dark:border-white/10 dark:bg-black/30 dark:text-paper-200"
             >
               <option value="">By category / tag…</option>
               {deckOptions.map((d) => (
@@ -223,7 +216,7 @@ export function ReviewDeck() {
           </div>
         </fieldset>
 
-        <div className="rounded-lg border border-paper-300 bg-paper-50 p-5 dark:border-sumi-border dark:bg-sumi-light">
+        <div className={"rounded-lg p-5 " + glass}>
           <p className="text-sm text-ink-light dark:text-paper-200">
             <span className="font-semibold text-ink dark:text-paper-100">{pool.length}</span> card
             {pool.length === 1 ? "" : "s"} in{" "}
@@ -265,7 +258,7 @@ export function ReviewDeck() {
     const missed = results.filter((r) => !r.correct);
     return (
       <div className="space-y-6">
-        <div className="rounded-xl border border-paper-300 bg-paper-50 p-6 text-center dark:border-sumi-border dark:bg-sumi-light">
+        <div className={"rounded-xl p-6 text-center " + glass}>
           <h2 className="font-serif text-2xl font-bold text-ink dark:text-paper-100">Session complete</h2>
           <p className="mt-2 text-4xl font-bold text-hanko dark:text-hanko-light">
             {correct} / {results.length}
@@ -277,7 +270,7 @@ export function ReviewDeck() {
         </div>
 
         {missed.length > 0 && (
-          <div className="rounded-lg border border-paper-300 bg-paper-50 p-5 dark:border-sumi-border dark:bg-sumi-light">
+          <div className={"rounded-lg p-5 " + glass}>
             <h3 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">
               Cards to revisit ({missed.length})
             </h3>
@@ -309,7 +302,7 @@ export function ReviewDeck() {
           <button
             type="button"
             onClick={() => setPhase("setup")}
-            className="rounded-md border border-paper-300 px-5 py-2.5 font-medium text-ink transition hover:bg-paper-200 dark:border-sumi-border dark:text-paper-100 dark:hover:bg-sumi-light"
+            className={"rounded-md px-5 py-2.5 font-medium text-ink dark:text-paper-100 " + glass}
           >
             New session
           </button>
@@ -333,11 +326,11 @@ export function ReviewDeck() {
       <ProgressBar value={index} max={session.length} showCount={false} label="" />
 
       <div className="mx-auto w-full max-w-xl">
-        <div className="flex min-h-[14rem] flex-col items-center justify-center rounded-xl border border-paper-300 bg-paper-50 p-8 text-center shadow-sm dark:border-sumi-border dark:bg-sumi-light">
+        <div className={"flex min-h-[14rem] flex-col items-center justify-center rounded-xl p-8 text-center " + glass}>
           <CardFaceView face={card.front} big />
           {revealed && (
             <>
-              <hr className="my-5 w-16 border-paper-300 dark:border-sumi-border" />
+              <hr className="my-5 w-16 border-white/50 dark:border-white/10" />
               <CardFaceView face={card.back} />
             </>
           )}

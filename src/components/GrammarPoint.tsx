@@ -4,6 +4,8 @@ import type { GrammarPoint as GrammarPointData } from "@/types/content";
 import { Formula } from "./Formula";
 import { GrammarExamples } from "./GrammarExamples";
 import { AddToFlashcards } from "./AddToFlashcards";
+import { LearnedToggle } from "./LearnedToggle";
+import { glass } from "@/lib/ui";
 
 interface RelatedLink {
   id: string;
@@ -51,7 +53,7 @@ export function GrammarPoint({ point, related }: GrammarPointProps) {
       {point.mistakes.length > 0 && (
         <section
           aria-labelledby="mistakes-heading"
-          className="rounded-lg border-l-4 border-hanko bg-paper-100 p-4 dark:bg-sumi-light"
+          className={"rounded-lg border-l-4 border-hanko p-4 " + glass}
         >
           <h2 id="mistakes-heading" className="font-serif text-lg font-semibold text-hanko dark:text-hanko-light">
             Common mistakes
@@ -84,8 +86,9 @@ export function GrammarPoint({ point, related }: GrammarPointProps) {
         </section>
       )}
 
-      <section className="border-t border-paper-200 pt-6 dark:border-sumi-border">
+      <section className="flex flex-wrap items-center gap-3 border-t border-white/40 pt-6 dark:border-white/10">
         <AddToFlashcards grammarId={point.id} />
+        <LearnedToggle module="grammar" itemId={point.id} label={point.title} />
       </section>
     </div>
   );
