@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import type { DrillQuestion } from "@/types/content";
 import { useLessonProgress } from "@/lib/lessonStore";
+import { glass } from "@/lib/ui";
 
 interface LessonDrillProps {
   lessonId: string;
@@ -31,7 +32,7 @@ export function LessonDrill({ lessonId, questions }: LessonDrillProps) {
           const chosen = answers[q.id];
           const answered = chosen !== undefined;
           return (
-            <li key={q.id} className="rounded-lg border border-paper-300 bg-paper-50 p-4 dark:border-sumi-border dark:bg-sumi-light">
+            <li key={q.id} className={"rounded-lg p-4 " + glass}>
               <p className="font-medium text-ink dark:text-paper-100">
                 {qi + 1}. {q.prompt}
               </p>
@@ -43,13 +44,13 @@ export function LessonDrill({ lessonId, questions }: LessonDrillProps) {
                     "rounded-md border px-3 py-2 text-left text-sm transition font-jp ";
                   if (!answered) {
                     cls +=
-                      "border-paper-300 text-ink-light hover:border-hanko/50 hover:bg-paper-200 dark:border-sumi-border dark:text-paper-200 dark:hover:bg-sumi";
+                      "border-white/50 bg-white/30 text-ink-light hover:border-hanko/50 hover:bg-white/50 dark:border-white/10 dark:bg-white/5 dark:text-paper-200 dark:hover:bg-white/10";
                   } else if (isAnswer) {
-                    cls += "border-emerald-600 bg-emerald-600/10 text-emerald-800 dark:text-emerald-300";
+                    cls += "border-emerald-600 bg-emerald-600/15 text-emerald-800 dark:text-emerald-300";
                   } else if (isChosen) {
                     cls += "border-hanko bg-hanko/10 text-hanko dark:text-hanko-light";
                   } else {
-                    cls += "border-paper-300 text-ink-muted dark:border-sumi-border dark:text-paper-300";
+                    cls += "border-white/40 text-ink-muted dark:border-white/10 dark:text-paper-300";
                   }
                   return (
                     <button
@@ -75,7 +76,7 @@ export function LessonDrill({ lessonId, questions }: LessonDrillProps) {
         })}
       </ol>
 
-      <div className="rounded-lg border border-paper-300 bg-paper-100 p-4 dark:border-sumi-border dark:bg-sumi">
+      <div className={"rounded-lg p-4 " + glass}>
         {answeredAll ? (
           <div className="flex flex-wrap items-center justify-between gap-3">
             <p className="text-sm text-ink-light dark:text-paper-200">

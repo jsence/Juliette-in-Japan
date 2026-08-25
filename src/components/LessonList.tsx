@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { Lesson } from "@/types/content";
 import { ProgressBar } from "./ProgressBar";
 import { useLessonProgress } from "@/lib/lessonStore";
+import { glass, glassHover } from "@/lib/ui";
 
 interface LessonListProps {
   lessons: Lesson[];
@@ -17,12 +18,8 @@ export function LessonList({ lessons }: LessonListProps) {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-lg border border-paper-300 bg-paper-50 p-5 dark:border-sumi-border dark:bg-sumi-light">
-        <ProgressBar
-          value={doneCount}
-          max={lessons.length}
-          label={`Lessons completed`}
-        />
+      <div className={"rounded-lg p-5 " + glass}>
+        <ProgressBar value={doneCount} max={lessons.length} label={`Lessons completed`} />
       </div>
 
       <ol className="space-y-3">
@@ -32,14 +29,14 @@ export function LessonList({ lessons }: LessonListProps) {
             <li key={lesson.id}>
               <Link
                 href={`/language/n5/lessons/${lesson.id}`}
-                className="group flex items-start gap-4 rounded-lg border border-paper-300 bg-paper-50 p-4 shadow-sm transition hover:border-hanko/50 hover:shadow-md dark:border-sumi-border dark:bg-sumi-light"
+                className={"group flex items-start gap-4 rounded-lg p-4 " + glass + " " + glassHover}
               >
                 <span
                   className={
                     "flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-serif text-sm font-bold " +
                     (done
                       ? "bg-hanko text-paper-50"
-                      : "border border-paper-300 text-ink-muted dark:border-sumi-border dark:text-paper-300")
+                      : "border border-white/50 text-ink-muted dark:border-white/10 dark:text-paper-300")
                   }
                   aria-hidden="true"
                 >

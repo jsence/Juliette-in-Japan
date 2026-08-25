@@ -6,6 +6,7 @@ import { N5SubNav } from "@/components/N5SubNav";
 import { Hanko } from "@/components/Hanko";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { getGrammarCategories } from "@/lib/data";
+import { glass, glassHover } from "@/lib/ui";
 
 export const metadata: Metadata = {
   title: "N5 grammar",
@@ -38,7 +39,7 @@ export default function GrammarIndexPage() {
           <ScrollReveal key={cat.meta.slug} index={i}>
             <Link
               href={`/language/n5/grammar/${cat.meta.slug}`}
-              className="group flex h-full items-start gap-4 rounded-xl border border-paper-300 bg-paper-50 p-5 shadow-sm transition hover:border-hanko/50 hover:shadow-md dark:border-sumi-border dark:bg-sumi-light"
+              className={"group flex h-full items-start gap-4 rounded-xl p-5 " + glass + " " + glassHover}
             >
               <Hanko size="md" className="transition group-hover:animate-seal-in">
                 {cat.meta.glyph}

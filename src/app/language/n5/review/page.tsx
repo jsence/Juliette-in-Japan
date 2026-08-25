@@ -19,10 +19,10 @@ export default function ReviewPage() {
         intro={
           <p>
             Flashcards built from the kanji, vocabulary and grammar data, scheduled with an{" "}
-            <strong>SM-2 spaced-repetition</strong> algorithm. Pick a study mode — recognition,
-            recall, kanji reading or cloze — choose a deck by category, tag or what&apos;s due
-            today, and grade yourself. Intervals, your streak and starred cards are saved in your
-            browser&apos;s local storage; nothing is sent anywhere.
+            <strong>SM-2 spaced-repetition</strong> algorithm. Choose a study mode — recognition,
+            recall, kanji reading or cloze — and a deck by category, tag or what&apos;s due today.
+            Card intervals and starred cards are stored in the browser&apos;s local storage; nothing
+            is sent anywhere.
           </p>
         }
       />

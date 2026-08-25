@@ -35,7 +35,7 @@ export function PostDetail({ post, backHref, backLabel }: PostDetailProps) {
             {post.tags.map((tag) => (
               <li
                 key={tag}
-                className="rounded-full bg-paper-200 px-2 py-0.5 text-xs text-ink-muted dark:bg-sumi dark:text-paper-300"
+                className="rounded-full border border-white/50 bg-white/40 px-2 py-0.5 text-xs text-ink-muted dark:border-white/10 dark:bg-white/5 dark:text-paper-300"
               >
                 #{tag}
               </li>

@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { SectionCard } from "@/components/SectionCard";
 import { SourceNote } from "@/components/SourceNote";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { ModuleProgress } from "@/components/ModuleProgress";
 import { n5Nav } from "@/lib/site";
 import { kana, kanji, vocabulary, grammar, lessons } from "@/lib/data";
 
@@ -20,7 +21,7 @@ const cardMeta: Record<string, { description: string }> = {
   "/language/n5/kanji": { description: `${kanji.length} kanji cards with readings and common words.` },
   "/language/n5/vocabulary": { description: `${vocabulary.length} words grouped by theme.` },
   "/language/n5/grammar": { description: `${grammar.length} grammar points across 11 functional categories.` },
-  "/language/n5/review": { description: "SM-2 flashcards: 4 study modes, deck selection, streak." },
+  "/language/n5/review": { description: "SM-2 flashcards with four study modes and deck selection." },
 };
 
 export default function N5HubPage() {
@@ -31,12 +32,23 @@ export default function N5HubPage() {
         glyph="五"
         intro={
           <p>
-            Everything here is built from typed data files I control — no invented Japanese.
-            Work through kana first, then layer on kanji, vocabulary and grammar, and use review
-            to keep it all warm.
+            The N5 modules are built from typed data files: kana and kanji tables, grammar
+            organised by function, themed vocabulary, and flashcard drills. A suggested order is
+            kana, then kanji and vocabulary alongside grammar, with review to consolidate.
           </p>
         }
       />
+
+      <ScrollReveal>
+        <ModuleProgress
+          totals={{
+            kana: kana.length,
+            kanji: kanji.length,
+            grammar: grammar.length,
+            vocabulary: vocabulary.length,
+          }}
+        />
+      </ScrollReveal>
 
       <ScrollReveal>
         <SourceNote>
@@ -64,9 +76,8 @@ export default function N5HubPage() {
 
       <ScrollReveal>
         <p className="text-sm text-ink-muted dark:text-paper-300">
-          Looking for the wider picture?{" "}
           <Link href="/language" className="text-hanko hover:underline dark:text-hanko-light">
-            See my full learning tracker and resources →
+            Back to the Language overview and resources →
           </Link>
         </p>
       </ScrollReveal>

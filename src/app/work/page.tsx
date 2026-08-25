@@ -16,9 +16,9 @@ export default function WorkPage() {
       glyph="働"
       intro={
         <p>
-          The professional side: hierarchy, meeting etiquette, business{" "}
-          <span className="font-jp">keigo</span>, the hiring process, visa types, and breakdowns of
-          real job postings I analyse. Written as I learn it — corrections welcome.
+          Notes on working life in Japan: workplace hierarchy, meeting etiquette, business{" "}
+          <span className="font-jp">keigo</span>, the hiring process, visa types, and analyses of
+          real job postings.
         </p>
       }
     />

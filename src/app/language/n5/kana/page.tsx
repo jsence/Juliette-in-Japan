@@ -5,6 +5,7 @@ import { KanaExplorer } from "@/components/KanaExplorer";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { N5SubNav } from "@/components/N5SubNav";
 import { getKanaByScript } from "@/lib/data";
+import { glass } from "@/lib/ui";
 
 export const metadata: Metadata = {
   title: "Kana — hiragana & katakana",
@@ -33,7 +34,7 @@ export default function KanaPage() {
       />
 
       <ScrollReveal as="section" className="grid gap-4 sm:grid-cols-2">
-        <div className="rounded-lg border border-paper-300 bg-paper-50 p-4 dark:border-sumi-border dark:bg-sumi-light">
+        <div className={"rounded-lg p-4 " + glass}>
           <h2 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">
             On stroke order
           </h2>
@@ -44,7 +45,7 @@ export default function KanaPage() {
             legible and — later — makes kanji far easier.
           </p>
         </div>
-        <div className="rounded-lg border border-paper-300 bg-paper-50 p-4 dark:border-sumi-border dark:bg-sumi-light">
+        <div className={"rounded-lg p-4 " + glass}>
           <h2 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">
             How this table is grouped
           </h2>
@@ -66,7 +67,7 @@ export default function KanaPage() {
         </h2>
 
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-lg border border-paper-300 bg-paper-50 p-4 dark:border-sumi-border dark:bg-sumi-light">
+          <div className={"rounded-lg p-4 " + glass}>
             <h3 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">
               Dakuten <span className="font-jp text-hanko dark:text-hanko-light">゛</span>
             </h3>
@@ -78,7 +79,7 @@ export default function KanaPage() {
             </p>
           </div>
 
-          <div className="rounded-lg border border-paper-300 bg-paper-50 p-4 dark:border-sumi-border dark:bg-sumi-light">
+          <div className={"rounded-lg p-4 " + glass}>
             <h3 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">
               Handakuten <span className="font-jp text-hanko dark:text-hanko-light">゜</span>
             </h3>
@@ -90,7 +91,7 @@ export default function KanaPage() {
             </p>
           </div>
 
-          <div className="rounded-lg border border-paper-300 bg-paper-50 p-4 dark:border-sumi-border dark:bg-sumi-light">
+          <div className={"rounded-lg p-4 " + glass}>
             <h3 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">
               Yōon <span className="font-jp text-hanko dark:text-hanko-light">ゃゅょ</span>
             </h3>
@@ -102,7 +103,7 @@ export default function KanaPage() {
             </p>
           </div>
 
-          <div className="rounded-lg border border-paper-300 bg-paper-50 p-4 dark:border-sumi-border dark:bg-sumi-light">
+          <div className={"rounded-lg p-4 " + glass}>
             <h3 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">
               Sokuon <span className="font-jp text-hanko dark:text-hanko-light">っ</span>
             </h3>
@@ -113,7 +114,7 @@ export default function KanaPage() {
             </p>
           </div>
 
-          <div className="rounded-lg border border-paper-300 bg-paper-50 p-4 md:col-span-2 dark:border-sumi-border dark:bg-sumi-light">
+          <div className={"rounded-lg p-4 md:col-span-2 " + glass}>
             <h3 className="font-serif text-lg font-semibold text-ink dark:text-paper-100">
               Long vowels <span className="font-jp text-hanko dark:text-hanko-light">ー</span>
             </h3>

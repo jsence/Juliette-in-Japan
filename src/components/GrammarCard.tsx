@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import type { GrammarPoint } from "@/types/content";
 import { Formula } from "./Formula";
+import { glass, glassHover } from "@/lib/ui";
 
 interface GrammarCardProps {
   point: GrammarPoint;
@@ -13,14 +14,14 @@ export function GrammarCard({ point }: GrammarCardProps) {
   return (
     <Link
       href={href}
-      className="group flex flex-col gap-2 rounded-lg border border-paper-300 bg-paper-50 p-4 shadow-sm transition hover:border-hanko/50 hover:shadow-md dark:border-sumi-border dark:bg-sumi-light"
+      className={"group flex flex-col gap-2 rounded-lg p-4 " + glass + " " + glassHover}
     >
       <div className="flex items-baseline justify-between gap-2">
         <span className="font-jp text-xl font-semibold text-ink group-hover:text-hanko dark:text-paper-100 dark:group-hover:text-hanko-light">
           {point.form}
         </span>
         {point.examples.length > 0 && (
-          <span className="rounded-full bg-paper-200 px-2 py-0.5 text-[0.65rem] text-ink-muted dark:bg-sumi dark:text-paper-300">
+          <span className="rounded-full border border-white/50 bg-white/40 px-2 py-0.5 text-[0.65rem] text-ink-muted dark:border-white/10 dark:bg-white/5 dark:text-paper-300">
             {point.examples.length} ex.
           </span>
         )}
