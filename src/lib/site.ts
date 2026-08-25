@@ -43,6 +43,7 @@ export const nav: NavItem[] = [
 
 /** Sub-navigation for the N5 study hub. */
 export const n5Nav: NavItem[] = [
+  { href: "/language/n5/lessons", label: "Lessons", glyph: "課" },
   { href: "/language/n5/kana", label: "Kana", glyph: "か" },
   { href: "/language/n5/kanji", label: "Kanji", glyph: "字" },
   { href: "/language/n5/vocabulary", label: "Vocabulary", glyph: "語" },

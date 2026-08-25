@@ -6,7 +6,7 @@ import { SectionCard } from "@/components/SectionCard";
 import { SourceNote } from "@/components/SourceNote";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { n5Nav } from "@/lib/site";
-import { kana, kanji, vocabulary, grammar } from "@/lib/data";
+import { kana, kanji, vocabulary, grammar, lessons } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "N5 study hub",
@@ -15,11 +15,12 @@ export const metadata: Metadata = {
 };
 
 const cardMeta: Record<string, { description: string }> = {
+  "/language/n5/lessons": { description: `${lessons.length} guided lessons bundling grammar, vocab and kanji with a drill.` },
   "/language/n5/kana": { description: `Hiragana & katakana — ${kana.length} characters with stroke counts.` },
   "/language/n5/kanji": { description: `${kanji.length} kanji cards with readings and common words.` },
   "/language/n5/vocabulary": { description: `${vocabulary.length} words grouped by theme.` },
-  "/language/n5/grammar": { description: `${grammar.length} grammar points with structures and notes.` },
-  "/language/n5/review": { description: "Flashcards with simple SRS, quizzes and a progress tracker." },
+  "/language/n5/grammar": { description: `${grammar.length} grammar points across 11 functional categories.` },
+  "/language/n5/review": { description: "SM-2 flashcards: 4 study modes, deck selection, streak." },
 };
 
 export default function N5HubPage() {

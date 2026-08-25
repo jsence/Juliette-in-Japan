@@ -1,32 +1,92 @@
+import Link from "next/link";
+
 import type { GrammarPoint as GrammarPointData } from "@/types/content";
+import { Formula } from "./Formula";
+import { GrammarExamples } from "./GrammarExamples";
+import { AddToFlashcards } from "./AddToFlashcards";
+
+interface RelatedLink {
+  id: string;
+  title: string;
+  href: string;
+}
 
 interface GrammarPointProps {
   point: GrammarPointData;
+  related: RelatedLink[];
 }
 
-/** A single grammar point card: title, pattern, explanation, examples. */
-export function GrammarPoint({ point }: GrammarPointProps) {
+/** Full detail view for a single grammar point (used on the point page). */
+export function GrammarPoint({ point, related }: GrammarPointProps) {
   return (
-    <article
-      id={point.id}
-      className="scroll-mt-24 rounded-lg border border-paper-300 bg-paper-50 p-5 shadow-sm dark:border-sumi-border dark:bg-sumi-light"
-    >
-      <h3 className="font-jp text-xl font-semibold text-ink dark:text-paper-100">{point.title}</h3>
-      <p className="mt-1 font-mono text-sm text-hanko dark:text-hanko-light">{point.structure}</p>
-      <p className="mt-3 text-ink-light dark:text-paper-200">{point.explanation}</p>
+    <div className="space-y-8">
+      <section className="space-y-3">
+        <p className="font-jp text-3xl font-semibold text-hanko dark:text-hanko-light">
+          {point.form}
+        </p>
+        <p className="text-lg text-ink-light dark:text-paper-200">{point.meaning}</p>
+      </section>
 
-      {point.exampleSentences.length > 0 && (
-        <ul className="mt-4 space-y-2 border-t border-paper-200 pt-3 dark:border-sumi-border">
-          {point.exampleSentences.map((s, i) => (
-            <li key={i} className="text-sm">
-              <span className="font-jp text-ink dark:text-paper-100">{s.jp}</span>
-              <span className="mx-1 text-ink-muted">—</span>
-              <span className="text-ink-light dark:text-paper-200">{s.en}</span>
-              <span className="ml-2 text-xs text-ink-muted dark:text-paper-300">({s.source})</span>
-            </li>
-          ))}
-        </ul>
+      <section aria-labelledby="formula-heading" className="space-y-2">
+        <h2 id="formula-heading" className="text-sm font-semibold uppercase tracking-wide text-ink-muted dark:text-paper-300">
+          Construction
+        </h2>
+        <Formula tokens={point.formula} />
+      </section>
+
+      <section aria-labelledby="explanation-heading" className="space-y-2">
+        <h2 id="explanation-heading" className="text-sm font-semibold uppercase tracking-wide text-ink-muted dark:text-paper-300">
+          How it works
+        </h2>
+        <p className="text-ink-light dark:text-paper-200">{point.explanation}</p>
+      </section>
+
+      <section aria-labelledby="examples-heading" className="space-y-3">
+        <h2 id="examples-heading" className="text-sm font-semibold uppercase tracking-wide text-ink-muted dark:text-paper-300">
+          Examples
+        </h2>
+        <GrammarExamples examples={point.examples} />
+      </section>
+
+      {point.mistakes.length > 0 && (
+        <section
+          aria-labelledby="mistakes-heading"
+          className="rounded-lg border-l-4 border-hanko bg-paper-100 p-4 dark:bg-sumi-light"
+        >
+          <h2 id="mistakes-heading" className="font-serif text-lg font-semibold text-hanko dark:text-hanko-light">
+            Common mistakes
+          </h2>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-ink-light dark:text-paper-200">
+            {point.mistakes.map((m, i) => (
+              <li key={i}>{m}</li>
+            ))}
+          </ul>
+        </section>
       )}
-    </article>
+
+      {related.length > 0 && (
+        <section aria-labelledby="related-heading" className="space-y-2">
+          <h2 id="related-heading" className="text-sm font-semibold uppercase tracking-wide text-ink-muted dark:text-paper-300">
+            Related points
+          </h2>
+          <ul className="flex flex-wrap gap-2">
+            {related.map((r) => (
+              <li key={r.id}>
+                <Link
+                  href={r.href}
+                  className="rounded-full border border-paper-300 px-3 py-1.5 text-sm text-ink-light transition hover:border-hanko/50 hover:text-hanko dark:border-sumi-border dark:text-paper-200 dark:hover:text-hanko-light"
+                >
+                  {r.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section className="border-t border-paper-200 pt-6 dark:border-sumi-border">
+        <AddToFlashcards grammarId={point.id} />
+      </section>
+    </div>
   );
 }
