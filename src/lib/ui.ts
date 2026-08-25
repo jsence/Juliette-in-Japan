@@ -21,4 +21,8 @@ export const glassNav =
 
 /** Interactive glass card (adds hover affordance); compose with `glass`. */
 export const glassHover =
-  "transition hover:bg-white/70 hover:border-hanko/40 hover:shadow-glass dark:hover:bg-black/40 dark:hover:border-hanko-light/30";
+  "transition duration-300 hover:bg-white/70 hover:border-hanko/40 hover:shadow-glass hover:-translate-y-1 dark:hover:bg-black/40 dark:hover:border-hanko-light/30";
+
+/** Lift effect for homepage section cards. */
+export const glassLift =
+  "transition duration-300 ease-out hover:-translate-y-1.5 hover:shadow-glass dark:hover:shadow-glass-dark";

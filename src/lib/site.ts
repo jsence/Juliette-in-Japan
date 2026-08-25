@@ -25,14 +25,9 @@ export interface SiteSection {
 
 export const site = {
   name: "Juliette in Japan",
-  /** Short neutral tagline. */
-  tagline: "A documentation site on the Japanese language, culture, and working life.",
-  /** Descriptive lines shown on the home page. */
-  pitch: [
-    "A documentation site covering the Japanese language, Japanese culture and history, and working life in Japan.",
-    "The N5 study material — kana, kanji, grammar organised by function, vocabulary and flashcard drills — is built from open, human-verified data sources.",
-    "Kanji readings follow KANJIDIC2 and word definitions follow JMdict; example sentences come only from established corpora.",
-  ],
+  /** Short neutral tagline — one sentence for the homepage hero. */
+  tagline:
+    "A documentation site on the Japanese language, culture, and working life in Japan.",
   links: {
     linkedin: "https://www.linkedin.com/in/juliette",
     email: "juliette@example.com",
@@ -198,6 +193,12 @@ export const sections: SiteSection[] = [
         label: "How it's built",
         glyph: "構",
         description: "The technical stack, data sources and site architecture.",
+      },
+      {
+        href: "/project/sources",
+        label: "Sources",
+        glyph: "源",
+        description: "Open data references for kanji, vocabulary and example sentences.",
       },
     ],
   },
