@@ -51,6 +51,12 @@ export const sections: SiteSection[] = [
         description: "Hiragana and katakana with stroke counts and the modified sounds (dakuten, yōon).",
       },
       {
+        href: "/language/kana/game",
+        label: "Kana Battle",
+        glyph: "戦",
+        description: "A pixel-art duel: match the romaji to the right kana before the timer runs out.",
+      },
+      {
         href: "/language/kanji",
         label: "Kanji",
         glyph: "字",

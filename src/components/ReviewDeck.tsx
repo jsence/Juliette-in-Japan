@@ -8,18 +8,20 @@ import { ProgressBar } from "./ProgressBar";
 import {
   buildCards,
   grammarPointCard,
+  kanaStudyCard,
   schedule,
   isDue,
   todayIso,
   GRADES,
   type GradeKey,
 } from "@/lib/srs";
-import { GRAMMAR_CATEGORIES, grammar } from "@/lib/data";
+import { GRAMMAR_CATEGORIES, grammar, kana } from "@/lib/data";
 import { glass } from "@/lib/ui";
 import {
   readSchedule,
   saveCardState,
   readStarred,
+  readStarredKana,
   resetSchedule,
 } from "@/lib/flashcardStore";
 
@@ -35,6 +37,7 @@ const MODE_LABELS: Record<StudyMode, string> = {
 const DECK_LABELS: Record<string, string> = {
   ...Object.fromEntries(GRAMMAR_CATEGORIES.map((c) => [c.slug, c.label])),
   kanji: "Kanji",
+  kana: "Kana",
   numbers: "Numbers",
   time: "Time",
   family: "Family",
@@ -82,11 +85,15 @@ export function ReviewDeck() {
     if (!ready) return [] as StudyCard[];
 
     if (deck === "starred") {
-      const starred = readStarred();
-      return starred
+      const starredGrammar = readStarred()
         .map((id) => grammar.find((p) => p.id === id))
         .filter((p): p is NonNullable<typeof p> => Boolean(p))
         .map((p) => grammarPointCard(p));
+      const starredKana = readStarredKana()
+        .map((char) => kana.find((k) => k.char === char))
+        .filter((k): k is NonNullable<typeof k> => Boolean(k))
+        .map((k) => kanaStudyCard(k));
+      return [...starredKana, ...starredGrammar];
     }
 
     let cards = buildCards(mode);

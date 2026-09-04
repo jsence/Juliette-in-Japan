@@ -4,6 +4,7 @@ import type {
   StudyMode,
   RubySegment,
   GrammarPoint,
+  Kana,
 } from "@/types/content";
 import { vocabulary, kanji, grammar } from "./data";
 
@@ -178,6 +179,18 @@ export function grammarPointCard(point: GrammarPoint): StudyCard {
     back: { text: point.meaning, sub: point.title },
     deck: point.category,
     tags: ["grammar", point.category, point.id],
+  };
+}
+
+/** A recognition-style card for a single kana (used by "starred"). */
+export function kanaStudyCard(k: Kana): StudyCard {
+  return {
+    id: `rec:kana:${k.char}`,
+    mode: "recognition",
+    front: { segments: jp(k.char) },
+    back: { text: k.romaji },
+    deck: "kana",
+    tags: ["kana", k.group],
   };
 }
 

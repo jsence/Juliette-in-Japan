@@ -47,6 +47,8 @@ const config: Config = {
         serif: ["var(--font-serif)", "Georgia", "serif"],
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         jp: ["var(--font-jp)", "var(--font-serif)", "serif"],
+        // Game UI only — loaded on the Kana Battle route.
+        pixel: ["var(--font-pixel)", "ui-monospace", "monospace"],
       },
       backgroundImage: {
         "paper-texture":
@@ -63,9 +65,26 @@ const config: Config = {
           "0%": { opacity: "0", transform: "scale(1.4) rotate(-8deg)" },
           "100%": { opacity: "1", transform: "scale(1) rotate(0deg)" },
         },
+        "hit-flash": {
+          "0%, 100%": { filter: "none" },
+          "25%, 75%": { filter: "brightness(2.4) saturate(0.2)" },
+        },
+        "victory-flash": {
+          "0%, 100%": { filter: "none" },
+          "40%": { filter: "brightness(1.35)" },
+        },
+        "screen-shake": {
+          "0%, 100%": { transform: "translateX(0)" },
+          "20%": { transform: "translateX(-5px)" },
+          "45%": { transform: "translateX(4px)" },
+          "70%": { transform: "translateX(-2px)" },
+        },
       },
       animation: {
         "seal-in": "seal-in 0.5s ease-out both",
+        "hit-flash": "hit-flash 0.45s steps(2, end) 1",
+        "victory-flash": "victory-flash 0.9s ease-out 1",
+        "screen-shake": "screen-shake 0.35s ease-out 1",
       },
     },
   },

@@ -6,6 +6,7 @@ import type { ScheduleStore, Sm2State } from "@/types/content";
 
 const SCHEDULE_KEY = "jij.srs.schedule.v2";
 const STARRED_KEY = "jij.srs.starred.v1";
+const STARRED_KANA_KEY = "jij.srs.starred-kana.v1";
 
 /** Custom event so all subscribers re-read after a mutation. */
 const CHANGE_EVENT = "jij:flashcards";
@@ -68,6 +69,24 @@ export function toggleStarred(grammarId: string): boolean {
   else set.delete(grammarId);
   writeJson(STARRED_KEY, [...set]);
   return nowStarred;
+}
+
+/* ----------------------------- starred kana ------------------------------ */
+
+/** Kana characters starred into the review deck (e.g. missed in Kana Battle). */
+export function readStarredKana(): string[] {
+  return readJson<string[]>(STARRED_KANA_KEY, []);
+}
+
+/** Add kana characters to the starred deck, ignoring ones already there. */
+export function addStarredKana(chars: string[]): void {
+  const set = new Set(readStarredKana());
+  for (const char of chars) set.add(char);
+  writeJson(STARRED_KANA_KEY, [...set]);
+}
+
+export function clearStarredKana(): void {
+  writeJson(STARRED_KANA_KEY, []);
 }
 
 /* -------------------------------- hooks ---------------------------------- */
