@@ -221,23 +221,25 @@ export function BattleArena({ settings, onGameOver, onQuit }: BattleArenaProps) 
       {/* Stage */}
       <div
         className={
-          "relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-ink/15 shadow-glass dark:border-paper-100/10 dark:shadow-glass-dark " +
+          // Height-capped so the stage and the answer buttons stay on screen
+          // together on a standard laptop viewport.
+          "relative aspect-[16/9] max-h-[42dvh] w-full overflow-hidden rounded-xl border border-ink/15 shadow-glass dark:border-paper-100/10 dark:shadow-glass-dark " +
           (phase === "waveClear" && animate ? "animate-victory-flash" : "") +
           (phase === "wrong" && animate ? " animate-screen-shake" : "")
         }
       >
         <BattleBackdrop depth={wave} />
 
-        {/* Romaji speech bubble */}
-        <div className="absolute left-1/2 top-[8%] z-20 w-full max-w-[15rem] -translate-x-1/2 px-3 sm:max-w-xs">
-          <div className="relative rounded-lg border-2 border-ink/70 bg-paper-50 px-4 py-3 text-center shadow-[3px_3px_0_rgba(43,38,32,0.35)] dark:border-paper-100/60 dark:bg-sumi-light">
+        {/* Romaji speech bubble, anchored over the ninja */}
+        <div className="absolute right-[3%] top-[6%] z-20 w-[46%] max-w-[13rem]">
+          <div className="relative rounded-lg border-2 border-ink/70 bg-paper-50 px-3 py-2.5 text-center shadow-[3px_3px_0_rgba(43,38,32,0.35)] dark:border-paper-100/60 dark:bg-sumi-light">
             <p
-              className="font-pixel text-lg leading-none text-ink dark:text-paper-100 sm:text-2xl"
+              className="font-pixel text-base leading-none text-ink dark:text-paper-100 sm:text-xl"
               aria-live="polite"
             >
               {question.answer.romaji}
             </p>
-            {/* bubble tail pointing at the ninja */}
+            {/* bubble tail pointing down at the ninja */}
             <span
               className="absolute -bottom-2 right-8 h-0 w-0 border-x-8 border-t-8 border-x-transparent border-t-ink/70 dark:border-t-paper-100/60"
               aria-hidden="true"
@@ -277,8 +279,8 @@ export function BattleArena({ settings, onGameOver, onQuit }: BattleArenaProps) 
           </div>
         </div>
 
-        {/* Timer */}
-        <div className="absolute bottom-3 left-3 z-20">
+        {/* Timer — top-left, clear of both fighters */}
+        <div className="absolute left-2 top-2 z-20 origin-top-left scale-[0.7] sm:left-3 sm:top-3 sm:scale-100">
           <CountdownRing progress={progress} remainingMs={remaining} />
         </div>
 

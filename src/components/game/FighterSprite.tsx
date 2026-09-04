@@ -127,7 +127,9 @@ function SilhouetteSprite({ fighter, pose, className = "", hidden }: SilhouetteP
       {samurai ? (
         <rect x="7" y="0" width="2" height="1" fill={accent} />
       ) : (
-        <rect x="5" y="3" width="6" height="1" fill={bodyDark} />
+        // Mask the lower face, leaving row 3 as an eye slit — covering the eye
+        // row instead turns the head into an unreadable dark block.
+        <rect x="5" y="4" width="6" height="1" fill={bodyDark} />
       )}
       {/* eyes */}
       <rect x="6" y="3" width="1" height="1" fill={hitPose ? "#b3352b" : "#20201c"} />

@@ -32,13 +32,12 @@ export default function KanaGamePage() {
         glyph="戦"
         intro={
           <p>
-            A timed hiragana duel. A romaji syllable appears above the ninja — pick the matching
-            kana before the timer drains. Three misses and the run ends. Kana are drawn from the
-            same tables as the{" "}
+            A timed hiragana duel: match the romaji above the ninja before the timer drains. Kana
+            come from the{" "}
             <Link href="/language/kana" className="text-hanko hover:underline dark:text-hanko-light">
               kana reference
             </Link>
-            , and anything you miss can be sent straight to the flashcard deck.
+            , and anything you miss can go straight to the flashcard deck.
           </p>
         }
       />

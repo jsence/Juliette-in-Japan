@@ -27,10 +27,10 @@ export function BattleBackdrop({ depth = 0 }: { depth?: number }) {
         </svg>
       </div>
 
-      {/* Pagoda silhouette */}
+      {/* Pagoda silhouette — kept between the duellists so neither covers it */}
       <div
-        className="absolute bottom-[24%] left-[8%] h-28 w-24 sm:left-[12%]"
-        style={{ transform: `translateX(${depth * -10}px)` }}
+        className="absolute bottom-[24%] left-1/2 h-[38%] w-16 -translate-x-1/2 sm:w-20"
+        style={{ transform: `translateX(calc(-50% + ${depth * -10}px))` }}
       >
         <svg viewBox="0 0 48 56" className="h-full w-full" shapeRendering="crispEdges">
           <g className="fill-[#8a6a4f]/55 dark:fill-[#2b2536]/85">
