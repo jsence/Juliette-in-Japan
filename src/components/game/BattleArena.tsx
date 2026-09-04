@@ -223,7 +223,7 @@ export function BattleArena({ settings, onGameOver, onQuit }: BattleArenaProps) 
         className={
           // Height-capped so the stage and the answer buttons stay on screen
           // together on a standard laptop viewport.
-          "relative aspect-[16/9] max-h-[42dvh] w-full overflow-hidden rounded-xl border border-ink/15 shadow-glass dark:border-paper-100/10 dark:shadow-glass-dark " +
+          "relative aspect-[16/9] max-h-[36dvh] w-full overflow-hidden rounded-xl border border-ink/15 shadow-glass dark:border-paper-100/10 dark:shadow-glass-dark " +
           (phase === "waveClear" && animate ? "animate-victory-flash" : "") +
           (phase === "wrong" && animate ? " animate-screen-shake" : "")
         }
@@ -338,7 +338,7 @@ export function BattleArena({ settings, onGameOver, onQuit }: BattleArenaProps) 
               disabled={phase !== "asking"}
               onClick={() => answer(choice.char)}
               className={
-                "relative rounded-xl border-2 py-5 font-jp text-4xl font-semibold shadow-glass backdrop-blur-md transition duration-200 disabled:cursor-default sm:py-6 sm:text-5xl " +
+                "relative rounded-xl border-2 py-4 font-jp text-4xl font-semibold shadow-glass backdrop-blur-md transition duration-200 disabled:cursor-default sm:py-5 sm:text-5xl " +
                 tone
               }
             >
