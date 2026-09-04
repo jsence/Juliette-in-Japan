@@ -30,30 +30,40 @@ function spriteFor(fighter: Fighter, pose: FighterPose): string {
 }
 
 /**
+ * Module-level probe cache: each sprite path is checked once per page load, so
+ * remounting between rounds does not re-request art that is known to be absent.
+ */
+const probeCache = new Map<string, boolean>();
+
+/**
  * A duellist. Renders the PNG sprite when present in /public/game/sprites and
  * otherwise draws a chunky silhouette so the game is playable without art.
  */
 export function FighterSprite({ fighter, pose, className = "" }: FighterSpriteProps) {
   const src = spriteFor(fighter, pose);
-  const [failed, setFailed] = useState<Record<string, boolean>>({});
+  const [, force] = useState(0);
 
   // Probe the file once per source so a missing sprite swaps to the fallback
   // without flashing a broken-image icon.
   useEffect(() => {
-    if (failed[src] !== undefined) return;
+    if (probeCache.has(src)) return;
     let active = true;
     const img = new window.Image();
-    img.onload = () => active && setFailed((f) => ({ ...f, [src]: false }));
-    img.onerror = () => active && setFailed((f) => ({ ...f, [src]: true }));
+    const settle = (ok: boolean) => {
+      probeCache.set(src, ok);
+      if (active) force((n) => n + 1);
+    };
+    img.onload = () => settle(true);
+    img.onerror = () => settle(false);
     img.src = src;
     return () => {
       active = false;
     };
-  }, [src, failed]);
+  }, [src]);
 
-  const status = failed[src];
+  const status = probeCache.get(src);
 
-  if (status === false) {
+  if (status === true) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img

@@ -199,6 +199,8 @@ export function BattleArena({ settings, onGameOver, onQuit }: BattleArenaProps) 
 
   const animate = !reduceMotion;
   const progress = remaining / allowance;
+  // Landed hits are fully described by the wave and the enemy's remaining HP.
+  const hits = (wave - 1) * MAX_HP + (MAX_HP - enemyHp);
 
   return (
     <div className="space-y-5">
@@ -210,7 +212,7 @@ export function BattleArena({ settings, onGameOver, onQuit }: BattleArenaProps) 
             Wave {wave}
           </span>
           <span className="font-pixel text-[0.5rem] text-ink-muted dark:text-paper-300">
-            {statsRef.current.correct} hits
+            {hits} {hits === 1 ? "hit" : "hits"}
           </span>
         </div>
         <HeartBar hp={enemyHp} max={MAX_HP} label="Ninja" align="right" />

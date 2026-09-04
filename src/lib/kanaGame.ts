@@ -113,6 +113,11 @@ function shuffle<T>(items: T[]): T[] {
  * Build one question. Distractors are drawn from the selected pool first and
  * topped up from the full hiragana set when the pool is smaller than the
  * requested number of choices.
+ *
+ * Choices are de-duplicated by *reading* rather than by character, because
+ * じ/ぢ both read "ji" and ず/づ both read "zu". Keying on the character alone
+ * would let a prompt offer two visually different but identically-read
+ * options, which reads as a bug to a learner.
  */
 export function makeQuestion(
   pool: Kana[],
@@ -125,24 +130,20 @@ export function makeQuestion(
   const answer = candidates[Math.floor(Math.random() * candidates.length)];
 
   const distractors: Kana[] = [];
-  const seen = new Set([answer.char]);
+  const usedRomaji = new Set([answer.romaji]);
 
-  for (const k of shuffle(pool)) {
-    if (distractors.length >= choiceCount - 1) break;
-    if (seen.has(k.char) || k.romaji === answer.romaji) continue;
-    seen.add(k.char);
-    distractors.push(k);
-  }
-
-  // Small pools (e.g. や行 alone) need filling from the wider set.
-  if (distractors.length < choiceCount - 1) {
-    for (const k of shuffle(hiragana)) {
+  const take = (source: Kana[]) => {
+    for (const k of shuffle(source)) {
       if (distractors.length >= choiceCount - 1) break;
-      if (seen.has(k.char) || k.romaji === answer.romaji) continue;
-      seen.add(k.char);
+      if (usedRomaji.has(k.romaji)) continue;
+      usedRomaji.add(k.romaji);
       distractors.push(k);
     }
-  }
+  };
+
+  take(pool);
+  // Small pools (e.g. や行 alone) need filling from the wider set.
+  if (distractors.length < choiceCount - 1) take(hiragana);
 
   return { answer, choices: shuffle([answer, ...distractors]) };
 }
