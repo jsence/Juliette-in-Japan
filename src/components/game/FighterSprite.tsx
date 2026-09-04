@@ -125,15 +125,20 @@ function SilhouetteSprite({ fighter, pose, className = "", hidden }: SilhouetteP
       {/* helmet / hood */}
       <rect x="5" y="1" width="6" height="2" fill={bodyDark} />
       {samurai ? (
-        <rect x="7" y="0" width="2" height="1" fill={accent} />
+        <>
+          <rect x="7" y="0" width="2" height="1" fill={accent} />
+          <rect x="6" y="3" width="1" height="1" fill={hitPose ? "#b3352b" : "#20201c"} />
+          <rect x="9" y="3" width="1" height="1" fill={hitPose ? "#b3352b" : "#20201c"} />
+        </>
       ) : (
-        // Mask the lower face, leaving row 3 as an eye slit — covering the eye
-        // row instead turns the head into an unreadable dark block.
-        <rect x="5" y="4" width="6" height="1" fill={bodyDark} />
+        <>
+          {/* Mask the lower face and leave a full-width eye slit. A narrower
+              slit broken by eye pixels washes out to a dark block at the size
+              the sprite is actually drawn. */}
+          <rect x="5" y="4" width="6" height="1" fill={bodyDark} />
+          <rect x="5" y="3" width="6" height="1" fill={hitPose ? "#b3352b" : skin} />
+        </>
       )}
-      {/* eyes */}
-      <rect x="6" y="3" width="1" height="1" fill={hitPose ? "#b3352b" : "#20201c"} />
-      <rect x="9" y="3" width="1" height="1" fill={hitPose ? "#b3352b" : "#20201c"} />
 
       {/* torso */}
       <rect x="5" y="5" width="6" height="6" fill={body} />
