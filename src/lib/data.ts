@@ -4,9 +4,11 @@ import vocabularyData from "../../data/vocabulary.json";
 import grammarData from "../../data/grammar.json";
 import resourcesData from "../../data/resources.json";
 import lessonsData from "../../data/lessons.json";
+import exampleWordsData from "../../data/example-words.json";
 
 import {
   GRAMMAR_CATEGORIES,
+  type ExampleWordIndex,
   type Kana,
   type Kanji,
   type VocabEntry,
@@ -23,6 +25,7 @@ export const kanji = kanjiData as Kanji[];
 export const vocabulary = vocabularyData as VocabEntry[];
 export const grammar = grammarData as GrammarPoint[];
 export const resources = resourcesData as Resource[];
+export const exampleWords = exampleWordsData as ExampleWordIndex;
 export const lessons = (lessonsData as Lesson[]).slice().sort((a, b) => a.number - b.number);
 
 export { GRAMMAR_CATEGORIES };

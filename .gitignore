@@ -32,3 +32,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# downloaded dictionary sources used by scripts/ (outputs are committed)
+/.cache

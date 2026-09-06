@@ -1,0 +1,6400 @@
+{
+  "あ": [
+    {
+      "word": "あの",
+      "reading": "あの",
+      "romaji": "ano",
+      "meaning": "that, those"
+    },
+    {
+      "word": "あら",
+      "reading": "あら",
+      "romaji": "ara",
+      "meaning": "oh!, ah!"
+    },
+    {
+      "word": "あれ",
+      "reading": "あれ",
+      "romaji": "are",
+      "meaning": "that, that thing"
+    },
+    {
+      "word": "さあ",
+      "reading": "さあ",
+      "romaji": "saa",
+      "meaning": "come (on), come now"
+    },
+    {
+      "word": "まあ",
+      "reading": "まあ",
+      "romaji": "maa",
+      "meaning": "just (e.g. \"just wait here\"), come now"
+    }
+  ],
+  "い": [
+    {
+      "word": "古い",
+      "reading": "ふるい",
+      "romaji": "furui",
+      "meaning": "old, aged"
+    },
+    {
+      "word": "良い",
+      "reading": "よい",
+      "romaji": "yoi",
+      "meaning": "good, excellent"
+    },
+    {
+      "word": "小さい",
+      "reading": "ちいさい",
+      "romaji": "chiisai",
+      "meaning": "small, little"
+    },
+    {
+      "word": "新しい",
+      "reading": "あたらしい",
+      "romaji": "atarashii",
+      "meaning": "new, novel"
+    },
+    {
+      "word": "大きい",
+      "reading": "おおきい",
+      "romaji": "ookii",
+      "meaning": "big, large"
+    }
+  ],
+  "う": [
+    {
+      "word": "うん",
+      "reading": "うん",
+      "romaji": "un",
+      "meaning": "yes, yeah"
+    },
+    {
+      "word": "こう",
+      "reading": "こう",
+      "romaji": "kou",
+      "meaning": "in this way, like this"
+    },
+    {
+      "word": "そう",
+      "reading": "そう",
+      "romaji": "sou",
+      "meaning": "appearing that, seeming that"
+    },
+    {
+      "word": "どう",
+      "reading": "どう",
+      "romaji": "dou",
+      "meaning": "how, in what way"
+    },
+    {
+      "word": "もう",
+      "reading": "もう",
+      "romaji": "mou",
+      "meaning": "already, yet"
+    }
+  ],
+  "え": [
+    {
+      "word": "ええ",
+      "reading": "ええ",
+      "romaji": "ee",
+      "meaning": "yes, that is correct"
+    },
+    {
+      "word": "覚え",
+      "reading": "おぼえ",
+      "romaji": "oboe",
+      "meaning": "memory, sense"
+    },
+    {
+      "word": "甘え",
+      "reading": "あまえ",
+      "romaji": "amae",
+      "meaning": "overdependence (on others; usu. one's fosterers or seniors), lack of self-reliance"
+    },
+    {
+      "word": "飢え",
+      "reading": "うえ",
+      "romaji": "ue",
+      "meaning": "hunger, starvation"
+    },
+    {
+      "word": "教え",
+      "reading": "おしえ",
+      "romaji": "oshie",
+      "meaning": "teaching, instruction"
+    }
+  ],
+  "お": [
+    {
+      "word": "お金",
+      "reading": "おかね",
+      "romaji": "okane",
+      "meaning": "money"
+    },
+    {
+      "word": "お茶",
+      "reading": "おちゃ",
+      "romaji": "ocha",
+      "meaning": "tea (esp. green or barley)"
+    },
+    {
+      "word": "おい",
+      "reading": "おい",
+      "romaji": "oi",
+      "meaning": "hey!, say!"
+    },
+    {
+      "word": "おや",
+      "reading": "おや",
+      "romaji": "oya",
+      "meaning": "oh!, oh?"
+    },
+    {
+      "word": "お産",
+      "reading": "おさん",
+      "romaji": "osan",
+      "meaning": "(giving) birth, childbirth"
+    }
+  ],
+  "か": [
+    {
+      "word": "静か",
+      "reading": "しずか",
+      "romaji": "shizuka",
+      "meaning": "quiet, silent"
+    },
+    {
+      "word": "とか",
+      "reading": "とか",
+      "romaji": "toka",
+      "meaning": "and the like, such as"
+    },
+    {
+      "word": "かき",
+      "reading": "かき",
+      "romaji": "kaki",
+      "meaning": "oyster, oyster shell"
+    },
+    {
+      "word": "何か",
+      "reading": "なにか",
+      "romaji": "nanika",
+      "meaning": "something, some"
+    },
+    {
+      "word": "かに",
+      "reading": "かに",
+      "romaji": "kani",
+      "meaning": "crab"
+    }
+  ],
+  "き": [
+    {
+      "word": "大きい",
+      "reading": "おおきい",
+      "romaji": "ookii",
+      "meaning": "big, large"
+    },
+    {
+      "word": "かき",
+      "reading": "かき",
+      "romaji": "kaki",
+      "meaning": "oyster, oyster shell"
+    },
+    {
+      "word": "渇き",
+      "reading": "かわき",
+      "romaji": "kawaki",
+      "meaning": "thirst"
+    },
+    {
+      "word": "きざ",
+      "reading": "きざ",
+      "romaji": "kiza",
+      "meaning": "affected, smug"
+    },
+    {
+      "word": "輝き",
+      "reading": "かがやき",
+      "romaji": "kagayaki",
+      "meaning": "brightness, brilliance"
+    }
+  ],
+  "く": [
+    {
+      "word": "行く",
+      "reading": "いく",
+      "romaji": "iku",
+      "meaning": "to go, to move (towards)"
+    },
+    {
+      "word": "めく",
+      "reading": "めく",
+      "romaji": "meku",
+      "meaning": "to show signs of ..., to have the appearance of ..."
+    },
+    {
+      "word": "引く",
+      "reading": "ひく",
+      "romaji": "hiku",
+      "meaning": "to pull, to tug"
+    },
+    {
+      "word": "遠く",
+      "reading": "とおく",
+      "romaji": "tooku",
+      "meaning": "far away, distant place"
+    },
+    {
+      "word": "解く",
+      "reading": "とく",
+      "romaji": "toku",
+      "meaning": "to untie, to unfasten"
+    }
+  ],
+  "け": [
+    {
+      "word": "けど",
+      "reading": "けど",
+      "romaji": "kedo",
+      "meaning": "but, however"
+    },
+    {
+      "word": "ぼけ",
+      "reading": "ぼけ",
+      "romaji": "boke",
+      "meaning": "fool, idiot"
+    },
+    {
+      "word": "けが",
+      "reading": "けが",
+      "romaji": "kega",
+      "meaning": "injury, wound"
+    },
+    {
+      "word": "掛け",
+      "reading": "かけ",
+      "romaji": "kake",
+      "meaning": "credit"
+    },
+    {
+      "word": "やけ",
+      "reading": "やけ",
+      "romaji": "yake",
+      "meaning": "desperation, despair"
+    }
+  ],
+  "こ": [
+    {
+      "word": "こう",
+      "reading": "こう",
+      "romaji": "kou",
+      "meaning": "in this way, like this"
+    },
+    {
+      "word": "そこ",
+      "reading": "そこ",
+      "romaji": "soko",
+      "meaning": "there (place relatively near listener)"
+    },
+    {
+      "word": "ここ",
+      "reading": "ここ",
+      "romaji": "koko",
+      "meaning": "here, this place"
+    },
+    {
+      "word": "こと",
+      "reading": "こと",
+      "romaji": "koto",
+      "meaning": "thing, matter"
+    },
+    {
+      "word": "こぐ",
+      "reading": "こぐ",
+      "romaji": "kogu",
+      "meaning": "to row, to paddle"
+    }
+  ],
+  "さ": [
+    {
+      "word": "小さい",
+      "reading": "ちいさい",
+      "romaji": "chiisai",
+      "meaning": "small, little"
+    },
+    {
+      "word": "さあ",
+      "reading": "さあ",
+      "romaji": "saa",
+      "meaning": "come (on), come now"
+    },
+    {
+      "word": "悪さ",
+      "reading": "わるさ",
+      "romaji": "warusa",
+      "meaning": "badness, mean mischief"
+    },
+    {
+      "word": "さる",
+      "reading": "さる",
+      "romaji": "saru",
+      "meaning": "monkey (esp. the Japanese macaque, Macaca fuscata), ape"
+    },
+    {
+      "word": "寒さ",
+      "reading": "さむさ",
+      "romaji": "samusa",
+      "meaning": "coldness"
+    }
+  ],
+  "し": [
+    {
+      "word": "新しい",
+      "reading": "あたらしい",
+      "romaji": "atarashii",
+      "meaning": "new, novel"
+    },
+    {
+      "word": "もし",
+      "reading": "もし",
+      "romaji": "moshi",
+      "meaning": "if, in case"
+    },
+    {
+      "word": "押し",
+      "reading": "おし",
+      "romaji": "oshi",
+      "meaning": "push, pushing"
+    },
+    {
+      "word": "回し",
+      "reading": "まわし",
+      "romaji": "mawashi",
+      "meaning": "mawashi, belt"
+    },
+    {
+      "word": "許し",
+      "reading": "ゆるし",
+      "romaji": "yurushi",
+      "meaning": "pardon, forgiveness"
+    }
+  ],
+  "す": [
+    {
+      "word": "する",
+      "reading": "する",
+      "romaji": "suru",
+      "meaning": "to do, to carry out"
+    },
+    {
+      "word": "話す",
+      "reading": "はなす",
+      "romaji": "hanasu",
+      "meaning": "to talk, to speak"
+    },
+    {
+      "word": "成す",
+      "reading": "なす",
+      "romaji": "nasu",
+      "meaning": "to form, to make"
+    },
+    {
+      "word": "移す",
+      "reading": "うつす",
+      "romaji": "utsusu",
+      "meaning": "to transfer (to a different place, group, etc.), to change"
+    },
+    {
+      "word": "隠す",
+      "reading": "かくす",
+      "romaji": "kakusu",
+      "meaning": "to hide, to conceal"
+    }
+  ],
+  "せ": [
+    {
+      "word": "よせ",
+      "reading": "よせ",
+      "romaji": "yose",
+      "meaning": "yose, end game"
+    },
+    {
+      "word": "幸せ",
+      "reading": "しあわせ",
+      "romaji": "shiawase",
+      "meaning": "happiness, good fortune"
+    },
+    {
+      "word": "せい",
+      "reading": "せい",
+      "romaji": "sei",
+      "meaning": "consequence, outcome"
+    },
+    {
+      "word": "させる",
+      "reading": "させる",
+      "romaji": "saseru",
+      "meaning": "to make (someone) do"
+    },
+    {
+      "word": "せがむ",
+      "reading": "せがむ",
+      "romaji": "segamu",
+      "meaning": "to badger, to pester"
+    }
+  ],
+  "そ": [
+    {
+      "word": "そう",
+      "reading": "そう",
+      "romaji": "sou",
+      "meaning": "appearing that, seeming that"
+    },
+    {
+      "word": "そこ",
+      "reading": "そこ",
+      "romaji": "soko",
+      "meaning": "there (place relatively near listener)"
+    },
+    {
+      "word": "その",
+      "reading": "その",
+      "romaji": "sono",
+      "meaning": "that, the"
+    },
+    {
+      "word": "それ",
+      "reading": "それ",
+      "romaji": "sore",
+      "meaning": "that, it"
+    },
+    {
+      "word": "そば",
+      "reading": "そば",
+      "romaji": "soba",
+      "meaning": "buckwheat (Fagopyrum esculentum)"
+    }
+  ],
+  "た": [
+    {
+      "word": "ねた",
+      "reading": "ねた",
+      "romaji": "neta",
+      "meaning": "material (for a story, article, etc.), information"
+    },
+    {
+      "word": "ため",
+      "reading": "ため",
+      "romaji": "tame",
+      "meaning": "good, advantage"
+    },
+    {
+      "word": "新た",
+      "reading": "あらた",
+      "romaji": "arata",
+      "meaning": "new, fresh"
+    },
+    {
+      "word": "たれ",
+      "reading": "たれ",
+      "romaji": "tare",
+      "meaning": "sauce (esp. soy or mirin-based dipping sauce)"
+    },
+    {
+      "word": "たか",
+      "reading": "たか",
+      "romaji": "taka",
+      "meaning": "hawk, falcon"
+    }
+  ],
+  "ち": [
+    {
+      "word": "ちび",
+      "reading": "ちび",
+      "romaji": "chibi",
+      "meaning": "small animal, runt"
+    },
+    {
+      "word": "育ち",
+      "reading": "そだち",
+      "romaji": "sodachi",
+      "meaning": "growth, breeding"
+    },
+    {
+      "word": "うち",
+      "reading": "うち",
+      "romaji": "uchi",
+      "meaning": "one's house, one's home"
+    },
+    {
+      "word": "過ち",
+      "reading": "あやまち",
+      "romaji": "ayamachi",
+      "meaning": "fault, error"
+    },
+    {
+      "word": "のち",
+      "reading": "のち",
+      "romaji": "nochi",
+      "meaning": "later, afterwards"
+    }
+  ],
+  "つ": [
+    {
+      "word": "つい",
+      "reading": "つい",
+      "romaji": "tsui",
+      "meaning": "just (now)"
+    },
+    {
+      "word": "育つ",
+      "reading": "そだつ",
+      "romaji": "sodatsu",
+      "meaning": "to be raised (e.g. child), to be brought up"
+    },
+    {
+      "word": "一つ",
+      "reading": "ひとつ",
+      "romaji": "hitotsu",
+      "meaning": "one"
+    },
+    {
+      "word": "いつ",
+      "reading": "いつ",
+      "romaji": "itsu",
+      "meaning": "when, at what time"
+    },
+    {
+      "word": "かつ",
+      "reading": "かつ",
+      "romaji": "katsu",
+      "meaning": "and, moreover"
+    }
+  ],
+  "て": [
+    {
+      "word": "果て",
+      "reading": "はて",
+      "romaji": "hate",
+      "meaning": "end, extremity"
+    },
+    {
+      "word": "隔て",
+      "reading": "へだて",
+      "romaji": "hedate",
+      "meaning": "partition, division"
+    },
+    {
+      "word": "当て",
+      "reading": "あて",
+      "romaji": "ate",
+      "meaning": "aim, object"
+    },
+    {
+      "word": "さて",
+      "reading": "さて",
+      "romaji": "sate",
+      "meaning": "well, now"
+    },
+    {
+      "word": "せめて",
+      "reading": "せめて",
+      "romaji": "semete",
+      "meaning": "at least, at most"
+    }
+  ],
+  "と": [
+    {
+      "word": "とか",
+      "reading": "とか",
+      "romaji": "toka",
+      "meaning": "and the like, such as"
+    },
+    {
+      "word": "とろ",
+      "reading": "とろ",
+      "romaji": "toro",
+      "meaning": "fatty cut (esp. of tuna belly)"
+    },
+    {
+      "word": "何と",
+      "reading": "なんと",
+      "romaji": "nanto",
+      "meaning": "what, how"
+    },
+    {
+      "word": "こと",
+      "reading": "こと",
+      "romaji": "koto",
+      "meaning": "thing, matter"
+    },
+    {
+      "word": "ふと",
+      "reading": "ふと",
+      "romaji": "futo",
+      "meaning": "suddenly, casually"
+    }
+  ],
+  "な": [
+    {
+      "word": "なす",
+      "reading": "なす",
+      "romaji": "nasu",
+      "meaning": "eggplant (Solanum melongena), aubergine"
+    },
+    {
+      "word": "みな",
+      "reading": "みな",
+      "romaji": "mina",
+      "meaning": "everyone, everybody"
+    },
+    {
+      "word": "頑な",
+      "reading": "かたくな",
+      "romaji": "katakuna",
+      "meaning": "obstinate, stubborn"
+    },
+    {
+      "word": "なお",
+      "reading": "なお",
+      "romaji": "nao",
+      "meaning": "still, yet"
+    },
+    {
+      "word": "なる",
+      "reading": "なる",
+      "romaji": "naru",
+      "meaning": "to become, to get"
+    }
+  ],
+  "に": [
+    {
+      "word": "暗に",
+      "reading": "あんに",
+      "romaji": "anni",
+      "meaning": "implicitly, indirectly"
+    },
+    {
+      "word": "仮に",
+      "reading": "かりに",
+      "romaji": "karini",
+      "meaning": "supposing, even if"
+    },
+    {
+      "word": "かに",
+      "reading": "かに",
+      "romaji": "kani",
+      "meaning": "crab"
+    },
+    {
+      "word": "現に",
+      "reading": "げんに",
+      "romaji": "genni",
+      "meaning": "actually, really"
+    },
+    {
+      "word": "今に",
+      "reading": "いまに",
+      "romaji": "imani",
+      "meaning": "before long, even now"
+    }
+  ],
+  "ぬ": [
+    {
+      "word": "死ぬ",
+      "reading": "しぬ",
+      "romaji": "shinu",
+      "meaning": "to die, to pass away"
+    },
+    {
+      "word": "ぬるい",
+      "reading": "ぬるい",
+      "romaji": "nurui",
+      "meaning": "lukewarm, tepid"
+    },
+    {
+      "word": "たぬき",
+      "reading": "たぬき",
+      "romaji": "tanuki",
+      "meaning": "tanuki (Nyctereutes procyonoides), raccoon dog"
+    },
+    {
+      "word": "ぬめり",
+      "reading": "ぬめり",
+      "romaji": "numeri",
+      "meaning": "slime, sliminess"
+    },
+    {
+      "word": "ぬくもり",
+      "reading": "ぬくもり",
+      "romaji": "nukumori",
+      "meaning": "warmth"
+    }
+  ],
+  "ね": [
+    {
+      "word": "ねた",
+      "reading": "ねた",
+      "romaji": "neta",
+      "meaning": "material (for a story, article, etc.), information"
+    },
+    {
+      "word": "ばね",
+      "reading": "ばね",
+      "romaji": "bane",
+      "meaning": "spring (device)"
+    },
+    {
+      "word": "ねぎ",
+      "reading": "ねぎ",
+      "romaji": "negi",
+      "meaning": "Welsh onion (Allium fistulosum), Japanese bunching onion"
+    },
+    {
+      "word": "すね",
+      "reading": "すね",
+      "romaji": "sune",
+      "meaning": "shin, shank"
+    },
+    {
+      "word": "うねり",
+      "reading": "うねり",
+      "romaji": "uneri",
+      "meaning": "undulation, winding"
+    }
+  ],
+  "の": [
+    {
+      "word": "あの",
+      "reading": "あの",
+      "romaji": "ano",
+      "meaning": "that, those"
+    },
+    {
+      "word": "その",
+      "reading": "その",
+      "romaji": "sono",
+      "meaning": "that, the"
+    },
+    {
+      "word": "ので",
+      "reading": "ので",
+      "romaji": "node",
+      "meaning": "because, as"
+    },
+    {
+      "word": "のり",
+      "reading": "のり",
+      "romaji": "nori",
+      "meaning": "nori, laver"
+    },
+    {
+      "word": "のち",
+      "reading": "のち",
+      "romaji": "nochi",
+      "meaning": "later, afterwards"
+    }
+  ],
+  "は": [
+    {
+      "word": "では",
+      "reading": "では",
+      "romaji": "deha",
+      "meaning": "then, well"
+    },
+    {
+      "word": "はい",
+      "reading": "はい",
+      "romaji": "hai",
+      "meaning": "yes, that is correct"
+    },
+    {
+      "word": "はえ",
+      "reading": "はえ",
+      "romaji": "hae",
+      "meaning": "fly (any insect of infraorder Muscomorpha)"
+    },
+    {
+      "word": "はぎ",
+      "reading": "はぎ",
+      "romaji": "hagi",
+      "meaning": "bush clover, Japanese clover (any flowering plant of genus Lespedeza)"
+    },
+    {
+      "word": "はす",
+      "reading": "はす",
+      "romaji": "hasu",
+      "meaning": "sacred lotus (Nelumbo nucifera), Indian lotus"
+    }
+  ],
+  "ひ": [
+    {
+      "word": "ひび",
+      "reading": "ひび",
+      "romaji": "hibi",
+      "meaning": "crack, fissure"
+    },
+    {
+      "word": "ひも",
+      "reading": "ひも",
+      "romaji": "himo",
+      "meaning": "string, cord"
+    },
+    {
+      "word": "ひげ",
+      "reading": "ひげ",
+      "romaji": "hige",
+      "meaning": "moustache, mustache"
+    },
+    {
+      "word": "ひく",
+      "reading": "ひく",
+      "romaji": "hiku",
+      "meaning": "to run over (with a vehicle), to knock down"
+    },
+    {
+      "word": "ひな",
+      "reading": "ひな",
+      "romaji": "hina",
+      "meaning": "young bird, chick"
+    }
+  ],
+  "ふ": [
+    {
+      "word": "ふと",
+      "reading": "ふと",
+      "romaji": "futo",
+      "meaning": "suddenly, casually"
+    },
+    {
+      "word": "ふん",
+      "reading": "ふん",
+      "romaji": "fun",
+      "meaning": "hmm, well ..."
+    },
+    {
+      "word": "ふわり",
+      "reading": "ふわり",
+      "romaji": "fuwari",
+      "meaning": "softly, gently"
+    },
+    {
+      "word": "ふける",
+      "reading": "ふける",
+      "romaji": "fukeru",
+      "meaning": "to indulge in, to give oneself up to"
+    },
+    {
+      "word": "ふとん",
+      "reading": "ふとん",
+      "romaji": "futon",
+      "meaning": "futon, Japanese bedding consisting of a mattress and a duvet"
+    }
+  ],
+  "へ": [
+    {
+      "word": "へら",
+      "reading": "へら",
+      "romaji": "hera",
+      "meaning": "spatula, (fabric) tracing spatula"
+    },
+    {
+      "word": "へそ",
+      "reading": "へそ",
+      "romaji": "heso",
+      "meaning": "navel, belly button"
+    },
+    {
+      "word": "そこらへん",
+      "reading": "そこらへん",
+      "romaji": "sokorahen",
+      "meaning": "hereabouts, around there"
+    },
+    {
+      "word": "異変",
+      "reading": "いへん",
+      "romaji": "ihen",
+      "meaning": "unusual event, strange occurrence"
+    },
+    {
+      "word": "凹む",
+      "reading": "へこむ",
+      "romaji": "hekomu",
+      "meaning": "to be dented, to be indented"
+    }
+  ],
+  "ほ": [
+    {
+      "word": "ほら",
+      "reading": "ほら",
+      "romaji": "hora",
+      "meaning": "look!, see!"
+    },
+    {
+      "word": "ほど",
+      "reading": "ほど",
+      "romaji": "hodo",
+      "meaning": "extent, degree"
+    },
+    {
+      "word": "ほぼ",
+      "reading": "ほぼ",
+      "romaji": "hobo",
+      "meaning": "almost, nearly"
+    },
+    {
+      "word": "ほっと",
+      "reading": "ほっと",
+      "romaji": "hotto",
+      "meaning": "with a feeling of relief, with a sigh of relief"
+    },
+    {
+      "word": "ほんの",
+      "reading": "ほんの",
+      "romaji": "honno",
+      "meaning": "mere, only"
+    }
+  ],
+  "ま": [
+    {
+      "word": "まあ",
+      "reading": "まあ",
+      "romaji": "maa",
+      "meaning": "just (e.g. \"just wait here\"), come now"
+    },
+    {
+      "word": "ごま",
+      "reading": "ごま",
+      "romaji": "goma",
+      "meaning": "sesame seeds"
+    },
+    {
+      "word": "まく",
+      "reading": "まく",
+      "romaji": "maku",
+      "meaning": "to scatter, to sprinkle"
+    },
+    {
+      "word": "まず",
+      "reading": "まず",
+      "romaji": "mazu",
+      "meaning": "first (of all), firstly"
+    },
+    {
+      "word": "こま",
+      "reading": "こま",
+      "romaji": "koma",
+      "meaning": "spinning top"
+    }
+  ],
+  "み": [
+    {
+      "word": "営み",
+      "reading": "いとなみ",
+      "romaji": "itonami",
+      "meaning": "activity, action"
+    },
+    {
+      "word": "みな",
+      "reading": "みな",
+      "romaji": "mina",
+      "meaning": "everyone, everybody"
+    },
+    {
+      "word": "丸み",
+      "reading": "まるみ",
+      "romaji": "marumi",
+      "meaning": "roundness, rotundity"
+    },
+    {
+      "word": "含み",
+      "reading": "ふくみ",
+      "romaji": "fukumi",
+      "meaning": "implication, hidden meaning"
+    },
+    {
+      "word": "企み",
+      "reading": "たくらみ",
+      "romaji": "takurami",
+      "meaning": "plot, scheme"
+    }
+  ],
+  "む": [
+    {
+      "word": "飲む",
+      "reading": "のむ",
+      "romaji": "nomu",
+      "meaning": "to drink, to swallow"
+    },
+    {
+      "word": "読む",
+      "reading": "よむ",
+      "romaji": "yomu",
+      "meaning": "to read"
+    },
+    {
+      "word": "囲む",
+      "reading": "かこむ",
+      "romaji": "kakomu",
+      "meaning": "to surround, to encircle"
+    },
+    {
+      "word": "営む",
+      "reading": "いとなむ",
+      "romaji": "itonamu",
+      "meaning": "to run (a business), to operate"
+    },
+    {
+      "word": "詠む",
+      "reading": "よむ",
+      "romaji": "yomu",
+      "meaning": "to compose (a Japanese poem), to write"
+    }
+  ],
+  "め": [
+    {
+      "word": "めく",
+      "reading": "めく",
+      "romaji": "meku",
+      "meaning": "to show signs of ..., to have the appearance of ..."
+    },
+    {
+      "word": "ため",
+      "reading": "ため",
+      "romaji": "tame",
+      "meaning": "good, advantage"
+    },
+    {
+      "word": "勧め",
+      "reading": "すすめ",
+      "romaji": "susume",
+      "meaning": "recommendation, advice"
+    },
+    {
+      "word": "勤め",
+      "reading": "つとめ",
+      "romaji": "tsutome",
+      "meaning": "service, duty"
+    },
+    {
+      "word": "固め",
+      "reading": "かため",
+      "romaji": "katame",
+      "meaning": "hardening, fortifying"
+    }
+  ],
+  "も": [
+    {
+      "word": "でも",
+      "reading": "でも",
+      "romaji": "demo",
+      "meaning": "but, however"
+    },
+    {
+      "word": "もう",
+      "reading": "もう",
+      "romaji": "mou",
+      "meaning": "already, yet"
+    },
+    {
+      "word": "もし",
+      "reading": "もし",
+      "romaji": "moshi",
+      "meaning": "if, in case"
+    },
+    {
+      "word": "かも",
+      "reading": "かも",
+      "romaji": "kamo",
+      "meaning": "duck"
+    },
+    {
+      "word": "最も",
+      "reading": "もっとも",
+      "romaji": "mottomo",
+      "meaning": "most, extremely"
+    }
+  ],
+  "や": [
+    {
+      "word": "おや",
+      "reading": "おや",
+      "romaji": "oya",
+      "meaning": "oh!, oh?"
+    },
+    {
+      "word": "やる",
+      "reading": "やる",
+      "romaji": "yaru",
+      "meaning": "to do, to undertake"
+    },
+    {
+      "word": "今や",
+      "reading": "いまや",
+      "romaji": "imaya",
+      "meaning": "now (esp. in contrast to the past), now at last"
+    },
+    {
+      "word": "やけ",
+      "reading": "やけ",
+      "romaji": "yake",
+      "meaning": "desperation, despair"
+    },
+    {
+      "word": "やつ",
+      "reading": "やつ",
+      "romaji": "yatsu",
+      "meaning": "fellow, guy"
+    }
+  ],
+  "ゆ": [
+    {
+      "word": "ゆえ",
+      "reading": "ゆえ",
+      "romaji": "yue",
+      "meaning": "reason, circumstances"
+    },
+    {
+      "word": "ゆり",
+      "reading": "ゆり",
+      "romaji": "yuri",
+      "meaning": "lily (Lilium spp.)"
+    },
+    {
+      "word": "あゆ",
+      "reading": "あゆ",
+      "romaji": "ayu",
+      "meaning": "ayu (Plecoglossus altivelis), sweetfish"
+    },
+    {
+      "word": "ゆず",
+      "reading": "ゆず",
+      "romaji": "yuzu",
+      "meaning": "yuzu (Citrus ichangensis x C. reticulata)"
+    },
+    {
+      "word": "ゆとり",
+      "reading": "ゆとり",
+      "romaji": "yutori",
+      "meaning": "elbowroom, leeway"
+    }
+  ],
+  "よ": [
+    {
+      "word": "よる",
+      "reading": "よる",
+      "romaji": "yoru",
+      "meaning": "to be due to, to be caused by"
+    },
+    {
+      "word": "よせ",
+      "reading": "よせ",
+      "romaji": "yose",
+      "meaning": "yose, end game"
+    },
+    {
+      "word": "よす",
+      "reading": "よす",
+      "romaji": "yosu",
+      "meaning": "to stop (doing), to cease"
+    },
+    {
+      "word": "よう",
+      "reading": "よう",
+      "romaji": "you",
+      "meaning": "appearing ..., looking ..."
+    },
+    {
+      "word": "よく",
+      "reading": "よく",
+      "romaji": "yoku",
+      "meaning": "nicely, properly"
+    }
+  ],
+  "ら": [
+    {
+      "word": "あら",
+      "reading": "あら",
+      "romaji": "ara",
+      "meaning": "oh!, ah!"
+    },
+    {
+      "word": "ほら",
+      "reading": "ほら",
+      "romaji": "hora",
+      "meaning": "look!, see!"
+    },
+    {
+      "word": "何ら",
+      "reading": "なんら",
+      "romaji": "nanra",
+      "meaning": "(not) in any way, (not) at all"
+    },
+    {
+      "word": "自ら",
+      "reading": "みずから",
+      "romaji": "mizukara",
+      "meaning": "oneself"
+    },
+    {
+      "word": "むら",
+      "reading": "むら",
+      "romaji": "mura",
+      "meaning": "unevenness (of colour, paint, etc.), irregularity"
+    }
+  ],
+  "り": [
+    {
+      "word": "握り",
+      "reading": "にぎり",
+      "romaji": "nigiri",
+      "meaning": "grasping, gripping"
+    },
+    {
+      "word": "下り",
+      "reading": "くだり",
+      "romaji": "kudari",
+      "meaning": "down-train, train heading toward the ending point of its route"
+    },
+    {
+      "word": "のり",
+      "reading": "のり",
+      "romaji": "nori",
+      "meaning": "nori, laver"
+    },
+    {
+      "word": "帰り",
+      "reading": "かえり",
+      "romaji": "kaeri",
+      "meaning": "return, coming back"
+    },
+    {
+      "word": "祈り",
+      "reading": "いのり",
+      "romaji": "inori",
+      "meaning": "prayer, supplication"
+    }
+  ],
+  "る": [
+    {
+      "word": "する",
+      "reading": "する",
+      "romaji": "suru",
+      "meaning": "to do, to carry out"
+    },
+    {
+      "word": "見る",
+      "reading": "みる",
+      "romaji": "miru",
+      "meaning": "to see, to look"
+    },
+    {
+      "word": "来る",
+      "reading": "くる",
+      "romaji": "kuru",
+      "meaning": "to come (spatially or temporally), to approach"
+    },
+    {
+      "word": "食べる",
+      "reading": "たべる",
+      "romaji": "taberu",
+      "meaning": "to eat"
+    },
+    {
+      "word": "やる",
+      "reading": "やる",
+      "romaji": "yaru",
+      "meaning": "to do, to undertake"
+    }
+  ],
+  "れ": [
+    {
+      "word": "あれ",
+      "reading": "あれ",
+      "romaji": "are",
+      "meaning": "that, that thing"
+    },
+    {
+      "word": "それ",
+      "reading": "それ",
+      "romaji": "sore",
+      "meaning": "that, it"
+    },
+    {
+      "word": "どれ",
+      "reading": "どれ",
+      "romaji": "dore",
+      "meaning": "which (of three or more)"
+    },
+    {
+      "word": "哀れ",
+      "reading": "あわれ",
+      "romaji": "aware",
+      "meaning": "pity, sorrow"
+    },
+    {
+      "word": "外れ",
+      "reading": "はずれ",
+      "romaji": "hazure",
+      "meaning": "end, verge"
+    }
+  ],
+  "ろ": [
+    {
+      "word": "とろ",
+      "reading": "とろ",
+      "romaji": "toro",
+      "meaning": "fatty cut (esp. of tuna belly)"
+    },
+    {
+      "word": "後ろ",
+      "reading": "うしろ",
+      "romaji": "ushiro",
+      "meaning": "back, behind"
+    },
+    {
+      "word": "ころ",
+      "reading": "ころ",
+      "romaji": "koro",
+      "meaning": "(approximate) time, around"
+    },
+    {
+      "word": "いろは",
+      "reading": "いろは",
+      "romaji": "iroha",
+      "meaning": "traditional ordering of the Japanese syllabary"
+    },
+    {
+      "word": "何しろ",
+      "reading": "なにしろ",
+      "romaji": "nanishiro",
+      "meaning": "in any case, at any rate"
+    }
+  ],
+  "わ": [
+    {
+      "word": "わた",
+      "reading": "わた",
+      "romaji": "wata",
+      "meaning": "cotton plant (Gossypium spp.)"
+    },
+    {
+      "word": "わし",
+      "reading": "わし",
+      "romaji": "washi",
+      "meaning": "eagle (Accipitridae family)"
+    },
+    {
+      "word": "わら",
+      "reading": "わら",
+      "romaji": "wara",
+      "meaning": "straw"
+    },
+    {
+      "word": "しわ",
+      "reading": "しわ",
+      "romaji": "shiwa",
+      "meaning": "wrinkle, crease"
+    },
+    {
+      "word": "ふわり",
+      "reading": "ふわり",
+      "romaji": "fuwari",
+      "meaning": "softly, gently"
+    }
+  ],
+  "を": [],
+  "ん": [
+    {
+      "word": "うん",
+      "reading": "うん",
+      "romaji": "un",
+      "meaning": "yes, yeah"
+    },
+    {
+      "word": "かん",
+      "reading": "かん",
+      "romaji": "kan",
+      "meaning": "can, tin"
+    },
+    {
+      "word": "がん",
+      "reading": "がん",
+      "romaji": "gan",
+      "meaning": "cancer"
+    },
+    {
+      "word": "盛ん",
+      "reading": "さかん",
+      "romaji": "sakan",
+      "meaning": "prosperous, flourishing"
+    },
+    {
+      "word": "あん",
+      "reading": "あん",
+      "romaji": "an",
+      "meaning": "red bean paste, red bean jam"
+    }
+  ],
+  "が": [
+    {
+      "word": "けが",
+      "reading": "けが",
+      "romaji": "kega",
+      "meaning": "injury, wound"
+    },
+    {
+      "word": "がん",
+      "reading": "がん",
+      "romaji": "gan",
+      "meaning": "cancer"
+    },
+    {
+      "word": "我が",
+      "reading": "わが",
+      "romaji": "waga",
+      "meaning": "my, our"
+    },
+    {
+      "word": "がる",
+      "reading": "がる",
+      "romaji": "garu",
+      "meaning": "to show signs of being, to feel"
+    },
+    {
+      "word": "だが",
+      "reading": "だが",
+      "romaji": "daga",
+      "meaning": "but, however"
+    }
+  ],
+  "ぎ": [
+    {
+      "word": "稼ぎ",
+      "reading": "かせぎ",
+      "romaji": "kasegi",
+      "meaning": "earnings"
+    },
+    {
+      "word": "過ぎ",
+      "reading": "すぎ",
+      "romaji": "sugi",
+      "meaning": "past, after"
+    },
+    {
+      "word": "急ぎ",
+      "reading": "いそぎ",
+      "romaji": "isogi",
+      "meaning": "haste, hurry"
+    },
+    {
+      "word": "騒ぎ",
+      "reading": "さわぎ",
+      "romaji": "sawagi",
+      "meaning": "uproar, disturbance"
+    },
+    {
+      "word": "ねぎ",
+      "reading": "ねぎ",
+      "romaji": "negi",
+      "meaning": "Welsh onion (Allium fistulosum), Japanese bunching onion"
+    }
+  ],
+  "ぐ": [
+    {
+      "word": "泳ぐ",
+      "reading": "およぐ",
+      "romaji": "oyogu",
+      "meaning": "to swim"
+    },
+    {
+      "word": "嫁ぐ",
+      "reading": "とつぐ",
+      "romaji": "totsugu",
+      "meaning": "to marry (of a woman), to become a bride"
+    },
+    {
+      "word": "稼ぐ",
+      "reading": "かせぐ",
+      "romaji": "kasegu",
+      "meaning": "to earn (income), to make (money)"
+    },
+    {
+      "word": "急ぐ",
+      "reading": "いそぐ",
+      "romaji": "isogu",
+      "meaning": "to hurry, to rush"
+    },
+    {
+      "word": "仰ぐ",
+      "reading": "あおぐ",
+      "romaji": "aogu",
+      "meaning": "to look up (at)"
+    }
+  ],
+  "げ": [
+    {
+      "word": "上げ",
+      "reading": "あげ",
+      "romaji": "age",
+      "meaning": "tuck (e.g. in a dress)"
+    },
+    {
+      "word": "妨げ",
+      "reading": "さまたげ",
+      "romaji": "samatage",
+      "meaning": "obstruction, hindrance"
+    },
+    {
+      "word": "揚げ",
+      "reading": "あげ",
+      "romaji": "age",
+      "meaning": "deep-frying, deep-fried food"
+    },
+    {
+      "word": "ひげ",
+      "reading": "ひげ",
+      "romaji": "hige",
+      "meaning": "moustache, mustache"
+    },
+    {
+      "word": "投げ",
+      "reading": "なげ",
+      "romaji": "nage",
+      "meaning": "throw, throwing"
+    }
+  ],
+  "ご": [
+    {
+      "word": "ご飯",
+      "reading": "ごはん",
+      "romaji": "gohan",
+      "meaning": "cooked rice"
+    },
+    {
+      "word": "ごく",
+      "reading": "ごく",
+      "romaji": "goku",
+      "meaning": "quite, very"
+    },
+    {
+      "word": "ごま",
+      "reading": "ごま",
+      "romaji": "goma",
+      "meaning": "sesame seeds"
+    },
+    {
+      "word": "ごと",
+      "reading": "ごと",
+      "romaji": "goto",
+      "meaning": "each, every"
+    },
+    {
+      "word": "ござ",
+      "reading": "ござ",
+      "romaji": "goza",
+      "meaning": "rush mat, matting"
+    }
+  ],
+  "ざ": [
+    {
+      "word": "きざ",
+      "reading": "きざ",
+      "romaji": "kiza",
+      "meaning": "affected, smug"
+    },
+    {
+      "word": "ござ",
+      "reading": "ござ",
+      "romaji": "goza",
+      "meaning": "rush mat, matting"
+    },
+    {
+      "word": "あざ",
+      "reading": "あざ",
+      "romaji": "aza",
+      "meaning": "birthmark, nevus"
+    },
+    {
+      "word": "ざっと",
+      "reading": "ざっと",
+      "romaji": "zatto",
+      "meaning": "roughly, approximately"
+    },
+    {
+      "word": "改ざん",
+      "reading": "かいざん",
+      "romaji": "kaizan",
+      "meaning": "alteration, falsification"
+    }
+  ],
+  "じ": [
+    {
+      "word": "感じ",
+      "reading": "かんじ",
+      "romaji": "kanji",
+      "meaning": "feeling, sense"
+    },
+    {
+      "word": "同じ",
+      "reading": "おなじ",
+      "romaji": "onaji",
+      "meaning": "same, identical"
+    },
+    {
+      "word": "くじ",
+      "reading": "くじ",
+      "romaji": "kuji",
+      "meaning": "lottery, lot"
+    },
+    {
+      "word": "さじ",
+      "reading": "さじ",
+      "romaji": "saji",
+      "meaning": "spoon"
+    },
+    {
+      "word": "あじ",
+      "reading": "あじ",
+      "romaji": "aji",
+      "meaning": "horse mackerel (Carangidae spp., esp. the Japanese horse mackerel, Trachurus japonicus), jack mackerel"
+    }
+  ],
+  "ず": [
+    {
+      "word": "くず",
+      "reading": "くず",
+      "romaji": "kuzu",
+      "meaning": "waste, scrap"
+    },
+    {
+      "word": "すず",
+      "reading": "すず",
+      "romaji": "suzu",
+      "meaning": "tin (Sn)"
+    },
+    {
+      "word": "まず",
+      "reading": "まず",
+      "romaji": "mazu",
+      "meaning": "first (of all), firstly"
+    },
+    {
+      "word": "必ず",
+      "reading": "かならず",
+      "romaji": "kanarazu",
+      "meaning": "always, without exception"
+    },
+    {
+      "word": "ゆず",
+      "reading": "ゆず",
+      "romaji": "yuzu",
+      "meaning": "yuzu (Citrus ichangensis x C. reticulata)"
+    }
+  ],
+  "ぜ": [
+    {
+      "word": "なぜ",
+      "reading": "なぜ",
+      "romaji": "naze",
+      "meaning": "why, how"
+    },
+    {
+      "word": "混ぜる",
+      "reading": "まぜる",
+      "romaji": "mazeru",
+      "meaning": "to mix, to stir"
+    },
+    {
+      "word": "混ぜ物",
+      "reading": "まぜもの",
+      "romaji": "mazemono",
+      "meaning": "mixture, adulteration"
+    },
+    {
+      "word": "なぜか",
+      "reading": "なぜか",
+      "romaji": "nazeka",
+      "meaning": "somehow, for some reason"
+    },
+    {
+      "word": "なぜなら",
+      "reading": "なぜなら",
+      "romaji": "nazenara",
+      "meaning": "because, the reason is"
+    }
+  ],
+  "ぞ": [
+    {
+      "word": "さぞ",
+      "reading": "さぞ",
+      "romaji": "sazo",
+      "meaning": "surely, certainly"
+    },
+    {
+      "word": "どうぞ",
+      "reading": "どうぞ",
+      "romaji": "douzo",
+      "meaning": "please, kindly"
+    },
+    {
+      "word": "ぞくぞく",
+      "reading": "ぞくぞく",
+      "romaji": "zokuzoku",
+      "meaning": "shivering, feeling chilly"
+    },
+    {
+      "word": "ぞろぞろ",
+      "reading": "ぞろぞろ",
+      "romaji": "zorozoro",
+      "meaning": "in a crowd, in droves"
+    },
+    {
+      "word": "ぞんざい",
+      "reading": "ぞんざい",
+      "romaji": "zonzai",
+      "meaning": "rough, careless"
+    }
+  ],
+  "だ": [
+    {
+      "word": "だし",
+      "reading": "だし",
+      "romaji": "dashi",
+      "meaning": "dashi, Japanese soup stock made from fish and kelp"
+    },
+    {
+      "word": "甚だ",
+      "reading": "はなはだ",
+      "romaji": "hanahada",
+      "meaning": "very, greatly"
+    },
+    {
+      "word": "だめ",
+      "reading": "だめ",
+      "romaji": "dame",
+      "meaning": "no good, not serving its purpose"
+    },
+    {
+      "word": "まだ",
+      "reading": "まだ",
+      "romaji": "mada",
+      "meaning": "still, as yet"
+    },
+    {
+      "word": "むだ",
+      "reading": "むだ",
+      "romaji": "muda",
+      "meaning": "futility, waste"
+    }
+  ],
+  "ぢ": [
+    {
+      "word": "間近",
+      "reading": "まぢか",
+      "romaji": "majika",
+      "meaning": "near, close (to)"
+    },
+    {
+      "word": "縮む",
+      "reading": "ちぢむ",
+      "romaji": "chijimu",
+      "meaning": "to shrink, to contract"
+    },
+    {
+      "word": "身近",
+      "reading": "みぢか",
+      "romaji": "mijika",
+      "meaning": "near oneself, close to one"
+    },
+    {
+      "word": "底力",
+      "reading": "そこぢから",
+      "romaji": "sokojikara",
+      "meaning": "hidden reserves of strength, latent energy"
+    },
+    {
+      "word": "近々",
+      "reading": "ちかぢか",
+      "romaji": "chikajika",
+      "meaning": "soon, before long"
+    }
+  ],
+  "づ": [
+    {
+      "word": "近づく",
+      "reading": "ちかづく",
+      "romaji": "chikazuku",
+      "meaning": "to approach, to draw near"
+    },
+    {
+      "word": "気づく",
+      "reading": "きづく",
+      "romaji": "kizuku",
+      "meaning": "to notice, to realize"
+    },
+    {
+      "word": "近づき",
+      "reading": "ちかづき",
+      "romaji": "chikazuki",
+      "meaning": "acquaintance, making someone's acquaintance"
+    },
+    {
+      "word": "基づく",
+      "reading": "もとづく",
+      "romaji": "motozuku",
+      "meaning": "to be based (on), to be founded (on)"
+    },
+    {
+      "word": "つくづく",
+      "reading": "つくづく",
+      "romaji": "tsukuzuku",
+      "meaning": "deeply, keenly"
+    }
+  ],
+  "で": [
+    {
+      "word": "では",
+      "reading": "では",
+      "romaji": "deha",
+      "meaning": "then, well"
+    },
+    {
+      "word": "でも",
+      "reading": "でも",
+      "romaji": "demo",
+      "meaning": "but, however"
+    },
+    {
+      "word": "ので",
+      "reading": "ので",
+      "romaji": "node",
+      "meaning": "because, as"
+    },
+    {
+      "word": "おでん",
+      "reading": "おでん",
+      "romaji": "oden",
+      "meaning": "oden, dish of various ingredients, e.g. egg, daikon, potato, chikuwa, konnyaku stewed in soy-flavored dashi"
+    },
+    {
+      "word": "おでこ",
+      "reading": "おでこ",
+      "romaji": "odeko",
+      "meaning": "brow, forehead"
+    }
+  ],
+  "ど": [
+    {
+      "word": "けど",
+      "reading": "けど",
+      "romaji": "kedo",
+      "meaning": "but, however"
+    },
+    {
+      "word": "どう",
+      "reading": "どう",
+      "romaji": "dou",
+      "meaning": "how, in what way"
+    },
+    {
+      "word": "どれ",
+      "reading": "どれ",
+      "romaji": "dore",
+      "meaning": "which (of three or more)"
+    },
+    {
+      "word": "ほど",
+      "reading": "ほど",
+      "romaji": "hodo",
+      "meaning": "extent, degree"
+    },
+    {
+      "word": "めど",
+      "reading": "めど",
+      "romaji": "medo",
+      "meaning": "aim, goal"
+    }
+  ],
+  "ば": [
+    {
+      "word": "ばね",
+      "reading": "ばね",
+      "romaji": "bane",
+      "meaning": "spring (device)"
+    },
+    {
+      "word": "そば",
+      "reading": "そば",
+      "romaji": "soba",
+      "meaning": "buckwheat (Fagopyrum esculentum)"
+    },
+    {
+      "word": "さば",
+      "reading": "さば",
+      "romaji": "saba",
+      "meaning": "mackerel (esp. the chub mackerel, Scomber japonicus)"
+    },
+    {
+      "word": "半ば",
+      "reading": "なかば",
+      "romaji": "nakaba",
+      "meaning": "middle, halfway"
+    },
+    {
+      "word": "ばら",
+      "reading": "ばら",
+      "romaji": "bara",
+      "meaning": "rose"
+    }
+  ],
+  "び": [
+    {
+      "word": "ひび",
+      "reading": "ひび",
+      "romaji": "hibi",
+      "meaning": "crack, fissure"
+    },
+    {
+      "word": "ちび",
+      "reading": "ちび",
+      "romaji": "chibi",
+      "meaning": "small animal, runt"
+    },
+    {
+      "word": "及び",
+      "reading": "および",
+      "romaji": "oyobi",
+      "meaning": "and, as well as"
+    },
+    {
+      "word": "叫び",
+      "reading": "さけび",
+      "romaji": "sakebi",
+      "meaning": "shout, cry"
+    },
+    {
+      "word": "結び",
+      "reading": "むすび",
+      "romaji": "musubi",
+      "meaning": "ending, conclusion"
+    }
+  ],
+  "ぶ": [
+    {
+      "word": "運ぶ",
+      "reading": "はこぶ",
+      "romaji": "hakobu",
+      "meaning": "to carry, to transport"
+    },
+    {
+      "word": "学ぶ",
+      "reading": "まなぶ",
+      "romaji": "manabu",
+      "meaning": "to learn, to study"
+    },
+    {
+      "word": "喜ぶ",
+      "reading": "よろこぶ",
+      "romaji": "yorokobu",
+      "meaning": "to be delighted, to be glad"
+    },
+    {
+      "word": "及ぶ",
+      "reading": "およぶ",
+      "romaji": "oyobu",
+      "meaning": "to reach, to amount to"
+    },
+    {
+      "word": "叫ぶ",
+      "reading": "さけぶ",
+      "romaji": "sakebu",
+      "meaning": "to shout, to cry (out)"
+    }
+  ],
+  "べ": [
+    {
+      "word": "食べる",
+      "reading": "たべる",
+      "romaji": "taberu",
+      "meaning": "to eat"
+    },
+    {
+      "word": "延べ",
+      "reading": "のべ",
+      "romaji": "nobe",
+      "meaning": "futures"
+    },
+    {
+      "word": "調べ",
+      "reading": "しらべ",
+      "romaji": "shirabe",
+      "meaning": "investigation, inspection"
+    },
+    {
+      "word": "くらべ",
+      "reading": "くらべ",
+      "romaji": "kurabe",
+      "meaning": "contest, comparison"
+    },
+    {
+      "word": "下調べ",
+      "reading": "したしらべ",
+      "romaji": "shitashirabe",
+      "meaning": "preliminary investigation, preliminary inquiry"
+    }
+  ],
+  "ぼ": [
+    {
+      "word": "ぼけ",
+      "reading": "ぼけ",
+      "romaji": "boke",
+      "meaning": "fool, idiot"
+    },
+    {
+      "word": "やぼ",
+      "reading": "やぼ",
+      "romaji": "yabo",
+      "meaning": "boorish, unsophisticated"
+    },
+    {
+      "word": "ほぼ",
+      "reading": "ほぼ",
+      "romaji": "hobo",
+      "meaning": "almost, nearly"
+    },
+    {
+      "word": "ぼや",
+      "reading": "ぼや",
+      "romaji": "boya",
+      "meaning": "small fire"
+    },
+    {
+      "word": "及ぼす",
+      "reading": "およぼす",
+      "romaji": "oyobosu",
+      "meaning": "to exert (influence), to exercise"
+    }
+  ],
+  "ぱ": [
+    {
+      "word": "原っぱ",
+      "reading": "はらっぱ",
+      "romaji": "harappa",
+      "meaning": "open field, empty lot"
+    },
+    {
+      "word": "葉っぱ",
+      "reading": "はっぱ",
+      "romaji": "happa",
+      "meaning": "leaf, blade (of grass)"
+    },
+    {
+      "word": "おっぱい",
+      "reading": "おっぱい",
+      "romaji": "oppai",
+      "meaning": "boobs, boobies"
+    },
+    {
+      "word": "きっぱり",
+      "reading": "きっぱり",
+      "romaji": "kippari",
+      "meaning": "clearly, plainly"
+    },
+    {
+      "word": "さっぱり",
+      "reading": "さっぱり",
+      "romaji": "sappari",
+      "meaning": "feeling refreshed, feeling relieved"
+    }
+  ],
+  "ぴ": [
+    {
+      "word": "ぴったり",
+      "reading": "ぴったり",
+      "romaji": "pittari",
+      "meaning": "tightly, closely"
+    },
+    {
+      "word": "ぴりぴり",
+      "reading": "ぴりぴり",
+      "romaji": "piripiri",
+      "meaning": "with a sting, with a tingle"
+    },
+    {
+      "word": "ぴんぴん",
+      "reading": "ぴんぴん",
+      "romaji": "pinpin",
+      "meaning": "lively, energetic"
+    },
+    {
+      "word": "ちょっぴり",
+      "reading": "ちょっぴり",
+      "romaji": "choppiri",
+      "meaning": "a tiny bit, just a smidgin"
+    },
+    {
+      "word": "ぴょんぴょん",
+      "reading": "ぴょんぴょん",
+      "romaji": "pyonpyon",
+      "meaning": "hopping, skipping"
+    }
+  ],
+  "ぷ": [
+    {
+      "word": "たっぷり",
+      "reading": "たっぷり",
+      "romaji": "tappuri",
+      "meaning": "plentifully, amply"
+    },
+    {
+      "word": "てんぷら",
+      "reading": "てんぷら",
+      "romaji": "tenpura",
+      "meaning": "tempura, deep-fried fish and vegetables in a light batter"
+    },
+    {
+      "word": "ちんぷんかんぷん",
+      "reading": "ちんぷんかんぷん",
+      "romaji": "chinpunkanpun",
+      "meaning": "unintelligible language, incoherent language"
+    },
+    {
+      "word": "一風",
+      "reading": "いっぷう",
+      "romaji": "ippuu",
+      "meaning": "oddity, eccentricity"
+    },
+    {
+      "word": "音符",
+      "reading": "おんぷ",
+      "romaji": "onpu",
+      "meaning": "musical note, note symbol"
+    }
+  ],
+  "ぺ": [
+    {
+      "word": "ぺこぺこ",
+      "reading": "ぺこぺこ",
+      "romaji": "pekopeko",
+      "meaning": "very hungry, starving"
+    },
+    {
+      "word": "ぺらぺら",
+      "reading": "ぺらぺら",
+      "romaji": "perapera",
+      "meaning": "fluently (speaking a foreign language)"
+    },
+    {
+      "word": "いっぺん",
+      "reading": "いっぺん",
+      "romaji": "ippen",
+      "meaning": "once, one time"
+    },
+    {
+      "word": "てっぺん",
+      "reading": "てっぺん",
+      "romaji": "teppen",
+      "meaning": "top, summit"
+    },
+    {
+      "word": "ほっぺた",
+      "reading": "ほっぺた",
+      "romaji": "hoppeta",
+      "meaning": "cheek"
+    }
+  ],
+  "ぽ": [
+    {
+      "word": "ぽかん",
+      "reading": "ぽかん",
+      "romaji": "pokan",
+      "meaning": "vacantly, blankly"
+    },
+    {
+      "word": "空っぽ",
+      "reading": "からっぽ",
+      "romaji": "karappo",
+      "meaning": "empty, vacant"
+    },
+    {
+      "word": "っぽい",
+      "reading": "っぽい",
+      "romaji": "ppoi",
+      "meaning": "-ish, -like"
+    },
+    {
+      "word": "ぽかぽか",
+      "reading": "ぽかぽか",
+      "romaji": "pokapoka",
+      "meaning": "pleasantly warm, nice and warm"
+    },
+    {
+      "word": "安っぽい",
+      "reading": "やすっぽい",
+      "romaji": "yasuppoi",
+      "meaning": "cheap-looking, tawdry"
+    }
+  ],
+  "きゃ": [
+    {
+      "word": "観客",
+      "reading": "かんきゃく",
+      "romaji": "kankyaku",
+      "meaning": "spectator, audience"
+    },
+    {
+      "word": "棄却",
+      "reading": "ききゃく",
+      "romaji": "kikyaku",
+      "meaning": "rejection, dismissal"
+    },
+    {
+      "word": "却下",
+      "reading": "きゃっか",
+      "romaji": "kyakka",
+      "meaning": "rejection, dismissal"
+    },
+    {
+      "word": "客員",
+      "reading": "きゃくいん",
+      "romaji": "kyakuin",
+      "meaning": "guest member, associate member"
+    },
+    {
+      "word": "客観",
+      "reading": "きゃっかん",
+      "romaji": "kyakkan",
+      "meaning": "objectivity, objective"
+    }
+  ],
+  "きゅ": [
+    {
+      "word": "きゅうり",
+      "reading": "きゅうり",
+      "romaji": "kyuuri",
+      "meaning": "cucumber (Cucumis sativus)"
+    },
+    {
+      "word": "一級",
+      "reading": "いっきゅう",
+      "romaji": "ikkyuu",
+      "meaning": "one grade, first-class"
+    },
+    {
+      "word": "運休",
+      "reading": "うんきゅう",
+      "romaji": "unkyuu",
+      "meaning": "suspension (of a transportation service), cancellation"
+    },
+    {
+      "word": "応急",
+      "reading": "おうきゅう",
+      "romaji": "oukyuu",
+      "meaning": "emergency fix, tentative measure"
+    },
+    {
+      "word": "王宮",
+      "reading": "おうきゅう",
+      "romaji": "oukyuu",
+      "meaning": "royal palace"
+    }
+  ],
+  "きょ": [
+    {
+      "word": "きょしゅつ",
+      "reading": "きょしゅつ",
+      "romaji": "kyoshutsu",
+      "meaning": "donation, contribution"
+    },
+    {
+      "word": "今日",
+      "reading": "きょう",
+      "romaji": "kyou",
+      "meaning": "today, this day"
+    },
+    {
+      "word": "愛嬌",
+      "reading": "あいきょう",
+      "romaji": "aikyou",
+      "meaning": "charm, attractiveness"
+    },
+    {
+      "word": "医局",
+      "reading": "いきょく",
+      "romaji": "ikyoku",
+      "meaning": "medical office (esp. in a hospital), doctor's office"
+    },
+    {
+      "word": "一挙",
+      "reading": "いっきょ",
+      "romaji": "ikkyo",
+      "meaning": "one effort, one action"
+    }
+  ],
+  "しゃ": [
+    {
+      "word": "しゃれ",
+      "reading": "しゃれ",
+      "romaji": "share",
+      "meaning": "joke, pun"
+    },
+    {
+      "word": "おしゃれ",
+      "reading": "おしゃれ",
+      "romaji": "oshare",
+      "meaning": "stylish, fashionable"
+    },
+    {
+      "word": "くしゃみ",
+      "reading": "くしゃみ",
+      "romaji": "kushami",
+      "meaning": "sneeze, sneezing"
+    },
+    {
+      "word": "しゃがむ",
+      "reading": "しゃがむ",
+      "romaji": "shagamu",
+      "meaning": "to squat, to crouch"
+    },
+    {
+      "word": "はしゃぐ",
+      "reading": "はしゃぐ",
+      "romaji": "hashagu",
+      "meaning": "to make merry, to frolic"
+    }
+  ],
+  "しゅ": [
+    {
+      "word": "きょしゅつ",
+      "reading": "きょしゅつ",
+      "romaji": "kyoshutsu",
+      "meaning": "donation, contribution"
+    },
+    {
+      "word": "哀愁",
+      "reading": "あいしゅう",
+      "romaji": "aishuu",
+      "meaning": "pathos, sorrow"
+    },
+    {
+      "word": "悪臭",
+      "reading": "あくしゅう",
+      "romaji": "akushuu",
+      "meaning": "bad smell, foul smell"
+    },
+    {
+      "word": "握手",
+      "reading": "あくしゅ",
+      "romaji": "akushu",
+      "meaning": "handshake"
+    },
+    {
+      "word": "圧縮",
+      "reading": "あっしゅく",
+      "romaji": "asshuku",
+      "meaning": "compression"
+    }
+  ],
+  "しょ": [
+    {
+      "word": "こしょう",
+      "reading": "こしょう",
+      "romaji": "koshou",
+      "meaning": "pepper"
+    },
+    {
+      "word": "しょうが",
+      "reading": "しょうが",
+      "romaji": "shouga",
+      "meaning": "ginger (Zingiber officinale)"
+    },
+    {
+      "word": "しょんぼり",
+      "reading": "しょんぼり",
+      "romaji": "shonbori",
+      "meaning": "downheartedly, dejectedly"
+    },
+    {
+      "word": "びっしょり",
+      "reading": "びっしょり",
+      "romaji": "bisshori",
+      "meaning": "wet through, drenched"
+    },
+    {
+      "word": "ちくしょう",
+      "reading": "ちくしょう",
+      "romaji": "chikushou",
+      "meaning": "damn it, damn"
+    }
+  ],
+  "ちゃ": [
+    {
+      "word": "むちゃ",
+      "reading": "むちゃ",
+      "romaji": "mucha",
+      "meaning": "absurd, unreasonable"
+    },
+    {
+      "word": "ちゃう",
+      "reading": "ちゃう",
+      "romaji": "chau",
+      "meaning": "to do completely"
+    },
+    {
+      "word": "ちゃんと",
+      "reading": "ちゃんと",
+      "romaji": "chanto",
+      "meaning": "diligently, seriously"
+    },
+    {
+      "word": "おもちゃ",
+      "reading": "おもちゃ",
+      "romaji": "omocha",
+      "meaning": "toy"
+    },
+    {
+      "word": "赤ちゃん",
+      "reading": "あかちゃん",
+      "romaji": "akachan",
+      "meaning": "baby, infant"
+    }
+  ],
+  "ちゅ": [
+    {
+      "word": "しょっちゅう",
+      "reading": "しょっちゅう",
+      "romaji": "shotchuu",
+      "meaning": "always, all the time"
+    },
+    {
+      "word": "忠実",
+      "reading": "ちゅうじつ",
+      "romaji": "chuujitsu",
+      "meaning": "faithful, devoted"
+    },
+    {
+      "word": "宇宙",
+      "reading": "うちゅう",
+      "romaji": "uchuu",
+      "meaning": "universe, cosmos"
+    },
+    {
+      "word": "渦中",
+      "reading": "かちゅう",
+      "romaji": "kachuu",
+      "meaning": "vortex, maelstrom"
+    },
+    {
+      "word": "円柱",
+      "reading": "えんちゅう",
+      "romaji": "enchuu",
+      "meaning": "column, shaft"
+    }
+  ],
+  "ちょ": [
+    {
+      "word": "ちょっと",
+      "reading": "ちょっと",
+      "romaji": "chotto",
+      "meaning": "a little, a bit"
+    },
+    {
+      "word": "ちょうど",
+      "reading": "ちょうど",
+      "romaji": "choudo",
+      "meaning": "exactly, precisely"
+    },
+    {
+      "word": "ちょっぴり",
+      "reading": "ちょっぴり",
+      "romaji": "choppiri",
+      "meaning": "a tiny bit, just a smidgin"
+    },
+    {
+      "word": "ちょびっと",
+      "reading": "ちょびっと",
+      "romaji": "chobitto",
+      "meaning": "a little"
+    },
+    {
+      "word": "ちょくちょく",
+      "reading": "ちょくちょく",
+      "romaji": "chokuchoku",
+      "meaning": "often, frequently"
+    }
+  ],
+  "にゃ": [
+    {
+      "word": "にゃー",
+      "reading": "にゃー",
+      "romaji": "nyā",
+      "meaning": "meow, miaow"
+    },
+    {
+      "word": "老若",
+      "reading": "ろうにゃく",
+      "romaji": "rounyaku",
+      "meaning": "young and old, all ages"
+    },
+    {
+      "word": "老若男女",
+      "reading": "ろうにゃくなんにょ",
+      "romaji": "rounyakunannyo",
+      "meaning": "men and women of all ages"
+    }
+  ],
+  "にゅ": [
+    {
+      "word": "加入",
+      "reading": "かにゅう",
+      "romaji": "kanyuu",
+      "meaning": "joining (a club, organization, etc.), becoming a member"
+    },
+    {
+      "word": "介入",
+      "reading": "かいにゅう",
+      "romaji": "kainyuu",
+      "meaning": "intervention"
+    },
+    {
+      "word": "記入",
+      "reading": "きにゅう",
+      "romaji": "kinyuu",
+      "meaning": "entry (in a form, register, diary, etc.), filling in"
+    },
+    {
+      "word": "吸入",
+      "reading": "きゅうにゅう",
+      "romaji": "kyuunyuu",
+      "meaning": "inhalation"
+    },
+    {
+      "word": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "romaji": "gyuunyuu",
+      "meaning": "(cow's) milk"
+    }
+  ],
+  "にょ": [
+    {
+      "word": "女房",
+      "reading": "にょうぼう",
+      "romaji": "nyoubou",
+      "meaning": "wife (esp. one's own wife)"
+    },
+    {
+      "word": "如実",
+      "reading": "にょじつ",
+      "romaji": "nyojitsu",
+      "meaning": "reality, actuality"
+    },
+    {
+      "word": "尿酸",
+      "reading": "にょうさん",
+      "romaji": "nyousan",
+      "meaning": "uric acid"
+    },
+    {
+      "word": "糖尿病",
+      "reading": "とうにょうびょう",
+      "romaji": "tounyoubyou",
+      "meaning": "diabetes, diabetes mellitus"
+    },
+    {
+      "word": "泌尿器",
+      "reading": "ひにょうき",
+      "romaji": "hinyouki",
+      "meaning": "urinary organs"
+    }
+  ],
+  "ひゃ": [
+    {
+      "word": "数百",
+      "reading": "すうひゃく",
+      "romaji": "suuhyaku",
+      "meaning": "several hundred, hundreds (of)"
+    },
+    {
+      "word": "百姓",
+      "reading": "ひゃくしょう",
+      "romaji": "hyakushou",
+      "meaning": "farming"
+    },
+    {
+      "word": "四百",
+      "reading": "よんひゃく",
+      "romaji": "yonhyaku",
+      "meaning": "400, four hundred"
+    },
+    {
+      "word": "百貨店",
+      "reading": "ひゃっかてん",
+      "romaji": "hyakkaten",
+      "meaning": "department store"
+    },
+    {
+      "word": "２００",
+      "reading": "にひゃく",
+      "romaji": "nihyaku",
+      "meaning": "200, two hundred"
+    }
+  ],
+  "ひゅ": [],
+  "ひょ": [
+    {
+      "word": "ひょっとすると",
+      "reading": "ひょっとすると",
+      "romaji": "hyottosuruto",
+      "meaning": "perhaps, maybe"
+    },
+    {
+      "word": "意表",
+      "reading": "いひょう",
+      "romaji": "ihyou",
+      "meaning": "surprise, something unexpected"
+    },
+    {
+      "word": "開票",
+      "reading": "かいひょう",
+      "romaji": "kaihyou",
+      "meaning": "counting ballots, tally (of votes)"
+    },
+    {
+      "word": "公表",
+      "reading": "こうひょう",
+      "romaji": "kouhyou",
+      "meaning": "official announcement, proclamation"
+    },
+    {
+      "word": "好評",
+      "reading": "こうひょう",
+      "romaji": "kouhyou",
+      "meaning": "favorable reception, good reputation"
+    }
+  ],
+  "みゃ": [
+    {
+      "word": "金脈",
+      "reading": "きんみゃく",
+      "romaji": "kinmyaku",
+      "meaning": "vein of gold"
+    },
+    {
+      "word": "山脈",
+      "reading": "さんみゃく",
+      "romaji": "sanmyaku",
+      "meaning": "mountain range, mountain belt"
+    },
+    {
+      "word": "人脈",
+      "reading": "じんみゃく",
+      "romaji": "jinmyaku",
+      "meaning": "personal connections"
+    },
+    {
+      "word": "静脈",
+      "reading": "じょうみゃく",
+      "romaji": "joumyaku",
+      "meaning": "vein"
+    },
+    {
+      "word": "動脈",
+      "reading": "どうみゃく",
+      "romaji": "doumyaku",
+      "meaning": "artery"
+    }
+  ],
+  "みゅ": [],
+  "みょ": [
+    {
+      "word": "異名",
+      "reading": "いみょう",
+      "romaji": "imyou",
+      "meaning": "another name, nickname"
+    },
+    {
+      "word": "奇妙",
+      "reading": "きみょう",
+      "romaji": "kimyou",
+      "meaning": "strange, odd"
+    },
+    {
+      "word": "軽妙",
+      "reading": "けいみょう",
+      "romaji": "keimyou",
+      "meaning": "light and easy, lambent"
+    },
+    {
+      "word": "光明",
+      "reading": "こうみょう",
+      "romaji": "koumyou",
+      "meaning": "bright light"
+    },
+    {
+      "word": "功名",
+      "reading": "こうみょう",
+      "romaji": "koumyou",
+      "meaning": "great achievement, glorious deed"
+    }
+  ],
+  "りゃ": [
+    {
+      "word": "概略",
+      "reading": "がいりゃく",
+      "romaji": "gairyaku",
+      "meaning": "outline, summary"
+    },
+    {
+      "word": "簡略",
+      "reading": "かんりゃく",
+      "romaji": "kanryaku",
+      "meaning": "simple, brief"
+    },
+    {
+      "word": "攻略",
+      "reading": "こうりゃく",
+      "romaji": "kouryaku",
+      "meaning": "capture (of enemy territory), taking (by storm)"
+    },
+    {
+      "word": "策略",
+      "reading": "さくりゃく",
+      "romaji": "sakuryaku",
+      "meaning": "stratagem, artifice"
+    },
+    {
+      "word": "省略",
+      "reading": "しょうりゃく",
+      "romaji": "shouryaku",
+      "meaning": "omission, leaving out"
+    }
+  ],
+  "りゅ": [
+    {
+      "word": "一流",
+      "reading": "いちりゅう",
+      "romaji": "ichiryuu",
+      "meaning": "first-class, first-rate"
+    },
+    {
+      "word": "下流",
+      "reading": "かりゅう",
+      "romaji": "karyuu",
+      "meaning": "downstream, lower reaches of a river"
+    },
+    {
+      "word": "海流",
+      "reading": "かいりゅう",
+      "romaji": "kairyuu",
+      "meaning": "ocean current"
+    },
+    {
+      "word": "還流",
+      "reading": "かんりゅう",
+      "romaji": "kanryuu",
+      "meaning": "return current, reflux"
+    },
+    {
+      "word": "興隆",
+      "reading": "こうりゅう",
+      "romaji": "kouryuu",
+      "meaning": "rise, prosperity"
+    }
+  ],
+  "りょ": [
+    {
+      "word": "握力",
+      "reading": "あくりょく",
+      "romaji": "akuryoku",
+      "meaning": "grip (of hand), grip strength"
+    },
+    {
+      "word": "圧力",
+      "reading": "あつりょく",
+      "romaji": "atsuryoku",
+      "meaning": "pressure"
+    },
+    {
+      "word": "衣料",
+      "reading": "いりょう",
+      "romaji": "iryou",
+      "meaning": "clothing"
+    },
+    {
+      "word": "医療",
+      "reading": "いりょう",
+      "romaji": "iryou",
+      "meaning": "medical treatment, medical care"
+    },
+    {
+      "word": "一両",
+      "reading": "いちりょう",
+      "romaji": "ichiryou",
+      "meaning": "one vehicle"
+    }
+  ],
+  "ぎゃ": [
+    {
+      "word": "虐殺",
+      "reading": "ぎゃくさつ",
+      "romaji": "gyakusatsu",
+      "meaning": "slaughter, massacre"
+    },
+    {
+      "word": "虐待",
+      "reading": "ぎゃくたい",
+      "romaji": "gyakutai",
+      "meaning": "abuse, ill-treatment"
+    },
+    {
+      "word": "逆境",
+      "reading": "ぎゃっきょう",
+      "romaji": "gyakkyou",
+      "meaning": "adverse circumstances, unfortunate situation"
+    },
+    {
+      "word": "逆襲",
+      "reading": "ぎゃくしゅう",
+      "romaji": "gyakushuu",
+      "meaning": "counterattack"
+    },
+    {
+      "word": "逆説",
+      "reading": "ぎゃくせつ",
+      "romaji": "gyakusetsu",
+      "meaning": "paradox"
+    }
+  ],
+  "ぎゅ": [
+    {
+      "word": "ぎゅっと",
+      "reading": "ぎゅっと",
+      "romaji": "gyutto",
+      "meaning": "tightly (hold, squeeze, etc.), firmly"
+    },
+    {
+      "word": "ぎゅうぎゅう",
+      "reading": "ぎゅうぎゅう",
+      "romaji": "gyuugyuu",
+      "meaning": "creaking, squeaking"
+    },
+    {
+      "word": "牛舎",
+      "reading": "ぎゅうしゃ",
+      "romaji": "gyuusha",
+      "meaning": "cow shed, cattle barn"
+    },
+    {
+      "word": "牛肉",
+      "reading": "ぎゅうにく",
+      "romaji": "gyuuniku",
+      "meaning": "beef"
+    },
+    {
+      "word": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "romaji": "gyuunyuu",
+      "meaning": "(cow's) milk"
+    }
+  ],
+  "ぎょ": [
+    {
+      "word": "ぎょっと",
+      "reading": "ぎょっと",
+      "romaji": "gyotto",
+      "meaning": "being startled"
+    },
+    {
+      "word": "偉業",
+      "reading": "いぎょう",
+      "romaji": "igyou",
+      "meaning": "great achievement, great feat"
+    },
+    {
+      "word": "営業",
+      "reading": "えいぎょう",
+      "romaji": "eigyou",
+      "meaning": "business, trade"
+    },
+    {
+      "word": "家業",
+      "reading": "かぎょう",
+      "romaji": "kagyou",
+      "meaning": "family business, family trade"
+    },
+    {
+      "word": "稼業",
+      "reading": "かぎょう",
+      "romaji": "kagyou",
+      "meaning": "trade, business"
+    }
+  ],
+  "じゃ": [
+    {
+      "word": "じゃあ",
+      "reading": "じゃあ",
+      "romaji": "jaa",
+      "meaning": "then, well"
+    },
+    {
+      "word": "それじゃ",
+      "reading": "それじゃ",
+      "romaji": "soreja",
+      "meaning": "well, ..., right, ..."
+    },
+    {
+      "word": "じゃがいも",
+      "reading": "じゃがいも",
+      "romaji": "jagaimo",
+      "meaning": "potato (Solanum tuberosum)"
+    },
+    {
+      "word": "じゃんけん",
+      "reading": "じゃんけん",
+      "romaji": "janken",
+      "meaning": "rock-paper-scissors (game), janken"
+    },
+    {
+      "word": "じゃぶじゃぶ",
+      "reading": "じゃぶじゃぶ",
+      "romaji": "jabujabu",
+      "meaning": "splashing (water), splashing about"
+    }
+  ],
+  "じゅ": [
+    {
+      "word": "安住",
+      "reading": "あんじゅう",
+      "romaji": "anjuu",
+      "meaning": "living in peace, living a quiet life"
+    },
+    {
+      "word": "移住",
+      "reading": "いじゅう",
+      "romaji": "ijuu",
+      "meaning": "migration, move"
+    },
+    {
+      "word": "永住",
+      "reading": "えいじゅう",
+      "romaji": "eijuu",
+      "meaning": "permanent residence"
+    },
+    {
+      "word": "円熟",
+      "reading": "えんじゅく",
+      "romaji": "enjuku",
+      "meaning": "ripeness, mellowness"
+    },
+    {
+      "word": "下旬",
+      "reading": "げじゅん",
+      "romaji": "gejun",
+      "meaning": "last third of a month, 21st to the last day of a month"
+    }
+  ],
+  "じょ": [
+    {
+      "word": "上手",
+      "reading": "じょうず",
+      "romaji": "jouzu",
+      "meaning": "skillful, skilled"
+    },
+    {
+      "word": "愛情",
+      "reading": "あいじょう",
+      "romaji": "aijou",
+      "meaning": "love, affection"
+    },
+    {
+      "word": "悪女",
+      "reading": "あくじょ",
+      "romaji": "akujo",
+      "meaning": "wicked woman"
+    },
+    {
+      "word": "異常",
+      "reading": "いじょう",
+      "romaji": "ijou",
+      "meaning": "abnormal, unusual"
+    },
+    {
+      "word": "異状",
+      "reading": "いじょう",
+      "romaji": "ijou",
+      "meaning": "something wrong, something unusual"
+    }
+  ],
+  "びゃ": [
+    {
+      "word": "何百",
+      "reading": "なんびゃく",
+      "romaji": "nanbyaku",
+      "meaning": "hundreds"
+    },
+    {
+      "word": "３００",
+      "reading": "さんびゃく",
+      "romaji": "sanbyaku",
+      "meaning": "300, three hundred"
+    }
+  ],
+  "びゅ": [],
+  "びょ": [
+    {
+      "word": "臆病",
+      "reading": "おくびょう",
+      "romaji": "okubyou",
+      "meaning": "cowardly, timid"
+    },
+    {
+      "word": "看病",
+      "reading": "かんびょう",
+      "romaji": "kanbyou",
+      "meaning": "nursing (a patient)"
+    },
+    {
+      "word": "奇病",
+      "reading": "きびょう",
+      "romaji": "kibyou",
+      "meaning": "strange disease, rare disease"
+    },
+    {
+      "word": "急病",
+      "reading": "きゅうびょう",
+      "romaji": "kyuubyou",
+      "meaning": "sudden illness"
+    },
+    {
+      "word": "持病",
+      "reading": "じびょう",
+      "romaji": "jibyou",
+      "meaning": "chronic disease, chronic illness"
+    }
+  ],
+  "ぴゃ": [],
+  "ぴゅ": [],
+  "ぴょ": [
+    {
+      "word": "ぴょんぴょん",
+      "reading": "ぴょんぴょん",
+      "romaji": "pyonpyon",
+      "meaning": "hopping, skipping"
+    },
+    {
+      "word": "一票",
+      "reading": "いっぴょう",
+      "romaji": "ippyou",
+      "meaning": "one vote, one ballot"
+    },
+    {
+      "word": "伝票",
+      "reading": "でんぴょう",
+      "romaji": "denpyou",
+      "meaning": "chit, slip"
+    },
+    {
+      "word": "発表",
+      "reading": "はっぴょう",
+      "romaji": "happyou",
+      "meaning": "announcement, publication"
+    },
+    {
+      "word": "別表",
+      "reading": "べっぴょう",
+      "romaji": "beppyou",
+      "meaning": "annexed (statistical) table"
+    }
+  ],
+  "ア": [
+    {
+      "word": "アド",
+      "reading": "アド",
+      "romaji": "ado",
+      "meaning": "ad, advertisement"
+    },
+    {
+      "word": "アナ",
+      "reading": "アナ",
+      "romaji": "ana",
+      "meaning": "announcer"
+    },
+    {
+      "word": "アマ",
+      "reading": "アマ",
+      "romaji": "ama",
+      "meaning": "amateur"
+    },
+    {
+      "word": "エア",
+      "reading": "エア",
+      "romaji": "ea",
+      "meaning": "air"
+    },
+    {
+      "word": "ギア",
+      "reading": "ギア",
+      "romaji": "gia",
+      "meaning": "gear"
+    }
+  ],
+  "イ": [
+    {
+      "word": "イブ",
+      "reading": "イブ",
+      "romaji": "ibu",
+      "meaning": "eve (esp. Christmas Eve), the night before"
+    },
+    {
+      "word": "イン",
+      "reading": "イン",
+      "romaji": "in",
+      "meaning": "in (of a ball; in tennis, etc.), inside the line"
+    },
+    {
+      "word": "ガイ",
+      "reading": "ガイ",
+      "romaji": "gai",
+      "meaning": "guy"
+    },
+    {
+      "word": "ゲイ",
+      "reading": "ゲイ",
+      "romaji": "gei",
+      "meaning": "gay person (esp. male)"
+    },
+    {
+      "word": "タイ",
+      "reading": "タイ",
+      "romaji": "tai",
+      "meaning": "tie, necktie"
+    }
+  ],
+  "ウ": [
+    {
+      "word": "ナウ",
+      "reading": "ナウ",
+      "romaji": "nau",
+      "meaning": "trendy, in"
+    },
+    {
+      "word": "ワウ",
+      "reading": "ワウ",
+      "romaji": "wau",
+      "meaning": "wow (audio)"
+    },
+    {
+      "word": "ウンチ",
+      "reading": "ウンチ",
+      "romaji": "unchi",
+      "meaning": "poo, poop"
+    },
+    {
+      "word": "アウト",
+      "reading": "アウト",
+      "romaji": "auto",
+      "meaning": "out (of a ball; in tennis, etc.), outside the line"
+    },
+    {
+      "word": "ウール",
+      "reading": "ウール",
+      "romaji": "ūru",
+      "meaning": "wool"
+    }
+  ],
+  "エ": [
+    {
+      "word": "エア",
+      "reading": "エア",
+      "romaji": "ea",
+      "meaning": "air"
+    },
+    {
+      "word": "エゴ",
+      "reading": "エゴ",
+      "romaji": "ego",
+      "meaning": "ego"
+    },
+    {
+      "word": "エス",
+      "reading": "エス",
+      "romaji": "esu",
+      "meaning": "S, s"
+    },
+    {
+      "word": "エネ",
+      "reading": "エネ",
+      "romaji": "ene",
+      "meaning": "energy"
+    },
+    {
+      "word": "エペ",
+      "reading": "エペ",
+      "romaji": "epe",
+      "meaning": "épée (fencing)"
+    }
+  ],
+  "オ": [
+    {
+      "word": "オケ",
+      "reading": "オケ",
+      "romaji": "oke",
+      "meaning": "orchestra"
+    },
+    {
+      "word": "オフ",
+      "reading": "オフ",
+      "romaji": "ofu",
+      "meaning": "(switched) off"
+    },
+    {
+      "word": "オペ",
+      "reading": "オペ",
+      "romaji": "ope",
+      "meaning": "operation"
+    },
+    {
+      "word": "オン",
+      "reading": "オン",
+      "romaji": "on",
+      "meaning": "(switched) on"
+    },
+    {
+      "word": "ネオ",
+      "reading": "ネオ",
+      "romaji": "neo",
+      "meaning": "neo"
+    }
+  ],
+  "カ": [
+    {
+      "word": "カー",
+      "reading": "カー",
+      "romaji": "kā",
+      "meaning": "car"
+    },
+    {
+      "word": "カツ",
+      "reading": "カツ",
+      "romaji": "katsu",
+      "meaning": "cutlet (usu. crumbed and fried), katsu"
+    },
+    {
+      "word": "カブ",
+      "reading": "カブ",
+      "romaji": "kabu",
+      "meaning": "cub"
+    },
+    {
+      "word": "カム",
+      "reading": "カム",
+      "romaji": "kamu",
+      "meaning": "cam"
+    },
+    {
+      "word": "ダカ",
+      "reading": "ダカ",
+      "romaji": "daka",
+      "meaning": "daka-, 10^1"
+    }
+  ],
+  "キ": [
+    {
+      "word": "キー",
+      "reading": "キー",
+      "romaji": "kī",
+      "meaning": "key (for a lock)"
+    },
+    {
+      "word": "キス",
+      "reading": "キス",
+      "romaji": "kisu",
+      "meaning": "kiss"
+    },
+    {
+      "word": "キル",
+      "reading": "キル",
+      "romaji": "kiru",
+      "meaning": "kill"
+    },
+    {
+      "word": "テキ",
+      "reading": "テキ",
+      "romaji": "teki",
+      "meaning": "beefsteak"
+    },
+    {
+      "word": "エキス",
+      "reading": "エキス",
+      "romaji": "ekisu",
+      "meaning": "extract (of plants, meat, etc.), essence"
+    }
+  ],
+  "ク": [
+    {
+      "word": "テク",
+      "reading": "テク",
+      "romaji": "teku",
+      "meaning": "technology"
+    },
+    {
+      "word": "ヤクザ",
+      "reading": "ヤクザ",
+      "romaji": "yakuza",
+      "meaning": "(member of the) yakuza, gangster"
+    },
+    {
+      "word": "アーク",
+      "reading": "アーク",
+      "romaji": "āku",
+      "meaning": "arc"
+    },
+    {
+      "word": "イクラ",
+      "reading": "イクラ",
+      "romaji": "ikura",
+      "meaning": "salted salmon roe"
+    },
+    {
+      "word": "イラク",
+      "reading": "イラク",
+      "romaji": "iraku",
+      "meaning": "Iraq"
+    }
+  ],
+  "ケ": [
+    {
+      "word": "オケ",
+      "reading": "オケ",
+      "romaji": "oke",
+      "meaning": "orchestra"
+    },
+    {
+      "word": "ケア",
+      "reading": "ケア",
+      "romaji": "kea",
+      "meaning": "care (e.g. medical), attention"
+    },
+    {
+      "word": "ピケ",
+      "reading": "ピケ",
+      "romaji": "pike",
+      "meaning": "pique"
+    },
+    {
+      "word": "ロケ",
+      "reading": "ロケ",
+      "romaji": "roke",
+      "meaning": "location (e.g. of film shoot), remote (shoot at a remote location)"
+    },
+    {
+      "word": "ケーキ",
+      "reading": "ケーキ",
+      "romaji": "kēki",
+      "meaning": "cake"
+    }
+  ],
+  "コ": [
+    {
+      "word": "コア",
+      "reading": "コア",
+      "romaji": "koa",
+      "meaning": "core"
+    },
+    {
+      "word": "コネ",
+      "reading": "コネ",
+      "romaji": "kone",
+      "meaning": "connection, pull"
+    },
+    {
+      "word": "コマ",
+      "reading": "コマ",
+      "romaji": "koma",
+      "meaning": "coma (of a comet)"
+    },
+    {
+      "word": "コム",
+      "reading": "コム",
+      "romaji": "komu",
+      "meaning": "computer output microfilm system, COM"
+    },
+    {
+      "word": "コル",
+      "reading": "コル",
+      "romaji": "koru",
+      "meaning": "col"
+    }
+  ],
+  "サ": [
+    {
+      "word": "サド",
+      "reading": "サド",
+      "romaji": "sado",
+      "meaning": "sadist"
+    },
+    {
+      "word": "サブ",
+      "reading": "サブ",
+      "romaji": "sabu",
+      "meaning": "sub, substitute"
+    },
+    {
+      "word": "ミサ",
+      "reading": "ミサ",
+      "romaji": "misa",
+      "meaning": "(Catholic) Mass"
+    },
+    {
+      "word": "サメ",
+      "reading": "サメ",
+      "romaji": "same",
+      "meaning": "shark"
+    },
+    {
+      "word": "サーチ",
+      "reading": "サーチ",
+      "romaji": "sāchi",
+      "meaning": "search"
+    }
+  ],
+  "シ": [
+    {
+      "word": "シン",
+      "reading": "シン",
+      "romaji": "shin",
+      "meaning": "thin"
+    },
+    {
+      "word": "サッシ",
+      "reading": "サッシ",
+      "romaji": "sasshi",
+      "meaning": "sash, sliding window frame (esp. metal)"
+    },
+    {
+      "word": "シーク",
+      "reading": "シーク",
+      "romaji": "shīku",
+      "meaning": "seek"
+    },
+    {
+      "word": "シーツ",
+      "reading": "シーツ",
+      "romaji": "shītsu",
+      "meaning": "sheet, bed sheet"
+    },
+    {
+      "word": "シート",
+      "reading": "シート",
+      "romaji": "shīto",
+      "meaning": "seat"
+    }
+  ],
+  "ス": [
+    {
+      "word": "エス",
+      "reading": "エス",
+      "romaji": "esu",
+      "meaning": "S, s"
+    },
+    {
+      "word": "ガス",
+      "reading": "ガス",
+      "romaji": "gasu",
+      "meaning": "gas (as a fuel)"
+    },
+    {
+      "word": "キス",
+      "reading": "キス",
+      "romaji": "kisu",
+      "meaning": "kiss"
+    },
+    {
+      "word": "ジス",
+      "reading": "ジス",
+      "romaji": "jisu",
+      "meaning": "Japanese Industrial Standards, JIS"
+    },
+    {
+      "word": "スト",
+      "reading": "スト",
+      "romaji": "suto",
+      "meaning": "strike (i.e. industrial action)"
+    }
+  ],
+  "セ": [
+    {
+      "word": "セル",
+      "reading": "セル",
+      "romaji": "seru",
+      "meaning": "cell"
+    },
+    {
+      "word": "リセ",
+      "reading": "リセ",
+      "romaji": "rise",
+      "meaning": "lycée"
+    },
+    {
+      "word": "セ氏",
+      "reading": "セし",
+      "romaji": "seshi",
+      "meaning": "Celsius, centigrade"
+    },
+    {
+      "word": "セーフ",
+      "reading": "セーフ",
+      "romaji": "sēfu",
+      "meaning": "safe"
+    },
+    {
+      "word": "セーブ",
+      "reading": "セーブ",
+      "romaji": "sēbu",
+      "meaning": "saving (e.g. energy), cutting down on (e.g. alcohol)"
+    }
+  ],
+  "ソ": [
+    {
+      "word": "ソロ",
+      "reading": "ソロ",
+      "romaji": "soro",
+      "meaning": "solo"
+    },
+    {
+      "word": "ソース",
+      "reading": "ソース",
+      "romaji": "sōsu",
+      "meaning": "sauce"
+    },
+    {
+      "word": "ソープ",
+      "reading": "ソープ",
+      "romaji": "sōpu",
+      "meaning": "soap"
+    },
+    {
+      "word": "ソナタ",
+      "reading": "ソナタ",
+      "romaji": "sonata",
+      "meaning": "sonata"
+    },
+    {
+      "word": "ソファ",
+      "reading": "ソファ",
+      "romaji": "sofa",
+      "meaning": "sofa, couch"
+    }
+  ],
+  "タ": [
+    {
+      "word": "タイ",
+      "reading": "タイ",
+      "romaji": "tai",
+      "meaning": "tie, necktie"
+    },
+    {
+      "word": "タグ",
+      "reading": "タグ",
+      "romaji": "tagu",
+      "meaning": "tag, label"
+    },
+    {
+      "word": "タフ",
+      "reading": "タフ",
+      "romaji": "tafu",
+      "meaning": "tough"
+    },
+    {
+      "word": "タブ",
+      "reading": "タブ",
+      "romaji": "tabu",
+      "meaning": "tab (character, key)"
+    },
+    {
+      "word": "タン",
+      "reading": "タン",
+      "romaji": "tan",
+      "meaning": "tongue (beef, pork, etc.)"
+    }
+  ],
+  "チ": [
+    {
+      "word": "チア",
+      "reading": "チア",
+      "romaji": "chia",
+      "meaning": "cheer"
+    },
+    {
+      "word": "チリ",
+      "reading": "チリ",
+      "romaji": "chiri",
+      "meaning": "Chile"
+    },
+    {
+      "word": "ナチ",
+      "reading": "ナチ",
+      "romaji": "nachi",
+      "meaning": "Nazi, Nationalsozialist"
+    },
+    {
+      "word": "ウンチ",
+      "reading": "ウンチ",
+      "romaji": "unchi",
+      "meaning": "poo, poop"
+    },
+    {
+      "word": "アーチ",
+      "reading": "アーチ",
+      "romaji": "āchi",
+      "meaning": "arch"
+    }
+  ],
+  "ツ": [
+    {
+      "word": "カツ",
+      "reading": "カツ",
+      "romaji": "katsu",
+      "meaning": "cutlet (usu. crumbed and fried), katsu"
+    },
+    {
+      "word": "ツナ",
+      "reading": "ツナ",
+      "romaji": "tsuna",
+      "meaning": "tuna (esp. canned)"
+    },
+    {
+      "word": "ガッツ",
+      "reading": "ガッツ",
+      "romaji": "gattsu",
+      "meaning": "guts"
+    },
+    {
+      "word": "シーツ",
+      "reading": "シーツ",
+      "romaji": "shītsu",
+      "meaning": "sheet, bed sheet"
+    },
+    {
+      "word": "シャツ",
+      "reading": "シャツ",
+      "romaji": "shatsu",
+      "meaning": "shirt (undergarment), undershirt"
+    }
+  ],
+  "テ": [
+    {
+      "word": "テキ",
+      "reading": "テキ",
+      "romaji": "teki",
+      "meaning": "beefsteak"
+    },
+    {
+      "word": "テク",
+      "reading": "テク",
+      "romaji": "teku",
+      "meaning": "technology"
+    },
+    {
+      "word": "テロ",
+      "reading": "テロ",
+      "romaji": "tero",
+      "meaning": "terror, terrorism"
+    },
+    {
+      "word": "テン",
+      "reading": "テン",
+      "romaji": "ten",
+      "meaning": "10, ten"
+    },
+    {
+      "word": "パテ",
+      "reading": "パテ",
+      "romaji": "pate",
+      "meaning": "putty, filler"
+    }
+  ],
+  "ト": [
+    {
+      "word": "スト",
+      "reading": "スト",
+      "romaji": "suto",
+      "meaning": "strike (i.e. industrial action)"
+    },
+    {
+      "word": "トス",
+      "reading": "トス",
+      "romaji": "tosu",
+      "meaning": "toss (of a ball), tossing"
+    },
+    {
+      "word": "トン",
+      "reading": "トン",
+      "romaji": "ton",
+      "meaning": "ton (esp. a metric ton, i.e. 1000 kg), tonne"
+    },
+    {
+      "word": "アート",
+      "reading": "アート",
+      "romaji": "āto",
+      "meaning": "art"
+    },
+    {
+      "word": "アウト",
+      "reading": "アウト",
+      "romaji": "auto",
+      "meaning": "out (of a ball; in tennis, etc.), outside the line"
+    }
+  ],
+  "ナ": [
+    {
+      "word": "アナ",
+      "reading": "アナ",
+      "romaji": "ana",
+      "meaning": "announcer"
+    },
+    {
+      "word": "ツナ",
+      "reading": "ツナ",
+      "romaji": "tsuna",
+      "meaning": "tuna (esp. canned)"
+    },
+    {
+      "word": "ナウ",
+      "reading": "ナウ",
+      "romaji": "nau",
+      "meaning": "trendy, in"
+    },
+    {
+      "word": "ナチ",
+      "reading": "ナチ",
+      "romaji": "nachi",
+      "meaning": "Nazi, Nationalsozialist"
+    },
+    {
+      "word": "ナビ",
+      "reading": "ナビ",
+      "romaji": "nabi",
+      "meaning": "navigation, (car) navigation system"
+    }
+  ],
+  "ニ": [
+    {
+      "word": "ニー",
+      "reading": "ニー",
+      "romaji": "nī",
+      "meaning": "knee"
+    },
+    {
+      "word": "アニメ",
+      "reading": "アニメ",
+      "romaji": "anime",
+      "meaning": "animation, animated film"
+    },
+    {
+      "word": "シニア",
+      "reading": "シニア",
+      "romaji": "shinia",
+      "meaning": "senior"
+    },
+    {
+      "word": "テニス",
+      "reading": "テニス",
+      "romaji": "tenisu",
+      "meaning": "tennis"
+    },
+    {
+      "word": "デニム",
+      "reading": "デニム",
+      "romaji": "denimu",
+      "meaning": "denim"
+    }
+  ],
+  "ヌ": [
+    {
+      "word": "アイヌ",
+      "reading": "アイヌ",
+      "romaji": "ainu",
+      "meaning": "Ainu"
+    },
+    {
+      "word": "カヌー",
+      "reading": "カヌー",
+      "romaji": "kanū",
+      "meaning": "canoe"
+    },
+    {
+      "word": "ヌード",
+      "reading": "ヌード",
+      "romaji": "nūdo",
+      "meaning": "nude"
+    },
+    {
+      "word": "ヌルヌル",
+      "reading": "ヌルヌル",
+      "romaji": "nurunuru",
+      "meaning": "slimy, slippery"
+    },
+    {
+      "word": "テリーヌ",
+      "reading": "テリーヌ",
+      "romaji": "terīnu",
+      "meaning": "terrine"
+    }
+  ],
+  "ネ": [
+    {
+      "word": "エネ",
+      "reading": "エネ",
+      "romaji": "ene",
+      "meaning": "energy"
+    },
+    {
+      "word": "コネ",
+      "reading": "コネ",
+      "romaji": "kone",
+      "meaning": "connection, pull"
+    },
+    {
+      "word": "ネオ",
+      "reading": "ネオ",
+      "romaji": "neo",
+      "meaning": "neo"
+    },
+    {
+      "word": "ネガ",
+      "reading": "ネガ",
+      "romaji": "nega",
+      "meaning": "negative"
+    },
+    {
+      "word": "ネジ",
+      "reading": "ネジ",
+      "romaji": "neji",
+      "meaning": "screw"
+    }
+  ],
+  "ノ": [
+    {
+      "word": "ノア",
+      "reading": "ノア",
+      "romaji": "noa",
+      "meaning": "NOR (Boolean operator)"
+    },
+    {
+      "word": "ノブ",
+      "reading": "ノブ",
+      "romaji": "nobu",
+      "meaning": "knob"
+    },
+    {
+      "word": "モノ",
+      "reading": "モノ",
+      "romaji": "mono",
+      "meaning": "mono"
+    },
+    {
+      "word": "ノー",
+      "reading": "ノー",
+      "romaji": "nō",
+      "meaning": "no"
+    },
+    {
+      "word": "カジノ",
+      "reading": "カジノ",
+      "romaji": "kajino",
+      "meaning": "casino"
+    }
+  ],
+  "ハ": [
+    {
+      "word": "ハイ",
+      "reading": "ハイ",
+      "romaji": "hai",
+      "meaning": "high (spirits), euphoric"
+    },
+    {
+      "word": "ハム",
+      "reading": "ハム",
+      "romaji": "hamu",
+      "meaning": "ham (cured pig meat)"
+    },
+    {
+      "word": "アロハ",
+      "reading": "アロハ",
+      "romaji": "aroha",
+      "meaning": "aloha"
+    },
+    {
+      "word": "サハラ",
+      "reading": "サハラ",
+      "romaji": "sahara",
+      "meaning": "Sahara"
+    },
+    {
+      "word": "ハート",
+      "reading": "ハート",
+      "romaji": "hāto",
+      "meaning": "heart"
+    }
+  ],
+  "ヒ": [
+    {
+      "word": "ヒア",
+      "reading": "ヒア",
+      "romaji": "hia",
+      "meaning": "hear"
+    },
+    {
+      "word": "ヒレ",
+      "reading": "ヒレ",
+      "romaji": "hire",
+      "meaning": "fillet, tenderloin"
+    },
+    {
+      "word": "ニヒル",
+      "reading": "ニヒル",
+      "romaji": "nihiru",
+      "meaning": "nihilistic"
+    },
+    {
+      "word": "ヒート",
+      "reading": "ヒート",
+      "romaji": "hīto",
+      "meaning": "heat"
+    },
+    {
+      "word": "ヒール",
+      "reading": "ヒール",
+      "romaji": "hīru",
+      "meaning": "heel (of a shoe)"
+    }
+  ],
+  "フ": [
+    {
+      "word": "オフ",
+      "reading": "オフ",
+      "romaji": "ofu",
+      "meaning": "(switched) off"
+    },
+    {
+      "word": "タフ",
+      "reading": "タフ",
+      "romaji": "tafu",
+      "meaning": "tough"
+    },
+    {
+      "word": "フル",
+      "reading": "フル",
+      "romaji": "furu",
+      "meaning": "full"
+    },
+    {
+      "word": "ラフ",
+      "reading": "ラフ",
+      "romaji": "rafu",
+      "meaning": "rough"
+    },
+    {
+      "word": "カフェ",
+      "reading": "カフェ",
+      "romaji": "kafe",
+      "meaning": "café, cafe"
+    }
+  ],
+  "ヘ": [
+    {
+      "word": "ヘア",
+      "reading": "ヘア",
+      "romaji": "hea",
+      "meaning": "hair (on the head)"
+    },
+    {
+      "word": "ヘム",
+      "reading": "ヘム",
+      "romaji": "hemu",
+      "meaning": "hem"
+    },
+    {
+      "word": "ヘリ",
+      "reading": "ヘリ",
+      "romaji": "heri",
+      "meaning": "helicopter"
+    },
+    {
+      "word": "ヘル",
+      "reading": "ヘル",
+      "romaji": "heru",
+      "meaning": "hell"
+    },
+    {
+      "word": "ヘクト",
+      "reading": "ヘクト",
+      "romaji": "hekuto",
+      "meaning": "hecto-, 10^2"
+    }
+  ],
+  "ホ": [
+    {
+      "word": "アホ",
+      "reading": "アホ",
+      "romaji": "aho",
+      "meaning": "fool, idiot"
+    },
+    {
+      "word": "ホース",
+      "reading": "ホース",
+      "romaji": "hōsu",
+      "meaning": "hose"
+    },
+    {
+      "word": "ホープ",
+      "reading": "ホープ",
+      "romaji": "hōpu",
+      "meaning": "hope"
+    },
+    {
+      "word": "ホーム",
+      "reading": "ホーム",
+      "romaji": "hōmu",
+      "meaning": "platform"
+    },
+    {
+      "word": "ホール",
+      "reading": "ホール",
+      "romaji": "hōru",
+      "meaning": "hall (dance, concert, etc.)"
+    }
+  ],
+  "マ": [
+    {
+      "word": "アマ",
+      "reading": "アマ",
+      "romaji": "ama",
+      "meaning": "amateur"
+    },
+    {
+      "word": "コマ",
+      "reading": "コマ",
+      "romaji": "koma",
+      "meaning": "coma (of a comet)"
+    },
+    {
+      "word": "デマ",
+      "reading": "デマ",
+      "romaji": "dema",
+      "meaning": "false rumor (rumour), groundless rumor"
+    },
+    {
+      "word": "マス",
+      "reading": "マス",
+      "romaji": "masu",
+      "meaning": "mass"
+    },
+    {
+      "word": "マゾ",
+      "reading": "マゾ",
+      "romaji": "mazo",
+      "meaning": "masochist"
+    }
+  ],
+  "ミ": [
+    {
+      "word": "ゼミ",
+      "reading": "ゼミ",
+      "romaji": "zemi",
+      "meaning": "seminar"
+    },
+    {
+      "word": "ミグ",
+      "reading": "ミグ",
+      "romaji": "migu",
+      "meaning": "Mig (Russian aeroplane, airplane), MIG"
+    },
+    {
+      "word": "ミサ",
+      "reading": "ミサ",
+      "romaji": "misa",
+      "meaning": "(Catholic) Mass"
+    },
+    {
+      "word": "ミス",
+      "reading": "ミス",
+      "romaji": "misu",
+      "meaning": "mistake, error"
+    },
+    {
+      "word": "ミズ",
+      "reading": "ミズ",
+      "romaji": "mizu",
+      "meaning": "Ms"
+    }
+  ],
+  "ム": [
+    {
+      "word": "カム",
+      "reading": "カム",
+      "romaji": "kamu",
+      "meaning": "cam"
+    },
+    {
+      "word": "ガム",
+      "reading": "ガム",
+      "romaji": "gamu",
+      "meaning": "chewing gum"
+    },
+    {
+      "word": "コム",
+      "reading": "コム",
+      "romaji": "komu",
+      "meaning": "computer output microfilm system, COM"
+    },
+    {
+      "word": "ゴム",
+      "reading": "ゴム",
+      "romaji": "gomu",
+      "meaning": "gum, rubber"
+    },
+    {
+      "word": "ジム",
+      "reading": "ジム",
+      "romaji": "jimu",
+      "meaning": "gym, gymnasium"
+    }
+  ],
+  "メ": [
+    {
+      "word": "メカ",
+      "reading": "メカ",
+      "romaji": "meka",
+      "meaning": "mechanism, mechanics"
+    },
+    {
+      "word": "メス",
+      "reading": "メス",
+      "romaji": "mesu",
+      "meaning": "scalpel, surgical knife"
+    },
+    {
+      "word": "メモ",
+      "reading": "メモ",
+      "romaji": "memo",
+      "meaning": "note, memo"
+    },
+    {
+      "word": "ラメ",
+      "reading": "ラメ",
+      "romaji": "rame",
+      "meaning": "lamé (cloth made from gold or silver thread)"
+    },
+    {
+      "word": "サメ",
+      "reading": "サメ",
+      "romaji": "same",
+      "meaning": "shark"
+    }
+  ],
+  "モ": [
+    {
+      "word": "デモ",
+      "reading": "デモ",
+      "romaji": "demo",
+      "meaning": "demonstration, protest"
+    },
+    {
+      "word": "メモ",
+      "reading": "メモ",
+      "romaji": "memo",
+      "meaning": "note, memo"
+    },
+    {
+      "word": "モノ",
+      "reading": "モノ",
+      "romaji": "mono",
+      "meaning": "mono"
+    },
+    {
+      "word": "モテ",
+      "reading": "モテ",
+      "romaji": "mote",
+      "meaning": "being popular (esp. with the opposite sex), being well-liked"
+    },
+    {
+      "word": "コスモ",
+      "reading": "コスモ",
+      "romaji": "kosumo",
+      "meaning": "cosmos"
+    }
+  ],
+  "ヤ": [
+    {
+      "word": "マヤ",
+      "reading": "マヤ",
+      "romaji": "maya",
+      "meaning": "Maya (ancient Indian tribe in Central America)"
+    },
+    {
+      "word": "ヤクザ",
+      "reading": "ヤクザ",
+      "romaji": "yakuza",
+      "meaning": "(member of the) yakuza, gangster"
+    },
+    {
+      "word": "タイヤ",
+      "reading": "タイヤ",
+      "romaji": "taiya",
+      "meaning": "tire, tyre"
+    },
+    {
+      "word": "ダイヤ",
+      "reading": "ダイヤ",
+      "romaji": "daiya",
+      "meaning": "diamond"
+    },
+    {
+      "word": "ベニヤ",
+      "reading": "ベニヤ",
+      "romaji": "beniya",
+      "meaning": "veneer"
+    }
+  ],
+  "ユ": [
+    {
+      "word": "ユー",
+      "reading": "ユー",
+      "romaji": "yū",
+      "meaning": "you"
+    },
+    {
+      "word": "ユタ",
+      "reading": "ユタ",
+      "romaji": "yuta",
+      "meaning": "Utah"
+    },
+    {
+      "word": "ユース",
+      "reading": "ユース",
+      "romaji": "yūsu",
+      "meaning": "youth"
+    },
+    {
+      "word": "ユーロ",
+      "reading": "ユーロ",
+      "romaji": "yūro",
+      "meaning": "euro (currency)"
+    },
+    {
+      "word": "ユダヤ",
+      "reading": "ユダヤ",
+      "romaji": "yudaya",
+      "meaning": "Judea (southern Palestine)"
+    }
+  ],
+  "ヨ": [
+    {
+      "word": "ヨガ",
+      "reading": "ヨガ",
+      "romaji": "yoga",
+      "meaning": "yoga"
+    },
+    {
+      "word": "ヨーク",
+      "reading": "ヨーク",
+      "romaji": "yōku",
+      "meaning": "yoke"
+    },
+    {
+      "word": "ヨット",
+      "reading": "ヨット",
+      "romaji": "yotto",
+      "meaning": "yacht (esp. a sailing boat with one mast), sailing boat"
+    },
+    {
+      "word": "ヨルダン",
+      "reading": "ヨルダン",
+      "romaji": "yorudan",
+      "meaning": "Jordan"
+    },
+    {
+      "word": "レーヨン",
+      "reading": "レーヨン",
+      "romaji": "rēyon",
+      "meaning": "rayon"
+    }
+  ],
+  "ラ": [
+    {
+      "word": "ビラ",
+      "reading": "ビラ",
+      "romaji": "bira",
+      "meaning": "villa, holiday house"
+    },
+    {
+      "word": "ラグ",
+      "reading": "ラグ",
+      "romaji": "ragu",
+      "meaning": "rug"
+    },
+    {
+      "word": "ラス",
+      "reading": "ラス",
+      "romaji": "rasu",
+      "meaning": "lath"
+    },
+    {
+      "word": "ラフ",
+      "reading": "ラフ",
+      "romaji": "rafu",
+      "meaning": "rough"
+    },
+    {
+      "word": "ラブ",
+      "reading": "ラブ",
+      "romaji": "rabu",
+      "meaning": "love"
+    }
+  ],
+  "リ": [
+    {
+      "word": "チリ",
+      "reading": "チリ",
+      "romaji": "chiri",
+      "meaning": "Chile"
+    },
+    {
+      "word": "パリ",
+      "reading": "パリ",
+      "romaji": "pari",
+      "meaning": "Paris (France)"
+    },
+    {
+      "word": "ピリ",
+      "reading": "ピリ",
+      "romaji": "piri",
+      "meaning": "period (interval of a game)"
+    },
+    {
+      "word": "ヘリ",
+      "reading": "ヘリ",
+      "romaji": "heri",
+      "meaning": "helicopter"
+    },
+    {
+      "word": "リア",
+      "reading": "リア",
+      "romaji": "ria",
+      "meaning": "rear"
+    }
+  ],
+  "ル": [
+    {
+      "word": "キル",
+      "reading": "キル",
+      "romaji": "kiru",
+      "meaning": "kill"
+    },
+    {
+      "word": "ゲル",
+      "reading": "ゲル",
+      "romaji": "geru",
+      "meaning": "gel"
+    },
+    {
+      "word": "コル",
+      "reading": "コル",
+      "romaji": "koru",
+      "meaning": "col"
+    },
+    {
+      "word": "セル",
+      "reading": "セル",
+      "romaji": "seru",
+      "meaning": "cell"
+    },
+    {
+      "word": "ドル",
+      "reading": "ドル",
+      "romaji": "doru",
+      "meaning": "dollar"
+    }
+  ],
+  "レ": [
+    {
+      "word": "ヒレ",
+      "reading": "ヒレ",
+      "romaji": "hire",
+      "meaning": "fillet, tenderloin"
+    },
+    {
+      "word": "レア",
+      "reading": "レア",
+      "romaji": "rea",
+      "meaning": "rare, uncommon"
+    },
+    {
+      "word": "レジ",
+      "reading": "レジ",
+      "romaji": "reji",
+      "meaning": "(cash) register"
+    },
+    {
+      "word": "レス",
+      "reading": "レス",
+      "romaji": "resu",
+      "meaning": "reply, response"
+    },
+    {
+      "word": "エレキ",
+      "reading": "エレキ",
+      "romaji": "ereki",
+      "meaning": "electricity"
+    }
+  ],
+  "ロ": [
+    {
+      "word": "エロ",
+      "reading": "エロ",
+      "romaji": "ero",
+      "meaning": "erotic, pornographic"
+    },
+    {
+      "word": "グロ",
+      "reading": "グロ",
+      "romaji": "guro",
+      "meaning": "grotesque"
+    },
+    {
+      "word": "ソロ",
+      "reading": "ソロ",
+      "romaji": "soro",
+      "meaning": "solo"
+    },
+    {
+      "word": "テロ",
+      "reading": "テロ",
+      "romaji": "tero",
+      "meaning": "terror, terrorism"
+    },
+    {
+      "word": "プロ",
+      "reading": "プロ",
+      "romaji": "puro",
+      "meaning": "professional, pro"
+    }
+  ],
+  "ワ": [
+    {
+      "word": "ワウ",
+      "reading": "ワウ",
+      "romaji": "wau",
+      "meaning": "wow (audio)"
+    },
+    {
+      "word": "ワン",
+      "reading": "ワン",
+      "romaji": "wan",
+      "meaning": "one"
+    },
+    {
+      "word": "アワー",
+      "reading": "アワー",
+      "romaji": "awā",
+      "meaning": "hour"
+    },
+    {
+      "word": "オタワ",
+      "reading": "オタワ",
+      "romaji": "otawa",
+      "meaning": "Ottawa (Canada)"
+    },
+    {
+      "word": "スワン",
+      "reading": "スワン",
+      "romaji": "suwan",
+      "meaning": "swan"
+    }
+  ],
+  "ヲ": [],
+  "ン": [
+    {
+      "word": "イン",
+      "reading": "イン",
+      "romaji": "in",
+      "meaning": "in (of a ball; in tennis, etc.), inside the line"
+    },
+    {
+      "word": "オン",
+      "reading": "オン",
+      "romaji": "on",
+      "meaning": "(switched) on"
+    },
+    {
+      "word": "ガン",
+      "reading": "ガン",
+      "romaji": "gan",
+      "meaning": "gun"
+    },
+    {
+      "word": "シン",
+      "reading": "シン",
+      "romaji": "shin",
+      "meaning": "thin"
+    },
+    {
+      "word": "ジン",
+      "reading": "ジン",
+      "romaji": "jin",
+      "meaning": "gin"
+    }
+  ],
+  "ガ": [
+    {
+      "word": "ガイ",
+      "reading": "ガイ",
+      "romaji": "gai",
+      "meaning": "guy"
+    },
+    {
+      "word": "ガス",
+      "reading": "ガス",
+      "romaji": "gasu",
+      "meaning": "gas (as a fuel)"
+    },
+    {
+      "word": "ガム",
+      "reading": "ガム",
+      "romaji": "gamu",
+      "meaning": "chewing gum"
+    },
+    {
+      "word": "ガン",
+      "reading": "ガン",
+      "romaji": "gan",
+      "meaning": "gun"
+    },
+    {
+      "word": "ギガ",
+      "reading": "ギガ",
+      "romaji": "giga",
+      "meaning": "giga-, 10^9"
+    }
+  ],
+  "ギ": [
+    {
+      "word": "ギア",
+      "reading": "ギア",
+      "romaji": "gia",
+      "meaning": "gear"
+    },
+    {
+      "word": "ギガ",
+      "reading": "ギガ",
+      "romaji": "giga",
+      "meaning": "giga-, 10^9"
+    },
+    {
+      "word": "ギター",
+      "reading": "ギター",
+      "romaji": "gitā",
+      "meaning": "guitar"
+    },
+    {
+      "word": "ギフト",
+      "reading": "ギフト",
+      "romaji": "gifuto",
+      "meaning": "gift"
+    },
+    {
+      "word": "ギプス",
+      "reading": "ギプス",
+      "romaji": "gipusu",
+      "meaning": "plaster cast, cast"
+    }
+  ],
+  "グ": [
+    {
+      "word": "グー",
+      "reading": "グー",
+      "romaji": "gū",
+      "meaning": "good"
+    },
+    {
+      "word": "グロ",
+      "reading": "グロ",
+      "romaji": "guro",
+      "meaning": "grotesque"
+    },
+    {
+      "word": "タグ",
+      "reading": "タグ",
+      "romaji": "tagu",
+      "meaning": "tag, label"
+    },
+    {
+      "word": "ミグ",
+      "reading": "ミグ",
+      "romaji": "migu",
+      "meaning": "Mig (Russian aeroplane, airplane), MIG"
+    },
+    {
+      "word": "ラグ",
+      "reading": "ラグ",
+      "romaji": "ragu",
+      "meaning": "rug"
+    }
+  ],
+  "ゲ": [
+    {
+      "word": "ゲイ",
+      "reading": "ゲイ",
+      "romaji": "gei",
+      "meaning": "gay person (esp. male)"
+    },
+    {
+      "word": "ゲル",
+      "reading": "ゲル",
+      "romaji": "geru",
+      "meaning": "gel"
+    },
+    {
+      "word": "ゲージ",
+      "reading": "ゲージ",
+      "romaji": "gēji",
+      "meaning": "gauge"
+    },
+    {
+      "word": "ゲート",
+      "reading": "ゲート",
+      "romaji": "gēto",
+      "meaning": "gate (for entry, boarding, etc.)"
+    },
+    {
+      "word": "ゲーム",
+      "reading": "ゲーム",
+      "romaji": "gēmu",
+      "meaning": "game"
+    }
+  ],
+  "ゴ": [
+    {
+      "word": "エゴ",
+      "reading": "エゴ",
+      "romaji": "ego",
+      "meaning": "ego"
+    },
+    {
+      "word": "ゴム",
+      "reading": "ゴム",
+      "romaji": "gomu",
+      "meaning": "gum, rubber"
+    },
+    {
+      "word": "ロゴ",
+      "reading": "ロゴ",
+      "romaji": "rogo",
+      "meaning": "logo"
+    },
+    {
+      "word": "ゴミ",
+      "reading": "ゴミ",
+      "romaji": "gomi",
+      "meaning": "rubbish, trash"
+    },
+    {
+      "word": "ゴミ箱",
+      "reading": "ごみばこ",
+      "romaji": "gomibako",
+      "meaning": "trash can, garbage can"
+    }
+  ],
+  "ザ": [
+    {
+      "word": "ビザ",
+      "reading": "ビザ",
+      "romaji": "biza",
+      "meaning": "visa"
+    },
+    {
+      "word": "ピザ",
+      "reading": "ピザ",
+      "romaji": "piza",
+      "meaning": "pizza"
+    },
+    {
+      "word": "ヤクザ",
+      "reading": "ヤクザ",
+      "romaji": "yakuza",
+      "meaning": "(member of the) yakuza, gangster"
+    },
+    {
+      "word": "バザー",
+      "reading": "バザー",
+      "romaji": "bazā",
+      "meaning": "bazaar, bazar"
+    },
+    {
+      "word": "ブザー",
+      "reading": "ブザー",
+      "romaji": "buzā",
+      "meaning": "buzzer, personal alarm (loud buzzer to attract attention in case of attack)"
+    }
+  ],
+  "ジ": [
+    {
+      "word": "ジス",
+      "reading": "ジス",
+      "romaji": "jisu",
+      "meaning": "Japanese Industrial Standards, JIS"
+    },
+    {
+      "word": "ジブ",
+      "reading": "ジブ",
+      "romaji": "jibu",
+      "meaning": "jib"
+    },
+    {
+      "word": "ジム",
+      "reading": "ジム",
+      "romaji": "jimu",
+      "meaning": "gym, gymnasium"
+    },
+    {
+      "word": "ジン",
+      "reading": "ジン",
+      "romaji": "jin",
+      "meaning": "gin"
+    },
+    {
+      "word": "レジ",
+      "reading": "レジ",
+      "romaji": "reji",
+      "meaning": "(cash) register"
+    }
+  ],
+  "ズ": [
+    {
+      "word": "ミズ",
+      "reading": "ミズ",
+      "romaji": "mizu",
+      "meaning": "Ms"
+    },
+    {
+      "word": "ズバリ",
+      "reading": "ズバリ",
+      "romaji": "zubari",
+      "meaning": "decisively, decidedly"
+    },
+    {
+      "word": "イズム",
+      "reading": "イズム",
+      "romaji": "izumu",
+      "meaning": "ism, -ism"
+    },
+    {
+      "word": "エイズ",
+      "reading": "エイズ",
+      "romaji": "eizu",
+      "meaning": "acquired immune deficiency syndrome, AIDS"
+    },
+    {
+      "word": "クイズ",
+      "reading": "クイズ",
+      "romaji": "kuizu",
+      "meaning": "quiz"
+    }
+  ],
+  "ゼ": [
+    {
+      "word": "ゼミ",
+      "reading": "ゼミ",
+      "romaji": "zemi",
+      "meaning": "seminar"
+    },
+    {
+      "word": "ロゼ",
+      "reading": "ロゼ",
+      "romaji": "roze",
+      "meaning": "rosé (wine)"
+    },
+    {
+      "word": "ガーゼ",
+      "reading": "ガーゼ",
+      "romaji": "gāze",
+      "meaning": "gauze"
+    },
+    {
+      "word": "ゼリー",
+      "reading": "ゼリー",
+      "romaji": "zerī",
+      "meaning": "jello, jelly"
+    },
+    {
+      "word": "テーゼ",
+      "reading": "テーゼ",
+      "romaji": "tēze",
+      "meaning": "thesis, statement"
+    }
+  ],
+  "ゾ": [
+    {
+      "word": "マゾ",
+      "reading": "マゾ",
+      "romaji": "mazo",
+      "meaning": "masochist"
+    },
+    {
+      "word": "オゾン",
+      "reading": "オゾン",
+      "romaji": "ozon",
+      "meaning": "ozone"
+    },
+    {
+      "word": "セゾン",
+      "reading": "セゾン",
+      "romaji": "sezon",
+      "meaning": "season"
+    },
+    {
+      "word": "ゾーン",
+      "reading": "ゾーン",
+      "romaji": "zōn",
+      "meaning": "zone"
+    },
+    {
+      "word": "メゾン",
+      "reading": "メゾン",
+      "romaji": "mezon",
+      "meaning": "house"
+    }
+  ],
+  "ダ": [
+    {
+      "word": "ダカ",
+      "reading": "ダカ",
+      "romaji": "daka",
+      "meaning": "daka-, 10^1"
+    },
+    {
+      "word": "ダム",
+      "reading": "ダム",
+      "romaji": "damu",
+      "meaning": "dam"
+    },
+    {
+      "word": "カナダ",
+      "reading": "カナダ",
+      "romaji": "kanada",
+      "meaning": "Canada"
+    },
+    {
+      "word": "サラダ",
+      "reading": "サラダ",
+      "romaji": "sarada",
+      "meaning": "salad"
+    },
+    {
+      "word": "セダン",
+      "reading": "セダン",
+      "romaji": "sedan",
+      "meaning": "sedan"
+    }
+  ],
+  "ヂ": [],
+  "ヅ": [],
+  "デ": [
+    {
+      "word": "デブ",
+      "reading": "デブ",
+      "romaji": "debu",
+      "meaning": "fat, chubby"
+    },
+    {
+      "word": "デマ",
+      "reading": "デマ",
+      "romaji": "dema",
+      "meaning": "false rumor (rumour), groundless rumor"
+    },
+    {
+      "word": "デモ",
+      "reading": "デモ",
+      "romaji": "demo",
+      "meaning": "demonstration, protest"
+    },
+    {
+      "word": "エデン",
+      "reading": "エデン",
+      "romaji": "eden",
+      "meaning": "Eden"
+    },
+    {
+      "word": "データ",
+      "reading": "データ",
+      "romaji": "dēta",
+      "meaning": "data, datum"
+    }
+  ],
+  "ド": [
+    {
+      "word": "アド",
+      "reading": "アド",
+      "romaji": "ado",
+      "meaning": "ad, advertisement"
+    },
+    {
+      "word": "サド",
+      "reading": "サド",
+      "romaji": "sado",
+      "meaning": "sadist"
+    },
+    {
+      "word": "ドア",
+      "reading": "ドア",
+      "romaji": "doa",
+      "meaning": "door"
+    },
+    {
+      "word": "ドル",
+      "reading": "ドル",
+      "romaji": "doru",
+      "meaning": "dollar"
+    },
+    {
+      "word": "アンド",
+      "reading": "アンド",
+      "romaji": "ando",
+      "meaning": "and"
+    }
+  ],
+  "バ": [
+    {
+      "word": "バー",
+      "reading": "バー",
+      "romaji": "bā",
+      "meaning": "bar, tavern"
+    },
+    {
+      "word": "バス",
+      "reading": "バス",
+      "romaji": "basu",
+      "meaning": "bus"
+    },
+    {
+      "word": "バン",
+      "reading": "バン",
+      "romaji": "ban",
+      "meaning": "bun (hairstyle)"
+    },
+    {
+      "word": "ビバ",
+      "reading": "ビバ",
+      "romaji": "biba",
+      "meaning": "viva"
+    },
+    {
+      "word": "ズバリ",
+      "reading": "ズバリ",
+      "romaji": "zubari",
+      "meaning": "decisively, decidedly"
+    }
+  ],
+  "ビ": [
+    {
+      "word": "ビザ",
+      "reading": "ビザ",
+      "romaji": "biza",
+      "meaning": "visa"
+    },
+    {
+      "word": "ビス",
+      "reading": "ビス",
+      "romaji": "bisu",
+      "meaning": "screw"
+    },
+    {
+      "word": "ビラ",
+      "reading": "ビラ",
+      "romaji": "bira",
+      "meaning": "villa, holiday house"
+    },
+    {
+      "word": "ビル",
+      "reading": "ビル",
+      "romaji": "biru",
+      "meaning": "multi-floor building, multi-storey building"
+    },
+    {
+      "word": "カビ",
+      "reading": "カビ",
+      "romaji": "kabi",
+      "meaning": "mold, mould"
+    }
+  ],
+  "ブ": [
+    {
+      "word": "イブ",
+      "reading": "イブ",
+      "romaji": "ibu",
+      "meaning": "eve (esp. Christmas Eve), the night before"
+    },
+    {
+      "word": "カブ",
+      "reading": "カブ",
+      "romaji": "kabu",
+      "meaning": "cub"
+    },
+    {
+      "word": "サブ",
+      "reading": "サブ",
+      "romaji": "sabu",
+      "meaning": "sub, substitute"
+    },
+    {
+      "word": "ジブ",
+      "reading": "ジブ",
+      "romaji": "jibu",
+      "meaning": "jib"
+    },
+    {
+      "word": "タブ",
+      "reading": "タブ",
+      "romaji": "tabu",
+      "meaning": "tab (character, key)"
+    }
+  ],
+  "ベ": [
+    {
+      "word": "ベア",
+      "reading": "ベア",
+      "romaji": "bea",
+      "meaning": "increase in basic salary"
+    },
+    {
+      "word": "ベタ",
+      "reading": "ベタ",
+      "romaji": "beta",
+      "meaning": "betta (esp. the Siamese fighting fish, Betta splendens)"
+    },
+    {
+      "word": "ベル",
+      "reading": "ベル",
+      "romaji": "beru",
+      "meaning": "bell"
+    },
+    {
+      "word": "ベロ",
+      "reading": "ベロ",
+      "romaji": "bero",
+      "meaning": "tongue"
+    },
+    {
+      "word": "ベース",
+      "reading": "ベース",
+      "romaji": "bēsu",
+      "meaning": "base, basis"
+    }
+  ],
+  "ボ": [
+    {
+      "word": "ボー",
+      "reading": "ボー",
+      "romaji": "bō",
+      "meaning": "bow (weapon)"
+    },
+    {
+      "word": "ボス",
+      "reading": "ボス",
+      "romaji": "bosu",
+      "meaning": "boss, leader"
+    },
+    {
+      "word": "ボブ",
+      "reading": "ボブ",
+      "romaji": "bobu",
+      "meaning": "bob (haircut)"
+    },
+    {
+      "word": "ボン",
+      "reading": "ボン",
+      "romaji": "bon",
+      "meaning": "good"
+    },
+    {
+      "word": "ラボ",
+      "reading": "ラボ",
+      "romaji": "rabo",
+      "meaning": "lab"
+    }
+  ],
+  "パ": [
+    {
+      "word": "パー",
+      "reading": "パー",
+      "romaji": "pā",
+      "meaning": "par"
+    },
+    {
+      "word": "パイ",
+      "reading": "パイ",
+      "romaji": "pai",
+      "meaning": "pie, tart"
+    },
+    {
+      "word": "パス",
+      "reading": "パス",
+      "romaji": "pasu",
+      "meaning": "passing (an examination, inspection, etc.)"
+    },
+    {
+      "word": "パテ",
+      "reading": "パテ",
+      "romaji": "pate",
+      "meaning": "putty, filler"
+    },
+    {
+      "word": "パパ",
+      "reading": "パパ",
+      "romaji": "papa",
+      "meaning": "dad, daddy"
+    }
+  ],
+  "ピ": [
+    {
+      "word": "ピケ",
+      "reading": "ピケ",
+      "romaji": "pike",
+      "meaning": "pique"
+    },
+    {
+      "word": "ピザ",
+      "reading": "ピザ",
+      "romaji": "piza",
+      "meaning": "pizza"
+    },
+    {
+      "word": "ピリ",
+      "reading": "ピリ",
+      "romaji": "piri",
+      "meaning": "period (interval of a game)"
+    },
+    {
+      "word": "ピル",
+      "reading": "ピル",
+      "romaji": "piru",
+      "meaning": "pill"
+    },
+    {
+      "word": "ピン",
+      "reading": "ピン",
+      "romaji": "pin",
+      "meaning": "pin (e.g. hairpin, safety pin)"
+    }
+  ],
+  "プ": [
+    {
+      "word": "プロ",
+      "reading": "プロ",
+      "romaji": "puro",
+      "meaning": "professional, pro"
+    },
+    {
+      "word": "アップ",
+      "reading": "アップ",
+      "romaji": "appu",
+      "meaning": "rise, increase"
+    },
+    {
+      "word": "アプリ",
+      "reading": "アプリ",
+      "romaji": "apuri",
+      "meaning": "app, application"
+    },
+    {
+      "word": "アンプ",
+      "reading": "アンプ",
+      "romaji": "anpu",
+      "meaning": "amp, ampere"
+    },
+    {
+      "word": "カップ",
+      "reading": "カップ",
+      "romaji": "kappu",
+      "meaning": "cup (drinking vessel, measure, brassiere, prize, etc.)"
+    }
+  ],
+  "ペ": [
+    {
+      "word": "エペ",
+      "reading": "エペ",
+      "romaji": "epe",
+      "meaning": "épée (fencing)"
+    },
+    {
+      "word": "オペ",
+      "reading": "オペ",
+      "romaji": "ope",
+      "meaning": "operation"
+    },
+    {
+      "word": "ペア",
+      "reading": "ペア",
+      "romaji": "pea",
+      "meaning": "pair, set of two"
+    },
+    {
+      "word": "ペイ",
+      "reading": "ペイ",
+      "romaji": "pei",
+      "meaning": "pay, salary"
+    },
+    {
+      "word": "ペン",
+      "reading": "ペン",
+      "romaji": "pen",
+      "meaning": "pen"
+    }
+  ],
+  "ポ": [
+    {
+      "word": "ポロ",
+      "reading": "ポロ",
+      "romaji": "poro",
+      "meaning": "polo"
+    },
+    {
+      "word": "ルポ",
+      "reading": "ルポ",
+      "romaji": "rupo",
+      "meaning": "reportage, report"
+    },
+    {
+      "word": "コーポ",
+      "reading": "コーポ",
+      "romaji": "kōpo",
+      "meaning": "apartment building, block of flats"
+    },
+    {
+      "word": "コンポ",
+      "reading": "コンポ",
+      "romaji": "konpo",
+      "meaning": "component, component stereo"
+    },
+    {
+      "word": "シンポ",
+      "reading": "シンポ",
+      "romaji": "shinpo",
+      "meaning": "symposium"
+    }
+  ],
+  "キャ": [
+    {
+      "word": "キャラ",
+      "reading": "キャラ",
+      "romaji": "kyara",
+      "meaning": "(fictional) character"
+    },
+    {
+      "word": "キャスト",
+      "reading": "キャスト",
+      "romaji": "kyasuto",
+      "meaning": "cast (of a film, play, etc.), cast member"
+    },
+    {
+      "word": "キャッチ",
+      "reading": "キャッチ",
+      "romaji": "kyatchi",
+      "meaning": "catch, catching"
+    },
+    {
+      "word": "キャップ",
+      "reading": "キャップ",
+      "romaji": "kyappu",
+      "meaning": "cap (hat)"
+    },
+    {
+      "word": "キャビア",
+      "reading": "キャビア",
+      "romaji": "kyabia",
+      "meaning": "caviar, caviare"
+    }
+  ],
+  "キュ": [
+    {
+      "word": "キュー",
+      "reading": "キュー",
+      "romaji": "kyū",
+      "meaning": "cue (billiards, pool), cue stick"
+    },
+    {
+      "word": "キュート",
+      "reading": "キュート",
+      "romaji": "kyūto",
+      "meaning": "cute"
+    },
+    {
+      "word": "キューバ",
+      "reading": "キューバ",
+      "romaji": "kyūba",
+      "meaning": "Cuba"
+    },
+    {
+      "word": "キュリー",
+      "reading": "キュリー",
+      "romaji": "kyurī",
+      "meaning": "curie (unit of radioactivity)"
+    },
+    {
+      "word": "キュロット",
+      "reading": "キュロット",
+      "romaji": "kyurotto",
+      "meaning": "culottes (esp. short divided skirt)"
+    }
+  ],
+  "キョ": [
+    {
+      "word": "キョロキョロ",
+      "reading": "キョロキョロ",
+      "romaji": "kyorokyoro",
+      "meaning": "(looking around) restlessly, (looking) all around"
+    }
+  ],
+  "シャ": [
+    {
+      "word": "シャイ",
+      "reading": "シャイ",
+      "romaji": "shai",
+      "meaning": "shy"
+    },
+    {
+      "word": "シャツ",
+      "reading": "シャツ",
+      "romaji": "shatsu",
+      "meaning": "shirt (undergarment), undershirt"
+    },
+    {
+      "word": "シャン",
+      "reading": "シャン",
+      "romaji": "shan",
+      "meaning": "beautiful"
+    },
+    {
+      "word": "Ｔシャツ",
+      "reading": "ティーシャツ",
+      "romaji": "tīshatsu",
+      "meaning": "T-shirt, tee shirt"
+    },
+    {
+      "word": "ギリシャ",
+      "reading": "ギリシャ",
+      "romaji": "girisha",
+      "meaning": "Greece"
+    }
+  ],
+  "シュ": [
+    {
+      "word": "シューズ",
+      "reading": "シューズ",
+      "romaji": "shūzu",
+      "meaning": "shoes"
+    },
+    {
+      "word": "シュート",
+      "reading": "シュート",
+      "romaji": "shūto",
+      "meaning": "shooting (a ball), shot (on basket, at goal, etc.)"
+    },
+    {
+      "word": "シュール",
+      "reading": "シュール",
+      "romaji": "shūru",
+      "meaning": "surreal"
+    },
+    {
+      "word": "シュガー",
+      "reading": "シュガー",
+      "romaji": "shugā",
+      "meaning": "sugar"
+    },
+    {
+      "word": "ダッシュ",
+      "reading": "ダッシュ",
+      "romaji": "dasshu",
+      "meaning": "dash"
+    }
+  ],
+  "ショ": [
+    {
+      "word": "ショー",
+      "reading": "ショー",
+      "romaji": "shō",
+      "meaning": "show, performance"
+    },
+    {
+      "word": "ショーツ",
+      "reading": "ショーツ",
+      "romaji": "shōtsu",
+      "meaning": "shorts"
+    },
+    {
+      "word": "ショート",
+      "reading": "ショート",
+      "romaji": "shōto",
+      "meaning": "short"
+    },
+    {
+      "word": "ショール",
+      "reading": "ショール",
+      "romaji": "shōru",
+      "meaning": "shawl"
+    },
+    {
+      "word": "ショック",
+      "reading": "ショック",
+      "romaji": "shokku",
+      "meaning": "shock (emotional)"
+    }
+  ],
+  "チャ": [
+    {
+      "word": "チャージ",
+      "reading": "チャージ",
+      "romaji": "chāji",
+      "meaning": "charge (electrical), recharging"
+    },
+    {
+      "word": "チャーチ",
+      "reading": "チャーチ",
+      "romaji": "chāchi",
+      "meaning": "church"
+    },
+    {
+      "word": "チャート",
+      "reading": "チャート",
+      "romaji": "chāto",
+      "meaning": "chart"
+    },
+    {
+      "word": "チャイナ",
+      "reading": "チャイナ",
+      "romaji": "chaina",
+      "meaning": "China"
+    },
+    {
+      "word": "チャイム",
+      "reading": "チャイム",
+      "romaji": "chaimu",
+      "meaning": "chime, bell (e.g. doorbell)"
+    }
+  ],
+  "チュ": [
+    {
+      "word": "シチュー",
+      "reading": "シチュー",
+      "romaji": "shichū",
+      "meaning": "stew (esp. Japanese cream stew)"
+    },
+    {
+      "word": "チューブ",
+      "reading": "チューブ",
+      "romaji": "chūbu",
+      "meaning": "tube"
+    },
+    {
+      "word": "アマチュア",
+      "reading": "アマチュア",
+      "romaji": "amachua",
+      "meaning": "amateur"
+    },
+    {
+      "word": "チューター",
+      "reading": "チューター",
+      "romaji": "chūtā",
+      "meaning": "tutor"
+    },
+    {
+      "word": "チューナー",
+      "reading": "チューナー",
+      "romaji": "chūnā",
+      "meaning": "tuner (of a radio, TV, etc.)"
+    }
+  ],
+  "チョ": [
+    {
+      "word": "チョコ",
+      "reading": "チョコ",
+      "romaji": "choko",
+      "meaning": "chocolate"
+    },
+    {
+      "word": "チョキ",
+      "reading": "チョキ",
+      "romaji": "choki",
+      "meaning": "scissors (in rock-paper-scissors)"
+    },
+    {
+      "word": "チョーク",
+      "reading": "チョーク",
+      "romaji": "chōku",
+      "meaning": "chalk"
+    },
+    {
+      "word": "チョーキング",
+      "reading": "チョーキング",
+      "romaji": "chōkingu",
+      "meaning": "bending (a guitar string)"
+    },
+    {
+      "word": "チョコレート",
+      "reading": "チョコレート",
+      "romaji": "chokorēto",
+      "meaning": "chocolate"
+    }
+  ],
+  "ニャ": [
+    {
+      "word": "コニャック",
+      "reading": "コニャック",
+      "romaji": "konyakku",
+      "meaning": "cognac"
+    }
+  ],
+  "ニュ": [
+    {
+      "word": "ニュー",
+      "reading": "ニュー",
+      "romaji": "nyū",
+      "meaning": "new"
+    },
+    {
+      "word": "ニュース",
+      "reading": "ニュース",
+      "romaji": "nyūsu",
+      "meaning": "news"
+    },
+    {
+      "word": "ニューロ",
+      "reading": "ニューロ",
+      "romaji": "nyūro",
+      "meaning": "neuro-"
+    },
+    {
+      "word": "メニュー",
+      "reading": "メニュー",
+      "romaji": "menyū",
+      "meaning": "menu"
+    },
+    {
+      "word": "アベニュー",
+      "reading": "アベニュー",
+      "romaji": "abenyū",
+      "meaning": "avenue, boulevard"
+    }
+  ],
+  "ニョ": [],
+  "ヒャ": [],
+  "ヒュ": [
+    {
+      "word": "ヒューズ",
+      "reading": "ヒューズ",
+      "romaji": "hyūzu",
+      "meaning": "fuse"
+    },
+    {
+      "word": "ヒューマン",
+      "reading": "ヒューマン",
+      "romaji": "hyūman",
+      "meaning": "human"
+    },
+    {
+      "word": "ヒューマニズム",
+      "reading": "ヒューマニズム",
+      "romaji": "hyūmanizumu",
+      "meaning": "humanism"
+    }
+  ],
+  "ヒョ": [],
+  "ミャ": [
+    {
+      "word": "ミャンマー",
+      "reading": "ミャンマー",
+      "romaji": "myanmā",
+      "meaning": "Myanmar"
+    }
+  ],
+  "ミュ": [
+    {
+      "word": "ミューズ",
+      "reading": "ミューズ",
+      "romaji": "myūzu",
+      "meaning": "Muse, one's muse"
+    },
+    {
+      "word": "コミュニケ",
+      "reading": "コミュニケ",
+      "romaji": "komyunike",
+      "meaning": "communiqué"
+    },
+    {
+      "word": "ミュンヘン",
+      "reading": "ミュンヘン",
+      "romaji": "myunhen",
+      "meaning": "Munich (Germany)"
+    },
+    {
+      "word": "コミュニティ",
+      "reading": "コミュニティ",
+      "romaji": "komyuniti",
+      "meaning": "community"
+    },
+    {
+      "word": "ミュージアム",
+      "reading": "ミュージアム",
+      "romaji": "myūjiamu",
+      "meaning": "museum"
+    }
+  ],
+  "ミョ": [],
+  "リャ": [],
+  "リュ": [
+    {
+      "word": "トリュフ",
+      "reading": "トリュフ",
+      "romaji": "toryufu",
+      "meaning": "truffle"
+    },
+    {
+      "word": "リュート",
+      "reading": "リュート",
+      "romaji": "ryūto",
+      "meaning": "lute"
+    },
+    {
+      "word": "スクリュー",
+      "reading": "スクリュー",
+      "romaji": "sukuryū",
+      "meaning": "screw"
+    },
+    {
+      "word": "ボリューム",
+      "reading": "ボリューム",
+      "romaji": "boryūmu",
+      "meaning": "volume (sound level)"
+    },
+    {
+      "word": "リュージュ",
+      "reading": "リュージュ",
+      "romaji": "ryūju",
+      "meaning": "luge, toboggan"
+    }
+  ],
+  "リョ": [],
+  "ギャ": [
+    {
+      "word": "ギャグ",
+      "reading": "ギャグ",
+      "romaji": "gyagu",
+      "meaning": "joke, gag"
+    },
+    {
+      "word": "ギャラ",
+      "reading": "ギャラ",
+      "romaji": "gyara",
+      "meaning": "fee paid to performing artists, etc., appearance fee"
+    },
+    {
+      "word": "ギャル",
+      "reading": "ギャル",
+      "romaji": "gyaru",
+      "meaning": "gyaru, (young) woman adhering to a fashion style usually characterized by dyed hair and gaudy clothing"
+    },
+    {
+      "word": "ギャップ",
+      "reading": "ギャップ",
+      "romaji": "gyappu",
+      "meaning": "gap"
+    },
+    {
+      "word": "ギャング",
+      "reading": "ギャング",
+      "romaji": "gyangu",
+      "meaning": "gang"
+    }
+  ],
+  "ギュ": [
+    {
+      "word": "フィギュア",
+      "reading": "フィギュア",
+      "romaji": "figyua",
+      "meaning": "figure, form"
+    },
+    {
+      "word": "レギュラー",
+      "reading": "レギュラー",
+      "romaji": "regyurā",
+      "meaning": "regular, standard"
+    },
+    {
+      "word": "レギュラー出演",
+      "reading": "レギュラーしゅつえん",
+      "romaji": "regyurāshutsuen",
+      "meaning": "appearing as a regular (on a variety TV show)"
+    },
+    {
+      "word": "コンフィギュレーション",
+      "reading": "コンフィギュレーション",
+      "romaji": "konfigyurēshon",
+      "meaning": "configuration"
+    }
+  ],
+  "ギョ": [
+    {
+      "word": "餃子",
+      "reading": "ギョーザ",
+      "romaji": "gyōza",
+      "meaning": "gyoza, pot sticker"
+    }
+  ],
+  "ジャ": [
+    {
+      "word": "ジャー",
+      "reading": "ジャー",
+      "romaji": "jā",
+      "meaning": "container for keeping food or drink warm, (wide-mouthed) thermos"
+    },
+    {
+      "word": "ジャス",
+      "reading": "ジャス",
+      "romaji": "jasu",
+      "meaning": "Japanese Agricultural Standard, JAS"
+    },
+    {
+      "word": "ジャズ",
+      "reading": "ジャズ",
+      "romaji": "jazu",
+      "meaning": "jazz"
+    },
+    {
+      "word": "ジャブ",
+      "reading": "ジャブ",
+      "romaji": "jabu",
+      "meaning": "jab"
+    },
+    {
+      "word": "ジャム",
+      "reading": "ジャム",
+      "romaji": "jamu",
+      "meaning": "jam"
+    }
+  ],
+  "ジュ": [
+    {
+      "word": "ゴルジュ",
+      "reading": "ゴルジュ",
+      "romaji": "goruju",
+      "meaning": "gorge, canyon"
+    },
+    {
+      "word": "ジュース",
+      "reading": "ジュース",
+      "romaji": "jūsu",
+      "meaning": "juice"
+    },
+    {
+      "word": "ジュール",
+      "reading": "ジュール",
+      "romaji": "jūru",
+      "meaning": "joule"
+    },
+    {
+      "word": "ジュニア",
+      "reading": "ジュニア",
+      "romaji": "junia",
+      "meaning": "junior"
+    },
+    {
+      "word": "ジュリー",
+      "reading": "ジュリー",
+      "romaji": "jurī",
+      "meaning": "jury"
+    }
+  ],
+  "ジョ": [
+    {
+      "word": "ジョイ",
+      "reading": "ジョイ",
+      "romaji": "joi",
+      "meaning": "joy"
+    },
+    {
+      "word": "ジョーク",
+      "reading": "ジョーク",
+      "romaji": "jōku",
+      "meaning": "joke"
+    },
+    {
+      "word": "ジョッキ",
+      "reading": "ジョッキ",
+      "romaji": "jokki",
+      "meaning": "beer mug, stein"
+    },
+    {
+      "word": "ビジョン",
+      "reading": "ビジョン",
+      "romaji": "bijon",
+      "meaning": "vision (of the future), foresight"
+    },
+    {
+      "word": "エンジョイ",
+      "reading": "エンジョイ",
+      "romaji": "enjoi",
+      "meaning": "enjoying, enjoyment"
+    }
+  ],
+  "ビャ": [],
+  "ビュ": [
+    {
+      "word": "ビュー",
+      "reading": "ビュー",
+      "romaji": "byū",
+      "meaning": "view"
+    },
+    {
+      "word": "デビュー",
+      "reading": "デビュー",
+      "romaji": "debyū",
+      "meaning": "debut, doing something for the first time"
+    },
+    {
+      "word": "レビュー",
+      "reading": "レビュー",
+      "romaji": "rebyū",
+      "meaning": "review"
+    },
+    {
+      "word": "ビューロー",
+      "reading": "ビューロー",
+      "romaji": "byūrō",
+      "meaning": "bureau"
+    },
+    {
+      "word": "ビュッフェ",
+      "reading": "ビュッフェ",
+      "romaji": "byuffe",
+      "meaning": "buffet, self-service meal"
+    }
+  ],
+  "ビョ": [],
+  "ピャ": [],
+  "ピュ": [
+    {
+      "word": "ピュア",
+      "reading": "ピュア",
+      "romaji": "pyua",
+      "meaning": "pure"
+    },
+    {
+      "word": "ポピュラー",
+      "reading": "ポピュラー",
+      "romaji": "popyurā",
+      "meaning": "popular, well-liked"
+    },
+    {
+      "word": "コンピュータ",
+      "reading": "コンピュータ",
+      "romaji": "konpyūta",
+      "meaning": "computer"
+    }
+  ],
+  "ピョ": [
+    {
+      "word": "ピョンヤン",
+      "reading": "ピョンヤン",
+      "romaji": "pyon'yan",
+      "meaning": "Pyongyang (North Korea)"
+    }
+  ],
+  "日": [
+    {
+      "word": "毎日",
+      "reading": "まいにち",
+      "romaji": "mainichi",
+      "meaning": "every day, daily"
+    },
+    {
+      "word": "今日",
+      "reading": "きょう",
+      "romaji": "kyou",
+      "meaning": "today, this day"
+    },
+    {
+      "word": "昨日",
+      "reading": "きのう",
+      "romaji": "kinou",
+      "meaning": "yesterday"
+    },
+    {
+      "word": "日本",
+      "reading": "にほん",
+      "romaji": "nihon",
+      "meaning": "Japan"
+    },
+    {
+      "word": "明日",
+      "reading": "あした",
+      "romaji": "ashita",
+      "meaning": "tomorrow"
+    }
+  ],
+  "本": [
+    {
+      "word": "本",
+      "reading": "ほん",
+      "romaji": "hon",
+      "meaning": "book, volume"
+    },
+    {
+      "word": "本当",
+      "reading": "ほんとう",
+      "romaji": "hontou",
+      "meaning": "truth, reality"
+    },
+    {
+      "word": "日本",
+      "reading": "にほん",
+      "romaji": "nihon",
+      "meaning": "Japan"
+    },
+    {
+      "word": "日本人",
+      "reading": "にほんじん",
+      "romaji": "nihonjin",
+      "meaning": "Japanese person"
+    },
+    {
+      "word": "一本",
+      "reading": "いっぽん",
+      "romaji": "ippon",
+      "meaning": "one long cylindrical thing, one film, TV show, etc."
+    }
+  ],
+  "人": [
+    {
+      "word": "人",
+      "reading": "ひと",
+      "romaji": "hito",
+      "meaning": "person, someone"
+    },
+    {
+      "word": "三人",
+      "reading": "さんにん",
+      "romaji": "sannin",
+      "meaning": "three people"
+    },
+    {
+      "word": "日本人",
+      "reading": "にほんじん",
+      "romaji": "nihonjin",
+      "meaning": "Japanese person"
+    },
+    {
+      "word": "愛人",
+      "reading": "あいじん",
+      "romaji": "aijin",
+      "meaning": "lover, mistress"
+    },
+    {
+      "word": "悪人",
+      "reading": "あくにん",
+      "romaji": "akunin",
+      "meaning": "bad person, villain"
+    }
+  ],
+  "月": [
+    {
+      "word": "月",
+      "reading": "つき",
+      "romaji": "tsuki",
+      "meaning": "Moon"
+    },
+    {
+      "word": "一月",
+      "reading": "ひとつき",
+      "romaji": "hitotsuki",
+      "meaning": "one month"
+    },
+    {
+      "word": "月曜日",
+      "reading": "げつようび",
+      "romaji": "getsuyoubi",
+      "meaning": "Monday"
+    },
+    {
+      "word": "１月",
+      "reading": "いちがつ",
+      "romaji": "ichigatsu",
+      "meaning": "January"
+    },
+    {
+      "word": "ヶ月",
+      "reading": "かげつ",
+      "romaji": "kagetsu",
+      "meaning": "counter for months"
+    }
+  ],
+  "水": [
+    {
+      "word": "水",
+      "reading": "みず",
+      "romaji": "mizu",
+      "meaning": "water (esp. cool or cold)"
+    },
+    {
+      "word": "水曜日",
+      "reading": "すいようび",
+      "romaji": "suiyoubi",
+      "meaning": "Wednesday"
+    },
+    {
+      "word": "汚水",
+      "reading": "おすい",
+      "romaji": "osui",
+      "meaning": "filthy water, sewage"
+    },
+    {
+      "word": "下水",
+      "reading": "げすい",
+      "romaji": "gesui",
+      "meaning": "drainage, ditch"
+    },
+    {
+      "word": "海水",
+      "reading": "かいすい",
+      "romaji": "kaisui",
+      "meaning": "seawater, saltwater"
+    }
+  ],
+  "火": [
+    {
+      "word": "火",
+      "reading": "ひ",
+      "romaji": "hi",
+      "meaning": "fire, flame"
+    },
+    {
+      "word": "花火",
+      "reading": "はなび",
+      "romaji": "hanabi",
+      "meaning": "fireworks"
+    },
+    {
+      "word": "火曜日",
+      "reading": "かようび",
+      "romaji": "kayoubi",
+      "meaning": "Tuesday"
+    },
+    {
+      "word": "下火",
+      "reading": "したび",
+      "romaji": "shitabi",
+      "meaning": "dying down (of a fire), waning"
+    },
+    {
+      "word": "火花",
+      "reading": "ひばな",
+      "romaji": "hibana",
+      "meaning": "spark"
+    }
+  ],
+  "木": [
+    {
+      "word": "木",
+      "reading": "き",
+      "romaji": "ki",
+      "meaning": "tree, shrub"
+    },
+    {
+      "word": "木曜日",
+      "reading": "もくようび",
+      "romaji": "mokuyoubi",
+      "meaning": "Thursday"
+    },
+    {
+      "word": "荒木",
+      "reading": "あらき",
+      "romaji": "araki",
+      "meaning": "logs in bark, rough wood"
+    },
+    {
+      "word": "黒木",
+      "reading": "くろき",
+      "romaji": "kuroki",
+      "meaning": "unbarked lumber"
+    },
+    {
+      "word": "材木",
+      "reading": "ざいもく",
+      "romaji": "zaimoku",
+      "meaning": "wood (for building), lumber"
+    }
+  ],
+  "金": [
+    {
+      "word": "お金",
+      "reading": "おかね",
+      "romaji": "okane",
+      "meaning": "money"
+    },
+    {
+      "word": "金曜日",
+      "reading": "きんようび",
+      "romaji": "kin'youbi",
+      "meaning": "Friday"
+    },
+    {
+      "word": "金",
+      "reading": "かね",
+      "romaji": "kane",
+      "meaning": "money"
+    },
+    {
+      "word": "黄金",
+      "reading": "おうごん",
+      "romaji": "ougon",
+      "meaning": "gold (Au)"
+    },
+    {
+      "word": "換金",
+      "reading": "かんきん",
+      "romaji": "kankin",
+      "meaning": "realization (of goods into money), conversion (into money)"
+    }
+  ],
+  "土": [
+    {
+      "word": "土",
+      "reading": "つち",
+      "romaji": "tsuchi",
+      "meaning": "earth, soil"
+    },
+    {
+      "word": "土曜日",
+      "reading": "どようび",
+      "romaji": "doyoubi",
+      "meaning": "Saturday"
+    },
+    {
+      "word": "郷土",
+      "reading": "きょうど",
+      "romaji": "kyoudo",
+      "meaning": "native place, birth-place"
+    },
+    {
+      "word": "国土",
+      "reading": "こくど",
+      "romaji": "kokudo",
+      "meaning": "country, territory"
+    },
+    {
+      "word": "出土",
+      "reading": "しゅつど",
+      "romaji": "shutsudo",
+      "meaning": "archeological excavation (archaeological)"
+    }
+  ],
+  "山": [
+    {
+      "word": "山",
+      "reading": "やま",
+      "romaji": "yama",
+      "meaning": "mountain, hill"
+    },
+    {
+      "word": "富士山",
+      "reading": "ふじさん",
+      "romaji": "fujisan",
+      "meaning": "Mount Fuji, Mt. Fuji"
+    },
+    {
+      "word": "奥山",
+      "reading": "おくやま",
+      "romaji": "okuyama",
+      "meaning": "remote mountain, mountain recesses"
+    },
+    {
+      "word": "下山",
+      "reading": "げざん",
+      "romaji": "gezan",
+      "meaning": "descending a mountain, descent"
+    },
+    {
+      "word": "火山",
+      "reading": "かざん",
+      "romaji": "kazan",
+      "meaning": "volcano"
+    }
+  ],
+  "川": [
+    {
+      "word": "川",
+      "reading": "かわ",
+      "romaji": "kawa",
+      "meaning": "river, stream"
+    },
+    {
+      "word": "河川",
+      "reading": "かせん",
+      "romaji": "kasen",
+      "meaning": "rivers"
+    },
+    {
+      "word": "山川",
+      "reading": "さんせん",
+      "romaji": "sansen",
+      "meaning": "mountains and rivers"
+    },
+    {
+      "word": "小川",
+      "reading": "おがわ",
+      "romaji": "ogawa",
+      "meaning": "stream, brook"
+    },
+    {
+      "word": "川下",
+      "reading": "かわしも",
+      "romaji": "kawashimo",
+      "meaning": "downstream"
+    }
+  ],
+  "大": [
+    {
+      "word": "大学",
+      "reading": "だいがく",
+      "romaji": "daigaku",
+      "meaning": "university, college"
+    },
+    {
+      "word": "大きい",
+      "reading": "おおきい",
+      "romaji": "ookii",
+      "meaning": "big, large"
+    },
+    {
+      "word": "大",
+      "reading": "だい",
+      "romaji": "dai",
+      "meaning": "large, big"
+    },
+    {
+      "word": "偉大",
+      "reading": "いだい",
+      "romaji": "idai",
+      "meaning": "great, grand"
+    },
+    {
+      "word": "医大",
+      "reading": "いだい",
+      "romaji": "idai",
+      "meaning": "medical university, medical college"
+    }
+  ],
+  "小": [
+    {
+      "word": "小さい",
+      "reading": "ちいさい",
+      "romaji": "chiisai",
+      "meaning": "small, little"
+    },
+    {
+      "word": "小学校",
+      "reading": "しょうがっこう",
+      "romaji": "shougakkou",
+      "meaning": "primary school, elementary school"
+    },
+    {
+      "word": "小",
+      "reading": "しょう",
+      "romaji": "shou",
+      "meaning": "smallness, small item"
+    },
+    {
+      "word": "最小",
+      "reading": "さいしょう",
+      "romaji": "saishou",
+      "meaning": "smallest (in size, degree, etc.), least"
+    },
+    {
+      "word": "縮小",
+      "reading": "しゅくしょう",
+      "romaji": "shukushou",
+      "meaning": "reduction, curtailment"
+    }
+  ],
+  "上": [
+    {
+      "word": "上",
+      "reading": "うえ",
+      "romaji": "ue",
+      "meaning": "above, over"
+    },
+    {
+      "word": "上手",
+      "reading": "じょうず",
+      "romaji": "jouzu",
+      "meaning": "skillful, skilled"
+    },
+    {
+      "word": "右上",
+      "reading": "みぎうえ",
+      "romaji": "migiue",
+      "meaning": "upper right"
+    },
+    {
+      "word": "炎上",
+      "reading": "えんじょう",
+      "romaji": "enjou",
+      "meaning": "going up in flames, destruction by fire (esp. of a large building)"
+    },
+    {
+      "word": "屋上",
+      "reading": "おくじょう",
+      "romaji": "okujou",
+      "meaning": "rooftop"
+    }
+  ],
+  "下": [
+    {
+      "word": "下",
+      "reading": "した",
+      "romaji": "shita",
+      "meaning": "below, down"
+    },
+    {
+      "word": "地下",
+      "reading": "ちか",
+      "romaji": "chika",
+      "meaning": "underground, below the ground"
+    },
+    {
+      "word": "右下",
+      "reading": "みぎした",
+      "romaji": "migishita",
+      "meaning": "lower right"
+    },
+    {
+      "word": "下す",
+      "reading": "くだす",
+      "romaji": "kudasu",
+      "meaning": "to make a decision, to draw a conclusion"
+    },
+    {
+      "word": "下り",
+      "reading": "くだり",
+      "romaji": "kudari",
+      "meaning": "down-train, train heading toward the ending point of its route"
+    }
+  ]
+}

@@ -64,6 +64,14 @@ export interface KanjiWord {
   meaning: string;
 }
 
+/** The classical (Kangxi) radical of a kanji, per KANJIDIC2. */
+export interface KanjiRadical {
+  /** The radical glyph, e.g. "日". */
+  char: string;
+  /** Kangxi radical number, 1–214. */
+  number: number;
+}
+
 /** A study card for a single kanji (readings/strokes per KANJIDIC2). */
 export interface Kanji {
   /** The kanji character, e.g. "日". */
@@ -76,9 +84,100 @@ export interface Kanji {
   kunyomi: string[];
   /** Stroke count, per KANJIDIC2. */
   strokes: number;
+  /** Classical radical, per KANJIDIC2 (see scripts/build-kanji-radicals.mjs). */
+  radical: KanjiRadical;
   /** 2–3 common words that use this kanji. */
   words: KanjiWord[];
 }
+
+/**
+ * An example word shown on a character detail panel.
+ *
+ * Sourced only from JMdict — see scripts/build-example-words.mjs. Characters
+ * with no suitable common word get an empty list and the UI says so; entries are
+ * never invented to fill a gap.
+ */
+export interface ExampleWord {
+  /** The word in its usual written form, e.g. "日本". */
+  word: string;
+  /** Reading in kana, e.g. "にほん". */
+  reading: string;
+  /**
+   * Hepburn romaji for the reading. Transliterated 1:1 from the kana, so long
+   * vowels written with hiragana appear as written ("toukyou"); only the
+   * katakana long mark ー becomes a macron.
+   */
+  romaji: string;
+  /** English meaning(s) per JMdict. */
+  meaning: string;
+}
+
+/** Example words for every taught character, keyed by the character itself. */
+export type ExampleWordIndex = Record<string, ExampleWord[]>;
+
+/**
+ * Stroke-order outlines for a single character, extracted from KanjiVG
+ * (CC BY-SA 3.0). Served as static JSON from /strokes and fetched on demand, so
+ * the drawing data stays out of the page bundle.
+ */
+export interface StrokeData {
+  /** The character these strokes draw. */
+  char: string;
+  /** SVG viewBox for the paths, normally "0 0 109 109". */
+  viewBox: string;
+  /** One SVG path `d` attribute per stroke, in writing order. */
+  strokes: string[];
+  /** Position of each stroke's number label, as [x, y] in viewBox units. */
+  numbers: [number, number][];
+}
+
+/** Where a kana sits in the gojūon grid, plus its neighbouring forms. */
+export interface KanaPosition {
+  /** Row label, e.g. "か行" — null for ん, which sits outside the grid. */
+  row: string | null;
+  /** Column label, e.g. "あ段" — null for ん. */
+  column: string | null;
+}
+
+/** How a related kana is derived from the one being viewed. */
+export type KanaRelation = "base" | "dakuten" | "handakuten" | "combination" | "series";
+
+/** A kana related to the one on screen, and how the two connect. */
+export interface RelatedKana {
+  char: string;
+  romaji: string;
+  relation: KanaRelation;
+}
+
+/**
+ * Everything a kana detail panel shows, assembled on the server so the panel
+ * itself needs no access to the content dataset.
+ */
+export interface KanaDetail extends KanaPosition {
+  kind: "kana";
+  char: string;
+  romaji: string;
+  script: KanaScript;
+  strokes: number;
+  note?: string;
+  related: RelatedKana[];
+  words: ExampleWord[];
+}
+
+/** Everything a kanji detail panel shows. */
+export interface KanjiDetail {
+  kind: "kanji";
+  char: string;
+  meanings: string[];
+  onyomi: string[];
+  kunyomi: string[];
+  strokes: number;
+  radical: KanjiRadical;
+  words: ExampleWord[];
+}
+
+/** Either kind of character detail, for the shared panel component. */
+export type CharacterDetail = KanaDetail | KanjiDetail;
 
 /** Thematic grouping for N5 vocabulary. */
 export type VocabTheme =
