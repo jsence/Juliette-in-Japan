@@ -1,14 +1,10 @@
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomeSectionGrid } from "@/components/home/HomeSectionGrid";
-import { LatestAdditions } from "@/components/home/LatestAdditions";
 import { SiteVolumeStrip } from "@/components/home/SiteVolumeStrip";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { getLatestPages } from "@/lib/latestPages";
 import { sections } from "@/lib/site";
 
 export default function HomePage() {
-  const latest = getLatestPages(3);
-
   return (
     <div className="-mt-10 space-y-24 pb-8 pt-0">
       <HomeHero />
@@ -26,8 +22,6 @@ export default function HomePage() {
       </section>
 
       <SiteVolumeStrip />
-
-      <LatestAdditions pages={latest} />
     </div>
   );
 }
