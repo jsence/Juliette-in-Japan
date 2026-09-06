@@ -14,7 +14,11 @@ interface ScrollRevealProps {
 
 /**
  * Restrained scroll-reveal: a soft fade + short upward drift, once.
- * Respects prefers-reduced-motion by rendering statically.
+ * Respects prefers-reduced-motion by settling straight to the visible state.
+ *
+ * The motion element is rendered in both cases on purpose. Swapping it for a
+ * plain tag once `useReducedMotion` resolves leaves Framer Motion's imperative
+ * inline `opacity: 0` on the hydrated node, which hides the section for good.
  */
 export function ScrollReveal({
   children,
@@ -25,18 +29,18 @@ export function ScrollReveal({
   const reduceMotion = useReducedMotion();
   const MotionTag = motion[as];
 
-  if (reduceMotion) {
-    const Tag = as;
-    return <Tag className={className}>{children}</Tag>;
-  }
-
   return (
     <MotionTag
       className={className}
       initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      animate={reduceMotion ? { opacity: 1, y: 0 } : undefined}
+      whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.5, ease: "easeOut", delay: Math.min(index * 0.06, 0.4) }}
+      transition={
+        reduceMotion
+          ? { duration: 0 }
+          : { duration: 0.5, ease: "easeOut", delay: Math.min(index * 0.06, 0.4) }
+      }
     >
       {children}
     </MotionTag>

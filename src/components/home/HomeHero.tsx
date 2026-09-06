@@ -39,8 +39,11 @@ export function HomeHero() {
   const patternY = useTransform(scrollYProgress, [0, 1], ["0%", "4%"]);
   const watermarkY = useTransform(scrollYProgress, [0, 1], ["-50%", "-38%"]);
 
+  // Reduced motion starts on the finished variant rather than skipping the
+  // animation props: without an `animate` target, Framer Motion leaves the
+  // server-rendered `opacity: 0` in place and the hero never appears.
   const enter = reduceMotion
-    ? {}
+    ? { initial: "show" as const, animate: "show" as const }
     : { initial: "hidden" as const, animate: "show" as const };
 
   return (
@@ -159,9 +162,13 @@ export function HomeHero() {
 
         <motion.a
           href="#inside-heading"
-          initial={reduceMotion ? false : { opacity: 0, y: 14 }}
-          animate={reduceMotion ? false : { opacity: 1, y: 0 }}
-          transition={{ delay: reduceMotion ? 0 : 0.78, duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={
+            reduceMotion
+              ? { duration: 0 }
+              : { delay: 0.78, duration: 0.55, ease: [0.22, 1, 0.36, 1] }
+          }
           className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-1.5 text-ai-muted transition hover:text-ai dark:text-ai-light/70 dark:hover:text-ai-light"
           aria-label="Scroll to content"
         >
