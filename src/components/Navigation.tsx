@@ -32,7 +32,7 @@ export function Navigation() {
 
         <button
           type="button"
-          className="rounded-md border border-white/40 bg-white/40 p-2 text-ink backdrop-blur md:hidden dark:border-white/10 dark:bg-black/20 dark:text-paper-100"
+          className="rounded-md border border-white/40 bg-white/40 p-2 text-ink backdrop-blur lg:hidden dark:border-white/10 dark:bg-black/20 dark:text-paper-100"
           aria-expanded={open}
           aria-controls="primary-menu"
           aria-label="Toggle navigation menu"
@@ -43,7 +43,9 @@ export function Navigation() {
           <span className="mt-1 block h-0.5 w-5 bg-current" />
         </button>
 
-        <ul className="hidden items-center gap-0.5 md:flex">
+        {/* Seven items with labels this long need ~1024px; below that the
+            hamburger menu carries the same navigation. */}
+        <ul className="hidden items-center gap-0.5 lg:flex">
           <li>
             <Link
               href={homeItem.href}
@@ -58,13 +60,13 @@ export function Navigation() {
               {homeItem.label}
             </Link>
           </li>
-          {sectionItems.map((section) => (
+          {sectionItems.map((section, i) => (
             <li key={section.href} className="group relative">
               <Link
                 href={section.href}
                 aria-current={isActive(section.href) ? "page" : undefined}
                 className={
-                  "flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition " +
+                  "flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2 text-sm font-medium transition " +
                   (isActive(section.href)
                     ? "bg-hanko/10 text-hanko dark:text-hanko-light"
                     : "text-ink-light hover:bg-white/50 dark:text-paper-200 dark:hover:bg-white/10")
@@ -75,7 +77,10 @@ export function Navigation() {
               </Link>
               <ul
                 className={
-                  "invisible absolute left-0 top-full z-50 min-w-[12rem] translate-y-1 rounded-lg border border-white/50 bg-white/80 py-1 opacity-0 shadow-glass backdrop-blur-md transition group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 dark:border-white/10 dark:bg-sumi/90"
+                  "invisible absolute top-full z-50 min-w-[12rem] translate-y-1 rounded-lg border border-white/50 bg-white/80 py-1 opacity-0 shadow-glass backdrop-blur-md transition group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 dark:border-white/10 dark:bg-sumi/90 " +
+                  // The rightmost menus hang from the right edge of their trigger,
+                  // otherwise a 12rem panel spills past the viewport.
+                  (i >= sectionItems.length - 2 ? "right-0" : "left-0")
                 }
               >
                 {section.subPages.map((page) => (
@@ -95,7 +100,7 @@ export function Navigation() {
       </nav>
 
       {open && (
-        <div id="primary-menu" className="border-t border-white/40 bg-white/50 backdrop-blur-md md:hidden dark:border-white/10 dark:bg-black/30">
+        <div id="primary-menu" className="border-t border-white/40 bg-white/50 backdrop-blur-md lg:hidden dark:border-white/10 dark:bg-black/30">
           <ul className="px-4 py-2">
             <li>
               <Link
