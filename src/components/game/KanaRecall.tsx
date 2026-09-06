@@ -73,7 +73,14 @@ export function KanaRecall() {
 
   if (screen === "play") {
     return (
-      <RecallArena key={runId} deck={deck} onComplete={handleComplete} onQuit={() => setScreen("setup")} />
+      <section aria-label="Kana Recall drill" className="w-full">
+        <RecallArena
+          key={runId}
+          deck={deck}
+          onComplete={handleComplete}
+          onQuit={() => setScreen("setup")}
+        />
+      </section>
     );
   }
 

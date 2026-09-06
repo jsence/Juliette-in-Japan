@@ -64,13 +64,21 @@
   .recall-stage {
     background-color: #2a3348;
     background-image:
-      radial-gradient(circle, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
-      linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
     background-size: 8px 8px, 100% 3px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
   }
 
   .dark .recall-stage {
-    background-color: #1e2433;
+    background-color: #1a2030;
+  }
+
+  /* Fixed card slot — prevents layout shift between cards. */
+  .recall-card-slot {
+    aspect-ratio: 1 / 1;
+    width: min(100%, 12.5rem);
+    min-height: 11.5rem;
   }
 
   /* Soft halo behind the active card. */
@@ -116,13 +124,15 @@
 
   /* Ghost cards in the deck stack reuse the same chunky border. */
   .recall-stack-card {
-    border: 3px solid rgba(43, 38, 32, 0.45);
-    box-shadow: 4px 4px 0 rgba(15, 12, 10, 0.35);
+    border: 3px solid rgba(43, 38, 32, 0.55);
+    box-shadow: 4px 4px 0 rgba(15, 12, 10, 0.4);
+    background-color: #e4d9c8;
   }
 
   .dark .recall-stack-card {
-    border-color: rgba(250, 246, 238, 0.2);
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.45);
+    border-color: rgba(250, 246, 238, 0.28);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #3d4658;
   }
 
   /* Pixel terminal input for typing romaji. */
