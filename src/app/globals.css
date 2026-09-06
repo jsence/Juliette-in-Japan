@@ -63,12 +63,23 @@
   /* Fixed card slot — prevents layout shift between cards. */
   .recall-card-slot {
     aspect-ratio: 1 / 1;
-    width: min(100%, 10.5rem);
-    min-height: 10rem;
+    width: min(100%, 9.5rem);
+    min-height: 9rem;
+    perspective: 1000px;
   }
 
-  /* Repeating pixel motif on a flipped card's back face. */
+  .recall-card-flip {
+    transform-style: preserve-3d;
+  }
+
+  .recall-card-face,
   .recall-card-back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .recall-card-back {
+    transform: rotateY(180deg);
     background-color: #e9dcc7;
     background-image:
       repeating-linear-gradient(
@@ -144,7 +155,7 @@
   }
 
   .recall-kana-char {
-    font-size: clamp(3.5rem, 16vw, 6.5rem);
+    font-size: clamp(3rem, 14vw, 5.75rem);
     line-height: 1;
   }
 }

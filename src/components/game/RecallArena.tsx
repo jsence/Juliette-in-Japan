@@ -316,8 +316,8 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
   const cardFlip = flipped && phase === "input" && !reduceMotion;
 
   return (
-    <div className="mx-auto w-full max-w-[16rem] sm:max-w-[17rem]">
-      <div className="relative flex flex-col gap-2">
+    <div className="mx-auto w-full max-w-[14rem]">
+      <div className="relative flex flex-col items-center gap-1.5">
         {stageFlash && (
           <div
             aria-hidden="true"
@@ -329,12 +329,9 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
         )}
 
         {/* HUD */}
-        <div className="relative flex flex-wrap items-center gap-x-3 gap-y-1.5">
-          <div
-            className="rounded border-2 border-ink/20 bg-paper-50 px-2 py-0.5 dark:border-paper-100/20 dark:bg-sumi-light"
-            aria-live="off"
-          >
-            <span className="font-pixel text-[0.6rem] tabular-nums tracking-wide text-ink dark:text-paper-100 sm:text-[0.65rem]">
+        <div className="relative flex w-full flex-wrap items-center justify-center gap-x-2.5 gap-y-1">
+          <div aria-live="off">
+            <span className="font-pixel text-[0.55rem] tabular-nums tracking-wide text-ink dark:text-paper-100 sm:text-[0.6rem]">
               {formatElapsed(elapsedMs)}
             </span>
           </div>
@@ -343,7 +340,7 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
 
           <div
             className={
-              "flex items-center gap-1 rounded border border-ink/15 bg-paper-100/80 px-1.5 py-0.5 dark:border-paper-100/15 dark:bg-sumi-light/80 " +
+              "flex items-center gap-1 " +
               (streakPop && !reduceMotion ? "animate-streak-pop" : "")
             }
             aria-live="polite"
@@ -353,7 +350,7 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
             </span>
             <span
               className={
-                "font-pixel text-[0.65rem] tabular-nums sm:text-xs " +
+                "font-pixel text-[0.6rem] tabular-nums sm:text-[0.65rem] " +
                 (streak >= 5 ? "text-hanko dark:text-hanko-light" : "text-ink dark:text-paper-100")
               }
             >
@@ -364,8 +361,8 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
         </div>
 
         {/* Card stack — fixed slot prevents layout shift between cards */}
-        <div className="recall-card-slot relative mx-auto">
-          <div className="absolute inset-0" style={{ perspective: "1000px" }}>
+        <div className="recall-card-slot relative">
+          <div className="absolute inset-0">
             {stackDepth > 0 &&
               Array.from({ length: stackDepth }, (_, i) => {
                 const depth = stackDepth - i;
@@ -394,80 +391,98 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
               }
               style={{ zIndex: 20 }}
             >
-              <div
-                className={
-                  "recall-card relative h-full w-full rounded-lg bg-paper-50 transition-transform duration-[400ms] ease-out dark:bg-sumi-light " +
-                  (cardFlip ? "[transform:rotateY(180deg)]" : "[transform:rotateY(0deg)]")
-                }
-                style={{ transformStyle: "preserve-3d" }}
-              >
-                <div
-                  className="h-full w-full cursor-pointer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    toggleFlip();
-                  }}
-                  role="button"
-                  tabIndex={-1}
-                  aria-label={flipped ? "Hide reading" : "Show reading"}
-                >
+              <div className="recall-card relative h-full w-full rounded-lg bg-paper-50 dark:bg-sumi-light">
+                {reduceMotion ? (
                   <div
-                    className={
-                      "absolute inset-0 flex flex-col items-center justify-center overflow-hidden rounded-[4px] transition-colors " +
-                      (flashCorrect
-                        ? reduceMotion
-                          ? "bg-hanko/15 dark:bg-hanko-light/15"
-                          : "bg-hanko/10 dark:bg-hanko-light/10"
-                        : "") +
-                      (reduceMotion && flipped ? " hidden" : "")
-                    }
-                    style={reduceMotion ? undefined : { backfaceVisibility: "hidden" }}
+                    className="h-full w-full cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      toggleFlip();
+                    }}
+                    role="button"
+                    tabIndex={-1}
+                    aria-label={flipped ? "Hide reading" : "Show reading"}
                   >
-                    <div className="flex h-[62%] w-full items-center justify-center">
-                      <p className="recall-kana-char font-jp font-semibold text-hanko dark:text-hanko-light">
-                        {current.char}
-                      </p>
-                    </div>
-
-                    {showReading && (phase === "correct" || phase === "exit") && (
-                      <p
+                    {!flipped ? (
+                      <div
                         className={
-                          "absolute bottom-[14%] font-pixel text-sm uppercase tracking-wide text-hanko dark:text-hanko-light " +
-                          (reduceMotion ? "opacity-100" : "animate-romaji-stamp")
+                          "recall-card-face absolute inset-0 flex flex-col items-center justify-center overflow-hidden rounded-[4px] transition-colors " +
+                          (flashCorrect ? "bg-hanko/15 dark:bg-hanko-light/15" : "")
                         }
                       >
-                        {current.romaji}
-                      </p>
+                        <div className="flex h-[62%] w-full items-center justify-center">
+                          <p className="recall-kana-char font-jp font-semibold text-hanko dark:text-hanko-light">
+                            {current.char}
+                          </p>
+                        </div>
+                        {showReading && (phase === "correct" || phase === "exit") && (
+                          <p className="absolute bottom-[14%] font-pixel text-xs uppercase tracking-wide text-hanko dark:text-hanko-light">
+                            {current.romaji}
+                          </p>
+                        )}
+                      </div>
+                    ) : (
+                      <div
+                        className="recall-card-back absolute inset-0 flex flex-col items-center justify-center rounded-[4px]"
+                        aria-hidden={false}
+                      >
+                        <p className="font-pixel text-[clamp(1rem,5vw,1.35rem)] uppercase tracking-wider text-hanko dark:text-hanko-light">
+                          {current.romaji}
+                        </p>
+                      </div>
                     )}
                   </div>
-
+                ) : (
                   <div
-                    className={
-                      "recall-card-back absolute inset-0 flex flex-col items-center justify-center rounded-[4px] " +
-                      (reduceMotion && !flipped ? "hidden" : "")
-                    }
-                    style={
-                      reduceMotion
-                        ? undefined
-                        : { backfaceVisibility: "hidden", transform: "rotateY(180deg)" }
-                    }
-                    aria-hidden={!flipped}
+                    className="recall-card-flip relative h-full w-full cursor-pointer transition-transform duration-[400ms] ease-out"
+                    style={{ transform: cardFlip ? "rotateY(180deg)" : "rotateY(0deg)" }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      toggleFlip();
+                    }}
+                    role="button"
+                    tabIndex={-1}
+                    aria-label={flipped ? "Hide reading" : "Show reading"}
                   >
-                    <p className="font-pixel text-[clamp(1.1rem,6vw,1.5rem)] uppercase tracking-wider text-hanko dark:text-hanko-light">
-                      {current.romaji}
-                    </p>
-                    <p className="mt-1.5 font-pixel text-[0.4rem] uppercase tracking-widest text-ink-muted dark:text-paper-300">
-                      Type it
-                    </p>
+                    <div
+                      className={
+                        "recall-card-face absolute inset-0 flex flex-col items-center justify-center overflow-hidden rounded-[4px] transition-colors " +
+                        (flashCorrect ? "bg-hanko/10 dark:bg-hanko-light/10" : "")
+                      }
+                    >
+                      <div className="flex h-[62%] w-full items-center justify-center">
+                        <p className="recall-kana-char font-jp font-semibold text-hanko dark:text-hanko-light">
+                          {current.char}
+                        </p>
+                      </div>
+                      {showReading && (phase === "correct" || phase === "exit") && (
+                        <p
+                          className={
+                            "absolute bottom-[14%] font-pixel text-xs uppercase tracking-wide text-hanko dark:text-hanko-light animate-romaji-stamp"
+                          }
+                        >
+                          {current.romaji}
+                        </p>
+                      )}
+                    </div>
+
+                    <div
+                      className="recall-card-back absolute inset-0 flex flex-col items-center justify-center rounded-[4px]"
+                      aria-hidden={!flipped}
+                    >
+                      <p className="font-pixel text-[clamp(1rem,5vw,1.35rem)] uppercase tracking-wider text-hanko dark:text-hanko-light">
+                        {current.romaji}
+                      </p>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </div>
         </div>
 
         {/* Input row */}
-        <div className="relative space-y-1">
+        <div className="relative w-full">
           <label htmlFor="recall-input" className="sr-only">
             Type the romaji reading for {current.char}
           </label>
@@ -529,10 +544,6 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
               Quit
             </button>
           </div>
-
-          <p className="text-center font-pixel text-[0.4rem] uppercase tracking-wide text-ink-muted/70 dark:text-paper-300/60 sm:text-[0.45rem]">
-            Enter to submit · flip = miss · typo = retry
-          </p>
         </div>
       </div>
     </div>
