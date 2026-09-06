@@ -90,6 +90,27 @@ const config: Config = {
           "0%, 100%": { borderColor: "rgba(179, 53, 43, 0.35)" },
           "35%": { borderColor: "rgba(22, 163, 74, 0.85)" },
         },
+        "card-exit": {
+          "0%": { transform: "translateX(0) rotate(0deg) scale(1)", opacity: "1" },
+          "100%": { transform: "translateX(115%) rotate(14deg) scale(0.92)", opacity: "0" },
+        },
+        "romaji-stamp": {
+          "0%": { transform: "scale(1.35)", opacity: "0" },
+          "35%": { transform: "scale(1)", opacity: "1" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        "streak-pop": {
+          "0%, 100%": { transform: "scale(1)" },
+          "40%": { transform: "scale(1.18)" },
+        },
+        "cursor-blink": {
+          "0%, 49%": { opacity: "1" },
+          "50%, 100%": { opacity: "0" },
+        },
+        "stage-flash": {
+          "0%, 100%": { opacity: "0" },
+          "25%": { opacity: "0.35" },
+        },
       },
       animation: {
         "seal-in": "seal-in 0.5s ease-out both",
@@ -98,6 +119,11 @@ const config: Config = {
         "screen-shake": "screen-shake 0.35s ease-out 1",
         "input-shake": "input-shake 0.4s ease-out 1",
         "correct-flash": "correct-flash 0.5s ease-out 1",
+        "card-exit": "card-exit 0.42s cubic-bezier(0.4, 0, 0.2, 1) forwards",
+        "romaji-stamp": "romaji-stamp 0.28s ease-out both",
+        "streak-pop": "streak-pop 0.35s ease-out 1",
+        "cursor-blink": "cursor-blink 1s step-end infinite",
+        "stage-flash": "stage-flash 0.45s ease-out 1",
       },
     },
   },
