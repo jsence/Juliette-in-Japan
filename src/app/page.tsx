@@ -1,10 +1,9 @@
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomeSectionGrid } from "@/components/home/HomeSectionGrid";
-import { HomeStudyStrip } from "@/components/home/HomeStudyStrip";
 import { LatestAdditions } from "@/components/home/LatestAdditions";
+import { SiteVolumeStrip } from "@/components/home/SiteVolumeStrip";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { getLatestPages } from "@/lib/latestPages";
-import { kana, kanji, vocabulary, grammar } from "@/lib/data";
 import { sections } from "@/lib/site";
 
 export default function HomePage() {
@@ -26,14 +25,7 @@ export default function HomePage() {
         <HomeSectionGrid sections={sections} />
       </section>
 
-      <HomeStudyStrip
-        totals={{
-          kana: kana.length,
-          kanji: kanji.length,
-          grammar: grammar.length,
-          vocabulary: vocabulary.length,
-        }}
-      />
+      <SiteVolumeStrip />
 
       <LatestAdditions pages={latest} />
     </div>

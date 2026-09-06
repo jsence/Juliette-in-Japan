@@ -1,5 +1,4 @@
 import type { VocabEntry } from "@/types/content";
-import { LearnedToggle } from "./LearnedToggle";
 import { glass } from "@/lib/ui";
 
 interface VocabTableProps {
@@ -22,7 +21,7 @@ const posLabels: Record<VocabEntry["partOfSpeech"], string> = {
   pronoun: "pronoun",
 };
 
-/** A responsive vocabulary table with furigana readings and learned toggles. */
+/** A responsive vocabulary table with furigana readings. */
 export function VocabTable({ entries, caption }: VocabTableProps) {
   return (
     <div className={"overflow-x-auto rounded-lg " + glass}>
@@ -34,7 +33,6 @@ export function VocabTable({ entries, caption }: VocabTableProps) {
             <th scope="col" className="px-4 py-2 font-serif font-semibold">Reading</th>
             <th scope="col" className="px-4 py-2 font-serif font-semibold">Meaning</th>
             <th scope="col" className="px-4 py-2 font-serif font-semibold">Type</th>
-            <th scope="col" className="px-4 py-2 font-serif font-semibold text-right">Learned</th>
           </tr>
         </thead>
         <tbody>
@@ -47,11 +45,6 @@ export function VocabTable({ entries, caption }: VocabTableProps) {
               <td className="px-4 py-2 font-jp text-ink-light dark:text-paper-200">{entry.reading}</td>
               <td className="px-4 py-2 text-ink-light dark:text-paper-200">{entry.meaning}</td>
               <td className="px-4 py-2 text-ink-muted dark:text-paper-300">{posLabels[entry.partOfSpeech]}</td>
-              <td className="px-4 py-2 text-right">
-                <div className="flex justify-end">
-                  <LearnedToggle module="vocabulary" itemId={entry.word} label={`word ${entry.word}`} variant="dot" />
-                </div>
-              </td>
             </tr>
           ))}
         </tbody>

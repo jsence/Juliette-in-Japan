@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import { SectionIndex } from "@/components/SectionIndex";
-import { ModuleProgress } from "@/components/ModuleProgress";
 import { SourceNote } from "@/components/SourceNote";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { getSection } from "@/lib/site";
@@ -36,28 +35,16 @@ export default function LanguagePage() {
       }
       cardDescriptions={cardDescriptions}
       beforeCards={
-        <>
-          <ScrollReveal>
-            <ModuleProgress
-              totals={{
-                kana: kana.length,
-                kanji: kanji.length,
-                grammar: grammar.length,
-                vocabulary: vocabulary.length,
-              }}
-            />
-          </ScrollReveal>
-          <ScrollReveal>
-            <SourceNote>
-              <p>
-                Since the 2010 revision, the JLPT no longer publishes official vocabulary or kanji
-                lists. The N5 scope shown here is a <strong>community-consensus estimate</strong>,
-                not an official syllabus. Kanji readings and stroke counts follow KANJIDIC2; word
-                definitions follow JMdict.
-              </p>
-            </SourceNote>
-          </ScrollReveal>
-        </>
+        <ScrollReveal>
+          <SourceNote>
+            <p>
+              Since the 2010 revision, the JLPT no longer publishes official vocabulary or kanji
+              lists. The N5 scope shown here is a <strong>community-consensus estimate</strong>, not
+              an official syllabus. Kanji readings and stroke counts follow KANJIDIC2; word
+              definitions follow JMdict.
+            </p>
+          </SourceNote>
+        </ScrollReveal>
       }
     />
   );

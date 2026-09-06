@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { LegacyStorageCleanup } from "@/components/LegacyStorageCleanup";
 import { site } from "@/lib/site";
 
 const sans = Inter({
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
+        <LegacyStorageCleanup />
         <Navigation />
         <main id="main" className="mx-auto w-full max-w-5xl flex-1 px-4 py-10">
           {children}

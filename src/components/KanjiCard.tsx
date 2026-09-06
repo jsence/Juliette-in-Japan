@@ -1,5 +1,4 @@
 import type { Kanji } from "@/types/content";
-import { LearnedToggle } from "./LearnedToggle";
 import { glass } from "@/lib/ui";
 
 interface KanjiCardProps {
@@ -47,10 +46,6 @@ export function KanjiCard({ kanji }: KanjiCardProps) {
           ))}
         </ul>
       )}
-
-      <div className="mt-1 flex justify-end">
-        <LearnedToggle module="kanji" itemId={kanji.char} label={`kanji ${kanji.char}`} />
-      </div>
     </article>
   );
 }

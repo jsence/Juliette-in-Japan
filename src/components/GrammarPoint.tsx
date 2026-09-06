@@ -4,7 +4,6 @@ import type { GrammarPoint as GrammarPointData } from "@/types/content";
 import { Formula } from "./Formula";
 import { GrammarExamples } from "./GrammarExamples";
 import { AddToFlashcards } from "./AddToFlashcards";
-import { LearnedToggle } from "./LearnedToggle";
 import { glass } from "@/lib/ui";
 
 interface RelatedLink {
@@ -88,7 +87,6 @@ export function GrammarPoint({ point, related }: GrammarPointProps) {
 
       <section className="flex flex-wrap items-center gap-3 border-t border-white/40 pt-6 dark:border-white/10">
         <AddToFlashcards grammarId={point.id} />
-        <LearnedToggle module="grammar" itemId={point.id} label={point.title} />
       </section>
     </div>
   );
