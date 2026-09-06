@@ -13,7 +13,9 @@ export function KanaBattleCta() {
       aria-label="Practise with Kana Battle"
       className="flex flex-col gap-3 rounded-lg border border-white/50 bg-white/40 px-4 py-3 backdrop-blur-md sm:flex-row sm:items-center sm:justify-between sm:gap-6 dark:border-white/10 dark:bg-white/5"
     >
-      <div className="flex items-center gap-3">
+      {/* Top-aligned, so the hearts sit against the first line rather than
+          floating beside the middle of wrapped copy on a narrow screen. */}
+      <div className="flex items-start gap-3">
         <PixelHearts />
         <p className="text-sm text-ink-light dark:text-paper-200">
           Know these by sight?{" "}
@@ -42,7 +44,7 @@ function PixelHearts() {
   return (
     <svg
       viewBox="0 0 25 6"
-      className="h-4 w-[4.2rem] shrink-0 [image-rendering:pixelated]"
+      className="mt-0.5 h-4 w-[4.2rem] shrink-0 [image-rendering:pixelated]"
       shapeRendering="crispEdges"
       aria-hidden="true"
       focusable="false"
