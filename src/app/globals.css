@@ -63,8 +63,8 @@
   /* Fixed card slot — prevents layout shift between cards. */
   .recall-card-slot {
     aspect-ratio: 1 / 1;
-    width: min(100%, 9.5rem);
-    min-height: 9rem;
+    width: min(100%, 28rem);
+    min-height: 16rem;
     perspective: 1000px;
   }
 
@@ -155,7 +155,7 @@
   }
 
   .recall-kana-char {
-    font-size: clamp(3rem, 14vw, 5.75rem);
+    font-size: clamp(4rem, 18vw, 7.5rem);
     line-height: 1;
   }
 }

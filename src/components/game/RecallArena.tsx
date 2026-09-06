@@ -34,33 +34,25 @@ function formatElapsed(ms: number): string {
   return `${min.toString().padStart(2, "0")}:${sec.toString().padStart(2, "0")}`;
 }
 
-/** Pixel blocks showing how much of the deck is left. */
+/** Continuous progress bar showing cards cleared through the deck. */
 function DeckProgress({ cleared, total }: { cleared: number; total: number }) {
   const remaining = total - cleared;
+  const pct = total > 0 ? (cleared / total) * 100 : 0;
+
   return (
     <div className="flex min-w-0 flex-1 items-center gap-2">
       <div
-        className="flex min-w-0 flex-1 flex-wrap gap-0.5"
+        className="h-2.5 min-w-0 flex-1 overflow-hidden rounded-sm border border-ink/20 bg-ink/5 dark:border-paper-100/20 dark:bg-paper-100/5"
         role="progressbar"
         aria-valuemin={0}
         aria-valuemax={total}
         aria-valuenow={remaining}
         aria-label={`${remaining} of ${total} cards remaining`}
       >
-        {Array.from({ length: total }, (_, i) => {
-          const done = i < cleared;
-          return (
-            <span
-              key={i}
-              className={
-                "block h-3 w-2 shrink-0 border " +
-                (done
-                  ? "border-ink/15 bg-ink/10 dark:border-paper-100/15 dark:bg-paper-100/10"
-                  : "border-ink/35 bg-paper-50 shadow-[1px_1px_0_rgba(43,38,32,0.18)] dark:border-paper-100/35 dark:bg-paper-100/90 dark:shadow-[1px_1px_0_rgba(0,0,0,0.25)]")
-              }
-            />
-          );
-        })}
+        <div
+          className="h-full bg-hanko/75 transition-[width] duration-300 ease-out dark:bg-hanko-light/75"
+          style={{ width: `${pct}%` }}
+        />
       </div>
       <span className="shrink-0 font-pixel text-[0.5rem] tabular-nums text-ink-muted dark:text-paper-300 sm:text-[0.625rem]">
         {remaining}/{total}
@@ -316,8 +308,8 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
   const cardFlip = flipped && phase === "input" && !reduceMotion;
 
   return (
-    <div className="mx-auto w-full max-w-[14rem]">
-      <div className="relative flex flex-col items-center gap-1.5">
+    <div className="mx-auto w-full max-w-[28rem]">
+      <div className="relative flex flex-col items-center gap-6">
         {stageFlash && (
           <div
             aria-hidden="true"
@@ -328,10 +320,13 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
           />
         )}
 
-        {/* HUD */}
-        <div className="relative flex w-full flex-wrap items-center justify-center gap-x-2.5 gap-y-1">
-          <div aria-live="off">
-            <span className="font-pixel text-[0.55rem] tabular-nums tracking-wide text-ink dark:text-paper-100 sm:text-[0.6rem]">
+        {/* HUD — timer, progress, streak on one line */}
+        <div className="relative flex w-full flex-nowrap items-center gap-3">
+          <div
+            className="shrink-0 rounded border-2 border-ink/20 bg-paper-50 px-2.5 py-1 dark:border-paper-100/20 dark:bg-sumi-light"
+            aria-live="off"
+          >
+            <span className="font-pixel text-[0.65rem] tabular-nums tracking-wide text-ink dark:text-paper-100 sm:text-xs">
               {formatElapsed(elapsedMs)}
             </span>
           </div>
@@ -340,17 +335,17 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
 
           <div
             className={
-              "flex items-center gap-1 " +
+              "flex shrink-0 items-center gap-1 rounded border border-ink/15 bg-paper-100/80 px-2 py-1 dark:border-paper-100/15 dark:bg-sumi-light/80 " +
               (streakPop && !reduceMotion ? "animate-streak-pop" : "")
             }
             aria-live="polite"
           >
-            <span className="font-pixel text-[0.4rem] uppercase text-ink-muted dark:text-paper-300">
+            <span className="font-pixel text-[0.45rem] uppercase text-ink-muted dark:text-paper-300">
               Streak
             </span>
             <span
               className={
-                "font-pixel text-[0.6rem] tabular-nums sm:text-[0.65rem] " +
+                "font-pixel text-xs tabular-nums " +
                 (streak >= 5 ? "text-hanko dark:text-hanko-light" : "text-ink dark:text-paper-100")
               }
             >
@@ -361,7 +356,7 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
         </div>
 
         {/* Card stack — fixed slot prevents layout shift between cards */}
-        <div className="recall-card-slot relative">
+        <div className="recall-card-slot relative w-full">
           <div className="absolute inset-0">
             {stackDepth > 0 &&
               Array.from({ length: stackDepth }, (_, i) => {
@@ -426,7 +421,7 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
                         className="recall-card-back absolute inset-0 flex flex-col items-center justify-center rounded-[4px]"
                         aria-hidden={false}
                       >
-                        <p className="font-pixel text-[clamp(1rem,5vw,1.35rem)] uppercase tracking-wider text-hanko dark:text-hanko-light">
+                        <p className="font-pixel text-[clamp(1.25rem,7vw,1.75rem)] uppercase tracking-wider text-hanko dark:text-hanko-light">
                           {current.romaji}
                         </p>
                       </div>
@@ -470,7 +465,7 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
                       className="recall-card-back absolute inset-0 flex flex-col items-center justify-center rounded-[4px]"
                       aria-hidden={!flipped}
                     >
-                      <p className="font-pixel text-[clamp(1rem,5vw,1.35rem)] uppercase tracking-wider text-hanko dark:text-hanko-light">
+                      <p className="font-pixel text-[clamp(1.25rem,7vw,1.75rem)] uppercase tracking-wider text-hanko dark:text-hanko-light">
                         {current.romaji}
                       </p>
                     </div>
@@ -481,57 +476,56 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
           </div>
         </div>
 
-        {/* Input row */}
-        <div className="relative w-full">
+        {/* Input + actions */}
+        <div className="w-full space-y-3">
           <label htmlFor="recall-input" className="sr-only">
             Type the romaji reading for {current.char}
           </label>
 
-          <div className="flex gap-2">
-            <div className="relative min-w-0 flex-1">
+          <div className="relative">
+            <span
+              ref={mirrorRef}
+              aria-hidden="true"
+              className="pointer-events-none invisible absolute left-4 top-1/2 -translate-y-1/2 whitespace-pre font-pixel text-base"
+            >
+              {value || ""}
+            </span>
+            <input
+              id="recall-input"
+              ref={inputRef}
+              type="text"
+              inputMode="text"
+              autoComplete="off"
+              autoCapitalize="off"
+              autoCorrect="off"
+              spellCheck={false}
+              enterKeyHint="go"
+              value={value}
+              readOnly={inputLocked}
+              onChange={(e) => setValue(e.target.value)}
+              onKeyDown={onKeyDown}
+              className={
+                "recall-input w-full rounded-md border-[3px] border-ink bg-paper-50 px-4 py-2.5 font-pixel text-base text-ink outline-none transition dark:border-paper-100/30 dark:bg-sumi-light dark:text-paper-100 " +
+                (inputLocked ? "opacity-75" : "") +
+                (shake && !reduceMotion ? "animate-input-shake border-hanko bg-hanko/5" : "") +
+                (shake && reduceMotion ? " border-hanko bg-hanko/10" : "")
+              }
+            />
+            {!inputLocked && (
               <span
-                ref={mirrorRef}
                 aria-hidden="true"
-                className="pointer-events-none invisible absolute left-3 top-1/2 -translate-y-1/2 whitespace-pre font-pixel text-sm"
-              >
-                {value || ""}
-              </span>
-              <input
-                id="recall-input"
-                ref={inputRef}
-                type="text"
-                inputMode="text"
-                autoComplete="off"
-                autoCapitalize="off"
-                autoCorrect="off"
-                spellCheck={false}
-                enterKeyHint="go"
-                value={value}
-                readOnly={inputLocked}
-                onChange={(e) => setValue(e.target.value)}
-                onKeyDown={onKeyDown}
-                placeholder="romaji"
-                className={
-                  "recall-input w-full rounded border-[3px] border-ink bg-paper-50 px-3 py-2 font-pixel text-sm text-ink outline-none transition placeholder:text-ink-muted/60 dark:border-paper-100/30 dark:bg-sumi-light dark:text-paper-100 dark:placeholder:text-paper-300/50 " +
-                  (inputLocked ? "opacity-75" : "") +
-                  (shake && !reduceMotion ? "animate-input-shake border-hanko bg-hanko/5" : "") +
-                  (shake && reduceMotion ? " border-hanko bg-hanko/10" : "")
-                }
+                className="pointer-events-none absolute top-1/2 h-[1.1em] w-2 -translate-y-1/2 bg-hanko animate-cursor-blink dark:bg-hanko-light"
+                style={{ left: `${16 + cursorLeft}px` }}
               />
-              {!inputLocked && (
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute top-1/2 h-[1.1em] w-2 -translate-y-1/2 bg-hanko animate-cursor-blink dark:bg-hanko-light"
-                  style={{ left: `${12 + cursorLeft}px` }}
-                />
-              )}
-            </div>
+            )}
+          </div>
 
+          <div className="flex gap-3">
             <button
               type="button"
               onClick={toggleFlip}
               disabled={inputLocked}
-              className="shrink-0 rounded border-2 border-ink/25 bg-paper-50 px-2 py-1.5 font-pixel text-[0.45rem] uppercase tracking-wide text-ink-light transition hover:bg-paper-200 disabled:opacity-40 dark:border-paper-100/25 dark:bg-sumi-light dark:text-paper-200 dark:hover:bg-sumi-border sm:text-[0.5rem]"
+              className="flex-1 rounded-md border-2 border-ink/25 bg-paper-50 px-3 py-2 font-pixel text-[0.5rem] uppercase tracking-wide text-ink-light transition hover:bg-paper-200 disabled:opacity-40 dark:border-paper-100/25 dark:bg-sumi-light dark:text-paper-200 dark:hover:bg-sumi-border sm:text-[0.625rem]"
             >
               {flipped ? "Hide" : "Flip"}
             </button>
@@ -539,7 +533,7 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
             <button
               type="button"
               onClick={confirmQuit}
-              className="shrink-0 rounded border-2 border-ink/20 bg-paper-100/80 px-2 py-1.5 font-pixel text-[0.45rem] uppercase tracking-wide text-ink-muted transition hover:bg-paper-200 dark:border-paper-100/20 dark:bg-sumi-light/80 dark:text-paper-300 dark:hover:bg-sumi-border sm:text-[0.5rem]"
+              className="flex-1 rounded-md border-2 border-ink/20 bg-paper-100/80 px-3 py-2 font-pixel text-[0.5rem] uppercase tracking-wide text-ink-muted transition hover:bg-paper-200 dark:border-paper-100/20 dark:bg-sumi-light/80 dark:text-paper-300 dark:hover:bg-sumi-border sm:text-[0.625rem]"
             >
               Quit
             </button>
