@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import type { Kanji } from "@/types/content";
 import { characterHref } from "@/lib/characterPaths";
 import { glass } from "@/lib/ui";
@@ -13,10 +11,13 @@ interface KanjiCardProps {
  *
  * The card links to the character's own page. Inside a CharacterBrowser a plain
  * click opens the detail panel instead of navigating.
+ *
+ * A plain anchor rather than next/link, so Next does not prefetch a route payload
+ * for every card on screen; the click is intercepted anyway.
  */
 export function KanjiCard({ kanji }: KanjiCardProps) {
   return (
-    <Link
+    <a
       href={characterHref("kanji", kanji.char)}
       data-char={kanji.char}
       className={
@@ -64,6 +65,6 @@ export function KanjiCard({ kanji }: KanjiCardProps) {
           ))}
         </ul>
       )}
-    </Link>
+    </a>
   );
 }

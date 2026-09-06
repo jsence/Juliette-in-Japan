@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import type { Kana } from "@/types/content";
 import { characterHref } from "@/lib/characterPaths";
 import { glass } from "@/lib/ui";
@@ -19,6 +17,10 @@ interface KanaTableProps {
  *
  * Each card links to the character's own page. Inside a CharacterBrowser a plain
  * click opens the detail panel instead of navigating.
+ *
+ * These are plain anchors rather than next/link on purpose: a table of 208 cards
+ * would have Next prefetch 208 route payloads as the reader scrolls, and the
+ * click is intercepted anyway.
  */
 export function KanaTable({ groups }: KanaTableProps) {
   return (
@@ -31,7 +33,7 @@ export function KanaTable({ groups }: KanaTableProps) {
           <ul className="grid grid-cols-3 gap-2 sm:grid-cols-5">
             {row.items.map((k) => (
               <li key={`${k.script}-${k.char}`}>
-                <Link
+                <a
                   href={characterHref("kana", k.char)}
                   data-char={k.char}
                   className={
@@ -54,7 +56,7 @@ export function KanaTable({ groups }: KanaTableProps) {
                       {k.note}
                     </span>
                   )}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

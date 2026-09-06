@@ -48,7 +48,9 @@ export function CharacterDetail({
           {detail.char}
         </p>
 
-        <dl className="grid min-w-[12rem] flex-1 grid-cols-2 gap-x-4 gap-y-3 text-sm">
+        {/* Full width on narrow screens so the facts sit under the character
+            rather than squeezing into a column too narrow for their labels. */}
+        <dl className="grid w-full grid-cols-2 gap-x-4 gap-y-3 text-sm sm:w-auto sm:min-w-[12rem] sm:flex-1">
           {detail.kind === "kana" ? (
             <>
               <Fact label="Reading">

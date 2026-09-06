@@ -88,7 +88,10 @@ export function CharacterBrowser({
       const char = card?.dataset.char;
       if (!char || !indexByChar.has(char)) return;
 
+      // Handled in the capture phase and stopped here, so no link handler further
+      // down gets a chance to start a navigation before the panel opens.
       event.preventDefault();
+      event.stopPropagation();
       show(char, "push");
     },
     [indexByChar, show]
@@ -98,7 +101,7 @@ export function CharacterBrowser({
 
   return (
     <>
-      <div ref={containerRef} onClick={onContainerClick}>
+      <div ref={containerRef} onClickCapture={onContainerClick}>
         {children}
       </div>
 

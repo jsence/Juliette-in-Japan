@@ -43,16 +43,24 @@ export function CharacterDialog({
   // Capture the trigger once, and hand focus back to it on the way out.
   useEffect(() => {
     openedFrom.current = document.activeElement as HTMLElement | null;
-    const { body } = document;
-    const previousOverflow = body.style.overflow;
-    body.style.overflow = "hidden";
 
-    panelRef.current?.focus();
+    // The lock goes on <html>, not <body>: body's overflow propagates to the
+    // viewport, which drops the scroll position and shortens the area a fixed
+    // overlay covers. The offset is restored either way, in case a browser
+    // clamps it while scrolling is disabled.
+    const root = document.documentElement;
+    const previousOverflow = root.style.overflow;
+    const scrollY = window.scrollY;
+    root.style.overflow = "hidden";
+    if (window.scrollY !== scrollY) window.scrollTo(0, scrollY);
+
+    panelRef.current?.focus({ preventScroll: true });
 
     return () => {
-      body.style.overflow = previousOverflow;
+      root.style.overflow = previousOverflow;
+      if (window.scrollY !== scrollY) window.scrollTo(0, scrollY);
       const target = getReturnFocus?.() ?? openedFrom.current;
-      target?.focus?.();
+      target?.focus?.({ preventScroll: true });
     };
     // getReturnFocus is read at cleanup time; re-running would lose the trigger.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -110,7 +118,10 @@ export function CharacterDialog({
   }, [onClose, onNext, onPrevious, trapTab]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-stretch justify-center sm:items-center sm:p-6">
+    // `!m-0` matters: a parent using a Tailwind `space-y-*` utility would give
+    // this element a top margin, which on a fixed element shifts the overlay down
+    // and leaves an uncovered strip along the top of the viewport.
+    <div className="fixed inset-0 z-50 flex !m-0 items-stretch justify-center sm:items-center sm:p-6">
       <motion.div
         aria-hidden="true"
         onClick={onClose}
