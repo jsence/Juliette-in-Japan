@@ -8,7 +8,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "data:strokes": "node scripts/fetch-stroke-data.mjs && node scripts/reconcile-kana-strokes.mjs",
+    "data:words": "node scripts/build-example-words.mjs",
+    "data:radicals": "node scripts/build-kanji-radicals.mjs",
+    "data:check": "node scripts/reconcile-kana-strokes.mjs --check && node scripts/build-kanji-radicals.mjs --check"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
