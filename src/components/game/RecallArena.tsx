@@ -308,8 +308,8 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
   const cardFlip = flipped && phase === "input" && !reduceMotion;
 
   return (
-    <div className="mx-auto w-full max-w-[28rem]">
-      <div className="relative flex flex-col items-center gap-6">
+    <div className="recall-play">
+      <div className="relative flex flex-col gap-4">
         {stageFlash && (
           <div
             aria-hidden="true"
@@ -321,7 +321,7 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
         )}
 
         {/* HUD — timer, progress, streak on one line */}
-        <div className="relative flex w-full flex-nowrap items-center gap-3">
+        <div className="relative flex w-full flex-nowrap items-center gap-2">
           <div
             className="shrink-0 rounded border-2 border-ink/20 bg-paper-50 px-2.5 py-1 dark:border-paper-100/20 dark:bg-sumi-light"
             aria-live="off"
@@ -356,19 +356,20 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
         </div>
 
         {/* Card stack — fixed slot prevents layout shift between cards */}
-        <div className="recall-card-slot relative w-full">
+        <div className="recall-card-slot relative">
           <div className="absolute inset-0">
             {stackDepth > 0 &&
               Array.from({ length: stackDepth }, (_, i) => {
                 const depth = stackDepth - i;
-                const rot = (i % 2 === 0 ? 1 : -1) * (2 + i * 1.5);
+                const offset = 4 + i;
+                const rot = (i % 2 === 0 ? 1 : -1) * (1 + i * 0.75);
                 return (
                   <div
                     key={`${index}-stack-${i}`}
                     aria-hidden="true"
                     className="recall-stack-card absolute inset-0 rounded-lg"
                     style={{
-                      transform: `translate(${depth * 6}px, ${depth * 5}px) rotate(${rot}deg) scale(${1 - depth * 0.016})`,
+                      transform: `translate(${offset}px, ${offset}px) rotate(${rot}deg) scale(${1 - depth * 0.006})`,
                       zIndex: 5 + i,
                       opacity: 0.92 - i * 0.12,
                       transition: reduceMotion
@@ -477,16 +478,16 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
         </div>
 
         {/* Input + actions */}
-        <div className="w-full space-y-3">
+        <div className="flex flex-col gap-4">
           <label htmlFor="recall-input" className="sr-only">
             Type the romaji reading for {current.char}
           </label>
 
-          <div className="relative">
+          <div className="relative h-12">
             <span
               ref={mirrorRef}
               aria-hidden="true"
-              className="pointer-events-none invisible absolute left-4 top-1/2 -translate-y-1/2 whitespace-pre font-pixel text-base"
+              className="pointer-events-none invisible absolute left-4 top-1/2 -translate-y-1/2 whitespace-pre font-pixel text-base leading-none"
             >
               {value || ""}
             </span>
@@ -505,7 +506,7 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
               onChange={(e) => setValue(e.target.value)}
               onKeyDown={onKeyDown}
               className={
-                "recall-input w-full rounded-md border-[3px] border-ink bg-paper-50 px-4 py-2.5 font-pixel text-base text-ink outline-none transition dark:border-paper-100/30 dark:bg-sumi-light dark:text-paper-100 " +
+                "recall-input box-border h-12 w-full rounded-md border-[3px] border-ink bg-paper-50 px-4 py-0 font-pixel text-base leading-none text-ink outline-none transition dark:border-paper-100/30 dark:bg-sumi-light dark:text-paper-100 " +
                 (inputLocked ? "opacity-75" : "") +
                 (shake && !reduceMotion ? "animate-input-shake border-hanko bg-hanko/5" : "") +
                 (shake && reduceMotion ? " border-hanko bg-hanko/10" : "")
@@ -520,12 +521,12 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
             )}
           </div>
 
-          <div className="flex gap-3">
+          <div className="flex h-10 gap-3">
             <button
               type="button"
               onClick={toggleFlip}
               disabled={inputLocked}
-              className="flex-1 rounded-md border-2 border-ink/25 bg-paper-50 px-3 py-2 font-pixel text-[0.5rem] uppercase tracking-wide text-ink-light transition hover:bg-paper-200 disabled:opacity-40 dark:border-paper-100/25 dark:bg-sumi-light dark:text-paper-200 dark:hover:bg-sumi-border sm:text-[0.625rem]"
+              className="h-10 flex-1 rounded-md border-2 border-ink/25 bg-paper-50 px-3 py-0 font-pixel text-[0.5rem] uppercase tracking-wide text-ink-light transition hover:bg-paper-200 disabled:opacity-40 dark:border-paper-100/25 dark:bg-sumi-light dark:text-paper-200 dark:hover:bg-sumi-border sm:text-[0.625rem]"
             >
               {flipped ? "Hide" : "Flip"}
             </button>
@@ -533,7 +534,7 @@ export function RecallArena({ deck, onComplete, onQuit }: RecallArenaProps) {
             <button
               type="button"
               onClick={confirmQuit}
-              className="flex-1 rounded-md border-2 border-ink/20 bg-paper-100/80 px-3 py-2 font-pixel text-[0.5rem] uppercase tracking-wide text-ink-muted transition hover:bg-paper-200 dark:border-paper-100/20 dark:bg-sumi-light/80 dark:text-paper-300 dark:hover:bg-sumi-border sm:text-[0.625rem]"
+              className="h-10 flex-1 rounded-md border-2 border-ink/20 bg-paper-100/80 px-3 py-0 font-pixel text-[0.5rem] uppercase tracking-wide text-ink-muted transition hover:bg-paper-200 dark:border-paper-100/20 dark:bg-sumi-light/80 dark:text-paper-300 dark:hover:bg-sumi-border sm:text-[0.625rem]"
             >
               Quit
             </button>
