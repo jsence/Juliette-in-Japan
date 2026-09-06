@@ -26,3 +26,22 @@ export const glassHover =
 /** Lift effect for homepage section cards. */
 export const glassLift =
   "transition duration-300 ease-out hover:-translate-y-1.5 hover:shadow-glass dark:hover:shadow-glass-dark";
+
+/**
+ * A tab strip: one continuous bar holding its tabs, rather than a row of
+ * separate buttons. The bar carries the border and the glass surface, so the
+ * tabs inside need no border, no shadow and no lift of their own.
+ */
+export const tabBar =
+  "inline-flex max-w-full rounded-lg border border-white/50 bg-white/40 p-1 backdrop-blur-md dark:border-white/10 dark:bg-white/5";
+
+/** A tab inside `tabBar`; compose with `tabActive` or `tabIdle`. */
+export const tab =
+  "shrink-0 whitespace-nowrap rounded-md px-3.5 py-1.5 text-sm font-medium transition-colors";
+
+/** The selected tab: filled in the accent colour, with no second indicator. */
+export const tabActive = "bg-hanko text-paper-50";
+
+/** An unselected tab: hover tints the background and nothing moves. */
+export const tabIdle =
+  "text-ink-light hover:bg-ink/5 dark:text-paper-200 dark:hover:bg-white/10";

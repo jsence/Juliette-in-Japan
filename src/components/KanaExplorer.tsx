@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Kana, KanaScript } from "@/types/content";
+import { tab, tabActive, tabBar, tabIdle } from "@/lib/ui";
 import { KanaTable } from "./KanaTable";
 
 interface KanaGroupData {
@@ -20,15 +21,12 @@ export function KanaExplorer({ hiragana, katakana }: KanaExplorerProps) {
   const [script, setScript] = useState<KanaScript>("hiragana");
   const groups = script === "hiragana" ? hiragana : katakana;
 
-  const tabClass = (active: boolean) =>
-    "rounded-md px-4 py-2 text-sm font-medium transition " +
-    (active
-      ? "bg-hanko text-paper-50"
-      : "border border-white/50 bg-white/30 text-ink-light backdrop-blur hover:bg-white/50 dark:border-white/10 dark:bg-white/5 dark:text-paper-200 dark:hover:bg-white/10");
+  // Same strip as the Language sub-nav, so the page shows one tab style.
+  const tabClass = (active: boolean) => tab + " " + (active ? tabActive : tabIdle);
 
   return (
     <div className="space-y-6">
-      <div role="tablist" aria-label="Kana script" className="flex gap-2">
+      <div role="tablist" aria-label="Kana script" className={tabBar + " gap-1"}>
         <button
           type="button"
           role="tab"

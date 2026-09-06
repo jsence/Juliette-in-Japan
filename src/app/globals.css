@@ -38,6 +38,15 @@
 }
 
 @layer utilities {
+  /* Tab strips scroll sideways without showing a scrollbar over the tabs. */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   /* Faint paper-fiber texture layered over the background. */
   .paper-grain {
     position: relative;

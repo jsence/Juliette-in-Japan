@@ -1,7 +1,6 @@
-import Link from "next/link";
-
 import { CharacterBrowser } from "@/components/character/CharacterBrowser";
 import { KanaExplorer } from "@/components/KanaExplorer";
+import { KanaBattleCta } from "@/components/language/KanaBattleCta";
 import { LanguageSubNav } from "@/components/LanguageSubNav";
 import { PageHeader } from "@/components/PageHeader";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -36,6 +35,8 @@ export function KanaIndex({ initialChar }: { initialChar?: string }) {
           </p>
         }
       />
+
+      <KanaBattleCta />
 
       <ScrollReveal as="section" className="grid gap-4 sm:grid-cols-2">
         <div className={"rounded-lg p-4 " + glass}>
@@ -143,36 +144,6 @@ export function KanaIndex({ initialChar }: { initialChar?: string }) {
             </p>
           </div>
         </div>
-      </ScrollReveal>
-
-      <ScrollReveal
-        as="section"
-        className={
-          "flex flex-col items-start gap-5 rounded-xl p-6 sm:flex-row sm:items-center sm:justify-between " +
-          glass
-        }
-      >
-        <div>
-          <h2 className="font-serif text-xl font-semibold text-ink dark:text-paper-100">
-            Now recall them under a clock
-          </h2>
-          <p className="mt-1 text-sm text-ink-light dark:text-paper-200">
-            Reading the table is the easy half. Kana Battle drills whichever rows you pick — including
-            dakuten and yōon — against a timer, and sends anything you miss to the flashcard deck.
-          </p>
-        </div>
-        <Link
-          href="/games/kana-battle"
-          className="group inline-flex shrink-0 items-center gap-2 rounded-md bg-hanko px-5 py-2.5 text-sm font-medium text-paper-50 shadow-glass transition duration-300 hover:-translate-y-0.5 hover:bg-hanko-dark"
-        >
-          Play Kana Battle
-          <span
-            aria-hidden="true"
-            className="inline-block transition-transform duration-300 group-hover:translate-x-1"
-          >
-            →
-          </span>
-        </Link>
       </ScrollReveal>
     </div>
   );

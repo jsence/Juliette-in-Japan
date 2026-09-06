@@ -85,6 +85,21 @@ export const sections: SiteSection[] = [
     ],
   },
   {
+    id: "games",
+    href: "/games",
+    label: "Games",
+    glyph: "遊",
+    description:
+      "Timed practice with a little pixel-art theatre, for drilling what the Language section teaches.",
+    // Built from the game catalogue so the dropdown always matches /games.
+    subPages: games.map((game) => ({
+      href: game.href,
+      label: game.title,
+      glyph: game.glyph,
+      description: game.description,
+    })),
+  },
+  {
     id: "culture",
     href: "/culture",
     label: "Culture",
@@ -203,21 +218,6 @@ export const sections: SiteSection[] = [
         description: "Open data references for kanji, vocabulary and example sentences.",
       },
     ],
-  },
-  {
-    id: "games",
-    href: "/games",
-    label: "Games",
-    glyph: "遊",
-    description:
-      "Timed practice with a little pixel-art theatre, for drilling what the Language section teaches.",
-    // Built from the game catalogue so the dropdown always matches /games.
-    subPages: games.map((game) => ({
-      href: game.href,
-      label: game.title,
-      glyph: game.glyph,
-      description: game.description,
-    })),
   },
 ];
 
