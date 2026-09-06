@@ -47,7 +47,7 @@ const config: Config = {
         serif: ["var(--font-serif)", "Georgia", "serif"],
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         jp: ["var(--font-jp)", "var(--font-serif)", "serif"],
-        // Game UI only — loaded on the Kana Battle route.
+        // Game UI only — loaded on the /games routes.
         pixel: ["var(--font-pixel)", "ui-monospace", "monospace"],
       },
       backgroundImage: {

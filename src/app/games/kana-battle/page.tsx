@@ -3,7 +3,6 @@ import { Press_Start_2P } from "next/font/google";
 import Link from "next/link";
 
 import { KanaBattle } from "@/components/game/KanaBattle";
-import { LanguageSubNav } from "@/components/LanguageSubNav";
 import { PageHeader } from "@/components/PageHeader";
 
 /**
@@ -23,10 +22,9 @@ export const metadata: Metadata = {
     "A pixel-art hiragana duel: match the romaji to the right kana before the timer runs out.",
 };
 
-export default function KanaGamePage() {
+export default function KanaBattlePage() {
   return (
     <div className={pixel.variable + " space-y-8"}>
-      <LanguageSubNav />
       <PageHeader
         title="Kana Battle"
         glyph="戦"
@@ -42,6 +40,11 @@ export default function KanaGamePage() {
         }
       />
       <KanaBattle />
+      <p className="text-sm text-ink-muted dark:text-paper-300">
+        <Link href="/games" className="text-hanko hover:underline dark:text-hanko-light">
+          ← Back to Games
+        </Link>
+      </p>
     </div>
   );
 }

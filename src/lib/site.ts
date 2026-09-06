@@ -1,5 +1,7 @@
 /** Global, human-edited site configuration. */
 
+import { games } from "./games";
+
 export interface NavItem {
   href: string;
   label: string;
@@ -49,12 +51,6 @@ export const sections: SiteSection[] = [
         label: "Kana",
         glyph: "か",
         description: "Hiragana and katakana with stroke counts and the modified sounds (dakuten, yōon).",
-      },
-      {
-        href: "/language/kana/game",
-        label: "Kana Battle",
-        glyph: "戦",
-        description: "A pixel-art duel: match the romaji to the right kana before the timer runs out.",
       },
       {
         href: "/language/kanji",
@@ -207,6 +203,21 @@ export const sections: SiteSection[] = [
         description: "Open data references for kanji, vocabulary and example sentences.",
       },
     ],
+  },
+  {
+    id: "games",
+    href: "/games",
+    label: "Games",
+    glyph: "遊",
+    description:
+      "Timed practice with a little pixel-art theatre, for drilling what the Language section teaches.",
+    // Built from the game catalogue so the dropdown always matches /games.
+    subPages: games.map((game) => ({
+      href: game.href,
+      label: game.title,
+      glyph: game.glyph,
+      description: game.description,
+    })),
   },
 ];
 

@@ -8,13 +8,19 @@ interface HomeSectionGridProps {
   sections: SiteSection[];
 }
 
-/** Asymmetric glass card grid — Language spans a larger cell. */
+/**
+ * Asymmetric glass card grid — Language spans a larger cell.
+ *
+ * The 3×3 grid is sized so Language's 2×2 block plus the five remaining
+ * sections fill it exactly, leaving no gap. Adding a section means growing the
+ * grid to match.
+ */
 export function HomeSectionGrid({ sections }: HomeSectionGridProps) {
   const language = sections.find((s) => s.id === "language")!;
   const others = sections.filter((s) => s.id !== "language");
 
   return (
-    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3">
       <ScrollReveal index={0} className="h-full sm:col-span-2 lg:row-span-2">
         <SectionCard section={language} large />
       </ScrollReveal>
