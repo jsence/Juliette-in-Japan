@@ -30,4 +30,15 @@ export const games: Game[] = [
       "Anything you miss can go straight to the flashcard deck",
     ],
   },
+  {
+    href: "/games/kana-recall",
+    title: "Kana Recall",
+    glyph: "憶",
+    description: "Type the romaji for each kana as it appears — flip only when you are truly stuck.",
+    facts: [
+      "Hiragana, katakana or both; monographs, diacritics and yōon by row",
+      "Flip marks a miss; typos just shake and let you retry",
+      "Export flipped cards to flashcards or replay just those",
+    ],
+  },
 ];

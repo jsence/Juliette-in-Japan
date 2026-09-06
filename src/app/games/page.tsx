@@ -3,6 +3,7 @@ import { Press_Start_2P } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { BattlePreview } from "@/components/game/BattlePreview";
+import { RecallPreview } from "@/components/game/RecallPreview";
 import { GameCard } from "@/components/game/GameCard";
 import { PageHeader } from "@/components/PageHeader";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -19,12 +20,13 @@ const pixel = Press_Start_2P({
 export const metadata: Metadata = {
   title: "Games",
   description:
-    "Timed practice games for the Japanese material on this site, starting with Kana Battle — a pixel-art hiragana duel.",
+    "Timed practice games for the Japanese material on this site — multiple-choice duels and typing recall drills built from the same kana data.",
 };
 
 /** Thumbnail art per game, kept out of the catalogue so it stays plain data. */
 const previews: Record<string, ReactNode> = {
   "/games/kana-battle": <BattlePreview />,
+  "/games/kana-recall": <RecallPreview />,
 };
 
 export default function GamesPage() {
@@ -52,7 +54,7 @@ export default function GamesPage() {
 
       <ScrollReveal>
         <p className="text-sm text-ink-muted dark:text-paper-300">
-          More will appear here as they are built — kanji and vocabulary are the obvious next
+          More will appear here as they are built — kanji and vocabulary drills are the obvious next
           candidates.
         </p>
       </ScrollReveal>
