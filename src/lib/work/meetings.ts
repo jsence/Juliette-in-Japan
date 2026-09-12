@@ -5,16 +5,42 @@ export const meetingsPage: WorkPageContent = {
   title: "Meetings",
   glyph: "会",
   description: "Seating, when to speak, 根回し, consensus, and minutes.",
-  intro:
-    "Meetings often confirm what was already agreed in corridors. Your job in the room is to listen, take accurate notes, and support the decision — not to surprise the chair with a new idea.",
+  introLines: [
+    "Meetings often confirm what was already agreed in corridors.",
+    "Listen, take accurate notes, and support the decision — do not surprise the chair with a new idea.",
+  ],
+  tldr: [
+    "Honour seat is farthest from the door; sit near the door if unsure.",
+    "Sound out stakeholders before the invite — the meeting ratifies, it rarely discovers.",
+    "Speak after the chair opens the floor or your manager nods to you.",
+    "Minutes: who decided what, owners, dates — send within 24 hours.",
+  ],
   concepts: [
     {
       id: "seating",
       title: "Where to sit",
       ruby: { kanji: "上座", reading: "かみざ" },
       romaji: "kamiza / shimoza",
-      summary:
-        "上座 is the honour seat — usually farthest from the door. 下座 is near the door where juniors sit and where you sit if unsure.",
+      summaryLines: [
+        "The honour seat is usually farthest from the door.",
+        "The lower seat is near the door — where juniors sit when unsure.",
+      ],
+      terms: [
+        {
+          id: "mtg-kamiza",
+          japanese: "上座",
+          ruby: [{ text: "上座", reading: "かみざ" }],
+          romaji: "kamiza",
+          meaning: "Honour / senior seat",
+        },
+        {
+          id: "mtg-shimoza",
+          japanese: "下座",
+          ruby: [{ text: "下座", reading: "しもざ" }],
+          romaji: "shimoza",
+          meaning: "Lower / junior seat (often by the door)",
+        },
+      ],
       whatToDo: [
         "Enter, pause, and let the most senior person sit first if it is a formal client meeting.",
         "If nobody directs you, take the seat nearest the door and keep your materials compact.",
@@ -24,13 +50,15 @@ export const meetingsPage: WorkPageContent = {
     {
       id: "when-speak",
       title: "When to speak",
-      summary:
-        "Speak after the chair opens the floor, or when your manager nods to you. Long silence then a sudden monologue reads as disrespect.",
+      summaryLines: [
+        "Speak after the chair opens the floor, or when your manager nods to you.",
+        "Long silence then a sudden monologue reads as disrespect.",
+      ],
       whatToDo: [
         "Prepare one slide or three bullet points maximum for your slot.",
-        "Open with 一言: purpose → fact → request.",
+        "Open with one line: purpose → fact → request.",
         "If interrupted, stop immediately — do not talk over seniors.",
-        "Summarise agreement before the room moves on: 「では、〇〇で進める、という理解でよろしいでしょうか。」",
+        "Summarise agreement before the room moves on — use the confirmation phrase in the table below.",
       ],
     },
     {
@@ -38,8 +66,10 @@ export const meetingsPage: WorkPageContent = {
       title: "Why decisions look pre-made",
       ruby: { kanji: "合意", reading: "ごうい" },
       romaji: "gōi",
-      summary:
-        "Visible consensus in the meeting means 根回し happened earlier. The meeting ratifies; it rarely discovers.",
+      summaryLines: [
+        "Visible consensus in the meeting means pre-alignment happened earlier.",
+        "The meeting ratifies; it rarely discovers.",
+      ],
       whatToDo: [
         "If you need a yes, sound out key people before the calendar invite goes out.",
         "Bring concerns to your manager privately first, not as an ambush in the room.",
@@ -51,8 +81,9 @@ export const meetingsPage: WorkPageContent = {
       title: "Building agreement beforehand",
       ruby: { kanji: "根回し", reading: "ねまわし" },
       romaji: "nemawashi",
-      summary:
-        "根回し is quiet pre-alignment: one-to-one chats, draft mails, and «would this direction be acceptable?» before the group meets.",
+      summaryLines: [
+        "Quiet pre-alignment: one-to-one chats, draft mails, and direction checks before the group meets.",
+      ],
       whatToDo: [
         "List stakeholders who can block the idea (legal, finance, section chief).",
         "Visit or mail each with a short brief and ask for concerns — not permission yet.",
@@ -66,8 +97,10 @@ export const meetingsPage: WorkPageContent = {
       title: "Notes and minutes",
       ruby: { kanji: "議事録", reading: "ぎじろく" },
       romaji: "gijiroku",
-      summary:
-        "Someone will write 議事録 — decisions, owners, dates. If you are junior, you may be asked to draft.",
+      summaryLines: [
+        "Someone writes formal minutes — decisions, owners, dates.",
+        "If you are junior, you may be asked to draft.",
+      ],
       whatToDo: [
         "Note who said what decision — not verbatim jokes or side chat.",
         "Record: date, attendees, agenda, conclusion, action items (who / what / by when).",
@@ -83,7 +116,7 @@ export const meetingsPage: WorkPageContent = {
       ruby: [{ text: "定刻", reading: "ていこく" }],
       romaji: "Sore dewa, teikoku ni narimashita node, hajime sasete itadakimasu.",
       english: "It is the scheduled time — we will begin.",
-      register: "Internal · humble (team / upward)",
+      register: "internal-senior",
       usage: "Only if you are chair; juniors rarely say this.",
     },
     {
@@ -92,7 +125,7 @@ export const meetingsPage: WorkPageContent = {
       ruby: [{ text: "説明", reading: "せつめい" }],
       romaji: "Itten, go-setsumei sasete itadakemasu deshō ka.",
       english: "May I explain one point?",
-      register: "Internal · humble (team / upward)",
+      register: "internal-senior",
       usage: "When invited to speak; wait for eye contact or a nod first.",
     },
     {
@@ -101,7 +134,7 @@ export const meetingsPage: WorkPageContent = {
       ruby: [{ text: "決定", reading: "けってい" }, { text: "事項", reading: "じこう" }],
       romaji: "Honjitsu no kettei jikō wa, ○○ to iu rikai de yoroshii deshō ka.",
       english: "Is it correct that today's decision is ○○?",
-      register: "Neutral · polite (either side)",
+      register: "internal-peer",
       usage: "End of meeting — saves silent disagreement later.",
     },
     {
@@ -110,7 +143,7 @@ export const meetingsPage: WorkPageContent = {
       ruby: [{ text: "議事録", reading: "ぎじろく" }, { text: "共有", reading: "きょうゆう" }],
       romaji: "Gijiroku o honjitsu-jū ni kyōyū itashimasu.",
       english: "I will share the minutes within today.",
-      register: "Internal · humble (team / upward)",
+      register: "internal-senior",
       usage: "Closing line when you are the note-taker.",
     },
   ],
@@ -118,12 +151,12 @@ export const meetingsPage: WorkPageContent = {
     do: [
       "Sit near the door until you know the room.",
       "Pre-align controversial items in one-to-ones.",
-      "Send minutes within 24 hours while memory is fresh.",
+      "Send minutes within 24 hours.",
     ],
     dont: [
       "Present a surprise proposal the manager has never seen.",
       "Contradict your manager in front of a client.",
-      "Record personal opinions in 議事録 as if they were decisions.",
+      "Record opinions in minutes as if they were decisions.",
     ],
   },
   sources: [

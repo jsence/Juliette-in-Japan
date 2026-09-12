@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { WorkPageLayout } from "@/components/work/WorkPageLayout";
+import { KeigoPageLayout } from "@/components/work/KeigoPageLayout";
 import { requireWorkPage } from "@/lib/work";
 
 const SLUG = "keigo";
@@ -12,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function WorkKeigoPage() {
-  return <WorkPageLayout page={page} />;
+  return <KeigoPageLayout page={page} />;
 }

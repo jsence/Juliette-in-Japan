@@ -1,12 +1,14 @@
 import type { WorkPageContent, WorkPhrase } from "@/types/work";
 
+import { keigoVerbRows } from "./keigo-verbs";
+
 const emailOpenInternal: WorkPhrase[] = [
   {
     id: "k-email-o1",
     japanese: "お疲れ様です。〇〇部の〇〇です。",
     romaji: "Otsukaresama desu. ○○-bu no ○○ desu.",
     english: "Good afternoon / thanks for your work — this is ○○ from ○○ department.",
-    register: "Internal · polite (です・ます)",
+    register: "internal-peer",
     usage: "Default internal mail opening same day; not for first contact with executives you have never met.",
   },
   {
@@ -15,7 +17,7 @@ const emailOpenInternal: WorkPhrase[] = [
     ruby: [{ text: "多忙", reading: "たぼう" }],
     romaji: "Go-tabō no tokoro osore irimasu.",
     english: "Sorry to contact you while you are busy.",
-    register: "Internal · humble (team / upward)",
+    register: "internal-senior",
     usage: "Before a request upward; skip with close peers if they prefer short mail.",
   },
   {
@@ -24,7 +26,7 @@ const emailOpenInternal: WorkPhrase[] = [
     ruby: [{ text: "平素", reading: "へいそ" }, { text: "世話", reading: "せわ" }],
     romaji: "Heiso yori taihen o-sewa ni natte orimasu.",
     english: "Thank you as always for your kind support.",
-    register: "Client · humble",
+    register: "client",
     usage: "Standard opening to external clients; pair with company name in the next line.",
   },
   {
@@ -33,7 +35,7 @@ const emailOpenInternal: WorkPhrase[] = [
     ruby: [{ text: "突然", reading: "とつぜん" }, { text: "失礼", reading: "しつれい" }],
     romaji: "Totsuzen no go-renraku shitsurei itashimasu.",
     english: "Forgive this sudden message.",
-    register: "Client · humble",
+    register: "client",
     usage: "First mail to a new external contact or after a long silence.",
   },
   {
@@ -41,7 +43,7 @@ const emailOpenInternal: WorkPhrase[] = [
     japanese: "いつもお世話になっております。",
     romaji: "Itsumo o-sewa ni natte orimasu.",
     english: "Thank you for your continued support.",
-    register: "Client · polite",
+    register: "client",
     usage: "Slightly lighter than 平素より; common with vendors you mail weekly.",
   },
 ];
@@ -53,7 +55,7 @@ const emailCloseInternal: WorkPhrase[] = [
     ruby: [{ text: "以上", reading: "いじょう" }],
     romaji: "Ijō, yoroshiku onegai itashimasu.",
     english: "That is all — thank you in advance.",
-    register: "Internal · polite (です・ます)",
+    register: "internal-peer",
     usage: "Standard internal close when asking for action.",
   },
   {
@@ -62,7 +64,7 @@ const emailCloseInternal: WorkPhrase[] = [
     ruby: [{ text: "確認", reading: "かくにん" }],
     romaji: "Go-kakunin no hodo, yoroshiku onegai itashimasu.",
     english: "I would appreciate your confirmation.",
-    register: "Internal · humble (team / upward)",
+    register: "internal-senior",
     usage: "When you need approval or a read receipt on a decision.",
   },
   {
@@ -71,7 +73,7 @@ const emailCloseInternal: WorkPhrase[] = [
     ruby: [{ text: "何卒", reading: "なにとぞ" }, { text: "申", reading: "もう" }],
     romaji: "Nanitozo yoroshiku onegai mōshiagemasu.",
     english: "I humbly ask for your cooperation.",
-    register: "Client · humble",
+    register: "client",
     usage: "Formal client close — stronger than よろしくお願いします.",
   },
   {
@@ -80,7 +82,7 @@ const emailCloseInternal: WorkPhrase[] = [
     ruby: [{ text: "手数", reading: "てすう" }],
     romaji: "O-tesū o okake shimasu ga, nanitozo yoroshiku onegai itashimasu.",
     english: "Sorry for the trouble — thank you in advance.",
-    register: "Client · humble",
+    register: "client",
     usage: "When your mail adds work for the client (forms, signatures, data).",
   },
   {
@@ -89,7 +91,7 @@ const emailCloseInternal: WorkPhrase[] = [
     ruby: [{ text: "引", reading: "ひ" }, { text: "続", reading: "つづ" }],
     romaji: "Hikitsuzuki dōzo yoroshiku onegai itashimasu.",
     english: "Thank you for your continued cooperation.",
-    register: "Client · polite",
+    register: "client",
     usage: "Ongoing projects; safe default when unsure.",
   },
 ];
@@ -101,7 +103,7 @@ const phonePhrases: WorkPhrase[] = [
     ruby: [{ text: "電話", reading: "でんわ" }],
     romaji: "O-denwa arigatō gozaimasu. Kabushiki gaisha ○○ no ○○ de gozaimasu.",
     english: "Thank you for calling — this is ○○ of ○○ Co., Ltd.",
-    register: "Client · humble",
+    register: "client",
     usage: "Inbound answer; state company then your name.",
   },
   {
@@ -109,7 +111,7 @@ const phonePhrases: WorkPhrase[] = [
     japanese: "〇〇をお願いしたく、お電話いたしました。",
     romaji: "○○ o onegai shitaku, o-denwa itashimashita.",
     english: "I am calling to ask regarding ○○.",
-    register: "Client · humble",
+    register: "client",
     usage: "Outbound after they pick up; replace お電話 with ご連絡 in mail.",
   },
   {
@@ -118,7 +120,7 @@ const phonePhrases: WorkPhrase[] = [
     ruby: [{ text: "担当", reading: "たんとう" }, { text: "者", reading: "もの" }],
     romaji: "Tantō no mono ni o-tsunagi itadakemasu deshō ka.",
     english: "Could you connect me to the person in charge?",
-    register: "Client · humble",
+    register: "client",
     usage: "Reception call; if you know the name, add 「〇〇様はいらっしゃいますでしょうか。」",
   },
   {
@@ -127,7 +129,7 @@ const phonePhrases: WorkPhrase[] = [
     ruby: [{ text: "少々", reading: "しょうしょう" }],
     romaji: "Shōshō omachi kudasai.",
     english: "Please hold for a moment.",
-    register: "Internal · polite (です・ます)",
+    register: "internal-peer",
     usage: "When transferring — say before putting on hold, not after.",
   },
 ];
@@ -139,7 +141,7 @@ const requestPhrases: WorkPhrase[] = [
     ruby: [{ text: "確認", reading: "かくにん" }],
     romaji: "○○ ni tsuite go-kakunin itadakemasu deshō ka.",
     english: "Could you please confirm ○○?",
-    register: "Internal · humble (team / upward)",
+    register: "internal-senior",
     usage: "Safer than 確認してください upward; neutral with peers.",
   },
   {
@@ -148,7 +150,7 @@ const requestPhrases: WorkPhrase[] = [
     ruby: [{ text: "都合", reading: "つごう" }],
     romaji: "Go-tsugō no yoroshii nichiji o o-shirase itadakemasu deshō ka.",
     english: "Could you let me know a convenient date and time?",
-    register: "Client · humble",
+    register: "client",
     usage: "Scheduling with external parties.",
   },
   {
@@ -157,7 +159,7 @@ const requestPhrases: WorkPhrase[] = [
     ruby: [{ text: "差", reading: "さ" }, { text: "支", reading: "つ" }],
     romaji: "Sashitsukae nakereba, ○○ o kyōyū itadakemasu deshō ka.",
     english: "If it is all right, could you share ○○?",
-    register: "Internal · polite (です・ます)",
+    register: "internal-peer",
     usage: "Asking for a file or document without sounding demanding.",
   },
   {
@@ -166,7 +168,7 @@ const requestPhrases: WorkPhrase[] = [
     ruby: [{ text: "検討", reading: "けんとう" }],
     romaji: "Osore irimasu ga, go-kentō no hodo onegai mōshiagemasu.",
     english: "Sorry to ask — please consider this.",
-    register: "Client · humble",
+    register: "client",
     usage: "Proposal to client; does not assume approval.",
   },
   {
@@ -175,7 +177,7 @@ const requestPhrases: WorkPhrase[] = [
     ruby: [{ text: "対応", reading: "たいおう" }],
     romaji: "O-tesū desu ga, ○○ no go-taiō o onegai dekimasu deshō ka.",
     english: "Sorry for the trouble — could I ask you to handle ○○?",
-    register: "Internal · humble (team / upward)",
+    register: "internal-senior",
     usage: "Cross-team request; name deadline in the next line.",
   },
 ];
@@ -187,7 +189,7 @@ const apologisePhrases: WorkPhrase[] = [
     ruby: [{ text: "申", reading: "もう" }, { text: "訳", reading: "わけ" }],
     romaji: "Taihen mōshiwake gozaimasen.",
     english: "I am very sorry.",
-    register: "Client · humble",
+    register: "client",
     usage: "Serious mistake to client; do not overuse for tiny delays.",
   },
   {
@@ -196,7 +198,7 @@ const apologisePhrases: WorkPhrase[] = [
     ruby: [{ text: "迷惑", reading: "めいわく" }],
     romaji: "Go-meiwaku o okake shi, mōshiwake gozaimasen.",
     english: "Sorry for the inconvenience caused.",
-    register: "Client · humble",
+    register: "client",
     usage: "After a delay, wrong attachment, or missed meeting.",
   },
   {
@@ -205,7 +207,7 @@ const apologisePhrases: WorkPhrase[] = [
     ruby: [{ text: "重", reading: "かさ" }],
     romaji: "Kasane gasane mōshiwake gozaimasen.",
     english: "I am sorry again (for repeated trouble).",
-    register: "Client · humble",
+    register: "client",
     usage: "Second apology on the same issue — shows awareness.",
   },
   {
@@ -214,7 +216,7 @@ const apologisePhrases: WorkPhrase[] = [
     ruby: [{ text: "確認", reading: "かくにん" }, { text: "不足", reading: "ぶそく" }, { text: "以後", reading: "いご" }],
     romaji: "Watashi no kakunin busoku deshita. Igo ki o tsukemasu.",
     english: "It was my lack of checking. I will be careful going forward.",
-    register: "Internal · polite (です・ます)",
+    register: "internal-peer",
     usage: "Own the error to your manager — avoid blaming tools or others first.",
   },
 ];
@@ -226,7 +228,7 @@ const thankPhrases: WorkPhrase[] = [
     ruby: [{ text: "対応", reading: "たいおう" }],
     romaji: "Go-taiō arigatō gozaimashita.",
     english: "Thank you for handling that.",
-    register: "Client · polite",
+    register: "client",
     usage: "After client sends data or approves — past tense.",
   },
   {
@@ -235,7 +237,7 @@ const thankPhrases: WorkPhrase[] = [
     ruby: [{ text: "迅速", reading: "じんそく" }, { text: "返信", reading: "へんしん" }],
     romaji: "Jinsoku na go-henshin arigatō gozaimasu.",
     english: "Thank you for your quick reply.",
-    register: "Client · respectful (相手を高める)",
+    register: "client",
     usage: "Elevates their action; good after fast client turnaround.",
   },
   {
@@ -244,7 +246,7 @@ const thankPhrases: WorkPhrase[] = [
     ruby: [{ text: "力", reading: "ちから" }, { text: "借", reading: "か" }],
     romaji: "O-chikara o okari shimashita.",
     english: "I borrowed your strength — thank you for your help.",
-    register: "Internal · humble (team / upward)",
+    register: "internal-senior",
     usage: "After a senior saves your project; spoken or short mail.",
   },
   {
@@ -253,7 +255,7 @@ const thankPhrases: WorkPhrase[] = [
     ruby: [{ text: "貴重", reading: "きちょう" }],
     romaji: "Honjitsu wa kichō na o-jikan o itadaki, arigatō gozaimashita.",
     english: "Thank you for your valuable time today.",
-    register: "Client · humble",
+    register: "client",
     usage: "End of meeting mail — standard and safe.",
   },
 ];
@@ -265,7 +267,7 @@ const reportPhrases: WorkPhrase[] = [
     ruby: [{ text: "以下", reading: "いか" }, { text: "完了", reading: "かんりょう" }],
     romaji: "○○ no ken, ika no tōri kanryō itashimashita.",
     english: "Regarding ○○, it has been completed as below.",
-    register: "Internal · humble (team / upward)",
+    register: "internal-senior",
     usage: "Report mail opening; bullet the facts next.",
   },
   {
@@ -274,7 +276,7 @@ const reportPhrases: WorkPhrase[] = [
     ruby: [{ text: "現状", reading: "げんじょう" }],
     romaji: "Genjō, ○○ de gozaimasu.",
     english: "The current situation is ○○.",
-    register: "Client · humble",
+    register: "client",
     usage: "Status to client — neutral, no blame language.",
   },
   {
@@ -283,7 +285,7 @@ const reportPhrases: WorkPhrase[] = [
     ruby: [{ text: "進捗", reading: "しんちょく" }],
     romaji: "Shinchoku wa ○ pāsento de gozaimasu.",
     english: "Progress is at ○ percent.",
-    register: "Internal · humble (team / upward)",
+    register: "internal-senior",
     usage: "Weekly report; add blockers in the next line.",
   },
   {
@@ -292,7 +294,7 @@ const reportPhrases: WorkPhrase[] = [
     ruby: [{ text: "問題", reading: "もんだい" }, { text: "発生", reading: "はっせい" }, { text: "相談", reading: "そうだん" }],
     romaji: "Mondai ga hassei shite orimasu node, go-sōdan sasete itadakemasu deshō ka.",
     english: "A problem has occurred — may I consult with you?",
-    register: "Internal · humble (team / upward)",
+    register: "internal-senior",
     usage: "報連相 の 相 — ask before the client hears it elsewhere.",
   },
 ];
@@ -302,36 +304,18 @@ export const keigoPage: WorkPageContent = {
   title: "Keigo in practice",
   glyph: "敬",
   description: "Daily formulas for mail, phone, requests, apologies, thanks, and reports — not grammar theory.",
-  intro:
-    "Business keigo is less about memorising rules than about fixed pairs: humble language lowers your side, respectful language raises the other. Below are formulas people actually send — with register labelled so you do not mix internal and client language.",
-  concepts: [
-    {
-      id: "kenjou",
-      title: "Humble vs respectful — what to lower",
-      ruby: { kanji: "謙譲語", reading: "けんじょうご" },
-      romaji: "kenjōgo",
-      summary:
-        "Use humble forms for your actions (伺います, 申し上げます, いただきます). Use respectful forms for their actions (ご確認, お送りいただく, いらっしゃいます).",
-      whatToDo: [
-        "To a client, never use 見る about their document — use ご覧いただく for them viewing yours.",
-        "About your own company to a client, use humble: 当社では…と存じます.",
-        "Internal upward mail: humble is safe; internal peers: plain polite is often enough.",
-        "When unsure with a client, choose humble — overdressed beats rude.",
-      ],
-    },
-    {
-      id: "sonkei",
-      title: "Respectful language for their side",
-      ruby: { kanji: "尊敬語", reading: "そんけいご" },
-      romaji: "sonkeigo",
-      summary: "Respectful verbs honour the other person: おっしゃる, ご覧になる, お越しになる.",
-      whatToDo: [
-        "Quote a client manager with おっしゃっていただいた通り in mail.",
-        "Avoid あなたが言った in client mail — use ご指摘のとおり.",
-        "Do not use respectful forms about yourself — it sounds arrogant or confused.",
-      ],
-    },
+  introLines: [
+    "Use the verb table to pick humble vs respectful forms, then copy whole phrases from the tables below.",
+    "Every line is tagged for audience — internal peer, internal senior, or client — before you paste into mail or say it on a call.",
   ],
+  tldr: [
+    "Respectful forms lift the other person; humble forms lower your side — never flip them.",
+    "Client mail: open with a fixed greeting, close with a humble request line.",
+    "When unsure with a client, choose humble — overdressed beats rude.",
+    "Read aloud once; wrong keigo is easier to hear than to see.",
+    "Copy full formulas first; change only the name and topic slots.",
+  ],
+  concepts: [],
   phrases: [],
   phraseSections: [
     { title: "Email — opening", phrases: emailOpenInternal },
@@ -342,16 +326,67 @@ export const keigoPage: WorkPageContent = {
     { title: "Thanking", phrases: thankPhrases },
     { title: "Reporting", phrases: reportPhrases },
   ],
+  keigo: {
+    verbRows: keigoVerbRows,
+    emailExample: {
+      subject: "〇〇資料のご確認のお願い",
+      bodyLines: [
+        {
+          text: "平素より大変お世話になっております。",
+          ruby: [{ text: "平素", reading: "へいそ" }, { text: "世話", reading: "せわ" }],
+          callout: 1,
+        },
+        {
+          text: "株式会社ABCの田中でございます。",
+          ruby: [{ text: "株式会社", reading: "かぶしきがいしゃ" }],
+          callout: 2,
+        },
+        { text: "" },
+        {
+          text: "添付の資料について、ご確認いただけますでしょうか。",
+          ruby: [{ text: "添付", reading: "てんぷ" }, { text: "確認", reading: "かくにん" }],
+          callout: 3,
+        },
+        {
+          text: "お手数をおかけしますが、何卒よろしくお願いいたします。",
+          ruby: [{ text: "手数", reading: "てすう" }, { text: "何卒", reading: "なにとぞ" }],
+          callout: 4,
+        },
+      ],
+      callouts: [
+        {
+          id: 1,
+          title: "Client opening",
+          detail: "Standard humble greeting to an external contact. Use before the first request line.",
+        },
+        {
+          id: 2,
+          title: "Self-identification",
+          detail: "Company name plus your name with でございます — slightly formal, safe on first client mail.",
+        },
+        {
+          id: 3,
+          title: "Request",
+          detail: "Ask them to confirm — いただけますでしょうか lowers your side while respecting theirs.",
+        },
+        {
+          id: 4,
+          title: "Client closing",
+          detail: "Apologise for trouble and ask for cooperation — pair with a clear deadline in the next sentence if needed.",
+        },
+      ],
+    },
+  },
   doDont: {
     do: [
-      "Copy the whole formula first; swap only the 〇〇 slots.",
-      "Match register to audience before sending.",
-      "Read mail aloud once — wrong keigo is easier to hear than to see.",
+      "Copy whole formulas; swap only name and topic slots.",
+      "Match register tag to recipient before sending.",
+      "Use humble forms for your actions to clients.",
     ],
     dont: [
-      "Use お疲れ様です to a client unless they used it first.",
-      "Use 尊敬語 for your own actions (「私がおっしゃいます」).",
-      "Mix casual internal chat phrases into client mail because they feel friendly.",
+      "Open client mail with the internal end-of-day greeting.",
+      "Use respectful verbs about your own actions.",
+      "Drop casual chat phrases into client mail.",
     ],
   },
   sources: [

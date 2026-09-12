@@ -5,39 +5,53 @@ export const interviewPage: WorkPageContent = {
   title: "Interview",
   glyph: "面",
   description: "Common questions, Japanese level, self-PR, expectations, and punctuality.",
-  intro:
-    "Interviews for foreign candidates often mix language check, culture fit, and role skill. Every suggested answer below is an example to adapt to your CV and target company — not a script to recite verbatim.",
+  introLines: [
+    "Interviews for foreign candidates often mix language check, culture fit, and role skill.",
+    "Suggested answers below are examples to adapt to your CV — not scripts to recite verbatim.",
+  ],
+  tldr: [
+    "Self-PR: strength → evidence → how it helps this company — one to two minutes.",
+    "State Japanese level in terms of tasks you can do, not only JLPT.",
+    "Ask about onboarding, success at six months, and day-to-day language.",
+    "Dark suit, arrive 5–10 minutes early, phone fully off.",
+  ],
   concepts: [
     {
       id: "jikopr",
-      title: "Self-introduction and 自己PR",
+      title: "Self-introduction and self-PR",
       ruby: { kanji: "自己PR", reading: "じこPR" },
       romaji: "jiko PR",
-      summary:
-        "自己PR is a structured pitch: strength → evidence → how it helps this company. One to two minutes spoken.",
+      summaryLines: [
+        "Structured pitch: strength → evidence → how it helps this company.",
+        "One to two minutes spoken.",
+      ],
       whatToDo: [
-        "Open with role fit: 「御社の〇〇の事業に、△△の経験で貢献したいと考えております。」",
+        "Open with role fit tied to their business line.",
         "Give one metric or project, not a life story.",
-        "Close with motivation tied to their product — not only Japan fandom.",
+        "Close with motivation tied to their product — not only interest in Japan.",
         "Practice aloud until you can do it without reading.",
       ],
     },
     {
       id: "japanese-level",
       title: "Describing your Japanese honestly",
-      summary:
-        "Overclaiming breaks trust in the first week. Underclaiming wastes the interview. Tie level to work tasks.",
+      summaryLines: [
+        "Overclaiming breaks trust in the first week.",
+        "Underclaiming wastes the interview — tie level to work tasks.",
+      ],
       whatToDo: [
         "State JLPT if you have it; add what you can do: mail with review, calls with notes, meetings with prep.",
-        "Say what you still need: 「専門用語のメールは上司に確認しながら対応します。」",
+        "Say what you still need help with — specialist mail checked with your manager, for example.",
         "Offer a short live sample if asked — do not refuse entirely.",
       ],
     },
     {
       id: "expectations",
       title: "What employers often expect from foreign hires",
-      summary:
-        "Many firms hire for global reach plus domestic teamwork — not to replace Japanese communication alone.",
+      summaryLines: [
+        "Many firms hire for global reach plus domestic teamwork.",
+        "They rarely expect you to replace all Japanese communication alone.",
+      ],
       whatToDo: [
         "Show you will learn keigo and reporting norms, not only English bridge role.",
         "Ask how the team communicates (mail, chat, meeting language).",
@@ -47,7 +61,9 @@ export const interviewPage: WorkPageContent = {
     {
       id: "questions-ask",
       title: "What to ask at the end",
-      summary: "Good questions show you think about the job, not only visa and salary.",
+      summaryLines: [
+        "Good questions show you think about the job, not only visa and salary.",
+      ],
       whatToDo: [
         "Ask about first-month onboarding and who you report to daily.",
         "Ask what success looks like at six months.",
@@ -60,8 +76,10 @@ export const interviewPage: WorkPageContent = {
       title: "Dress code and punctuality",
       ruby: { kanji: "時間厳守", reading: "じかんげんしゅ" },
       romaji: "jikan genshu",
-      summary:
-        "Dark suit, neat hair, minimal fragrance for traditional companies. Arrive 10 minutes early — 時間厳守 is a basic pass/fail signal.",
+      summaryLines: [
+        "Dark suit, neat hair, minimal fragrance for traditional companies.",
+        "Arrive on time — punctuality is a basic pass/fail signal.",
+      ],
       whatToDo: [
         "Confirm address and enter reception 5–10 minutes before — not 30 (that burdens staff).",
         "If delayed, call reception immediately with ETA — do not only mail.",
@@ -77,8 +95,8 @@ export const interviewPage: WorkPageContent = {
       ruby: [{ text: "志望", reading: "しぼう" }, { text: "惹", reading: "ひ" }],
       romaji: "Onsha no ○○ to iu ten ni tsuyoku hikare, shibō itashimashita.",
       english: "I applied because I am strongly drawn to your ○○ (product / mission).",
-      register: "Client · humble",
-      usage: "Why this company — replace 〇〇 with something specific you researched.",
+      register: "client",
+      usage: "Why this company — replace the slot with something specific you researched.",
     },
     {
       id: "int-strength",
@@ -86,8 +104,8 @@ export const interviewPage: WorkPageContent = {
       ruby: [{ text: "強", reading: "つよ" }, { text: "活", reading: "い" }],
       romaji: "Watashi no tsuyomi wa, ○○ no keiken o ikashita △△ desu. Zenshoku de wa…",
       english: "My strength is △△, using my experience in ○○. In my previous role…",
-      register: "Neutral · polite (either side)",
-      usage: "自己PR body — follow with one concrete episode.",
+      register: "internal-peer",
+      usage: "Self-PR body — follow with one concrete episode.",
     },
     {
       id: "int-japanese",
@@ -95,7 +113,7 @@ export const interviewPage: WorkPageContent = {
       ruby: [{ text: "契約書", reading: "けいやくしょ" }],
       romaji: "Nichijō kaiwa to bijinesu mēru wa taiō kanō desu. Senmonteki na keiyakusho wa kakunin shinagara susumemasu.",
       english: "I can handle daily conversation and business mail. I proceed on specialist contracts while verifying wording.",
-      register: "Neutral · polite (either side)",
+      register: "internal-peer",
       usage: "Honest level statement — adjust to your real ability.",
     },
     {
@@ -104,7 +122,7 @@ export const interviewPage: WorkPageContent = {
       ruby: [{ text: "敬語", reading: "けいご" }, { text: "学習", reading: "がくしゅう" }],
       romaji: "Genzai, keigo no tsukaiwake wa gakushū-chū desu. Nyūsha-go mo sekkyokuteki ni kaizen itashimasu.",
       english: "I am still learning keigo distinctions. I will keep improving after joining.",
-      register: "Neutral · polite (either side)",
+      register: "internal-peer",
       usage: "Weakness question — pair with what you already do well.",
     },
     {
@@ -113,7 +131,7 @@ export const interviewPage: WorkPageContent = {
       ruby: [{ text: "配属", reading: "はいぞく" }],
       romaji: "Haizoku yotei no chīmu de wa, nichijō no komyunikēshon wa dono yō na gengo ga ooi deshō ka.",
       english: "In the team I would join, what language is used day to day?",
-      register: "Internal · polite (です・ます)",
+      register: "internal-peer",
       usage: "End-of-interview question — practical and respected.",
     },
     {
@@ -122,7 +140,7 @@ export const interviewPage: WorkPageContent = {
       ruby: [{ text: "貴重", reading: "きちょう" }],
       romaji: "Honjitsu wa kichō na o-jikan o itadaki, arigatō gozaimashita.",
       english: "Thank you for your valuable time today.",
-      register: "Client · humble",
+      register: "client",
       usage: "Stand, bow, say at the door — even if the interview was in English.",
     },
   ],

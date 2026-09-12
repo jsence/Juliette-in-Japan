@@ -1,11 +1,12 @@
 import type { WorkConcept } from "@/types/work";
 import { RubyTerm } from "./RubyTerm";
+import { WorkTermTable } from "./WorkTermTable";
 
 interface WorkConceptBlockProps {
   concept: WorkConcept;
 }
 
-/** Situation block: term, what it is, and what to do in practice. */
+/** Behaviour in English; Japanese only in the heading or term table. */
 export function WorkConceptBlock({ concept }: WorkConceptBlockProps) {
   return (
     <article
@@ -18,25 +19,34 @@ export function WorkConceptBlock({ concept }: WorkConceptBlockProps) {
         ) : (
           concept.title
         )}
-        {!concept.ruby && concept.romaji ? (
-          <span className="ml-2 text-base font-normal text-ink-muted dark:text-paper-300">
-            ({concept.romaji})
-          </span>
-        ) : null}
         {concept.ruby ? (
           <span className="mt-1 block font-sans text-base font-normal text-ink-light dark:text-paper-200">
             {concept.title}
           </span>
         ) : null}
       </h2>
-      <p className="mt-3 text-ink-light dark:text-paper-200">{concept.summary}</p>
+      <div className="mt-3 space-y-2 text-sm text-ink-light dark:text-paper-200">
+        {concept.summaryLines.map((line) => (
+          <p key={line}>{line}</p>
+        ))}
+      </div>
+      {concept.terms && concept.terms.length > 0 ? (
+        <div className="mt-4">
+          <WorkTermTable rows={concept.terms} />
+        </div>
+      ) : null}
       <div className="mt-4 border-t border-paper-200 pt-4 dark:border-sumi-border">
         <h3 className="text-sm font-semibold uppercase tracking-wide text-hanko dark:text-hanko-light">
           What to do
         </h3>
-        <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-ink-light dark:text-paper-200">
+        <ul className="mt-2 list-none space-y-1.5 text-sm text-ink-light dark:text-paper-200">
           {concept.whatToDo.map((step) => (
-            <li key={step}>{step}</li>
+            <li key={step} className="flex gap-2">
+              <span className="text-hanko dark:text-hanko-light" aria-hidden>
+                →
+              </span>
+              <span>{step}</span>
+            </li>
           ))}
         </ul>
       </div>

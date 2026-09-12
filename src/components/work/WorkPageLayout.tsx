@@ -4,21 +4,43 @@ import { PageHeader } from "@/components/PageHeader";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import type { WorkPageContent } from "@/types/work";
 import { DoDont } from "./DoDont";
+import { RegisterLegend } from "./RegisterTag";
 import { PhraseCard } from "./PhraseCard";
 import { WorkConceptBlock } from "./WorkConceptBlock";
+import { WorkPhraseTable } from "./WorkPhraseTable";
 import { WorkSubNav } from "./WorkSubNav";
+import { WorkTldr } from "./WorkTldr";
 
 interface WorkPageLayoutProps {
   page: WorkPageContent;
-  /** Optional extra blocks (e.g. seating diagram) inserted before Do/Don't. */
   extra?: ReactNode;
+  /** Use tables instead of cards for phrase lists (dense reference). */
+  phraseMode?: "cards" | "table";
 }
 
-export function WorkPageLayout({ page, extra }: WorkPageLayoutProps) {
+export function WorkPageLayout({ page, extra, phraseMode = "cards" }: WorkPageLayoutProps) {
   return (
     <div className="space-y-10">
       <WorkSubNav />
-      <PageHeader title={page.title} glyph={page.glyph} intro={<p>{page.intro}</p>} />
+      <PageHeader
+        title={page.title}
+        glyph={page.glyph}
+        intro={
+          <div className="space-y-2">
+            {page.introLines.map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </div>
+        }
+      />
+
+      <ScrollReveal>
+        <WorkTldr items={page.tldr} />
+      </ScrollReveal>
+
+      {(page.phrases.length > 0 || (page.phraseSections && page.phraseSections.length > 0)) && (
+        <RegisterLegend />
+      )}
 
       <section className="space-y-4">
         {page.concepts.map((concept, i) => (
@@ -38,13 +60,17 @@ export function WorkPageLayout({ page, extra }: WorkPageLayoutProps) {
                   {section.title}
                 </h2>
               </ScrollReveal>
-              <div className="grid gap-4 md:grid-cols-2">
-                {section.phrases.map((phrase, i) => (
-                  <ScrollReveal key={phrase.id} index={i}>
-                    <PhraseCard phrase={phrase} />
-                  </ScrollReveal>
-                ))}
-              </div>
+              {phraseMode === "table" ? (
+                <WorkPhraseTable phrases={section.phrases} />
+              ) : (
+                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {section.phrases.map((phrase, i) => (
+                    <ScrollReveal key={phrase.id} index={i}>
+                      <PhraseCard phrase={phrase} />
+                    </ScrollReveal>
+                  ))}
+                </div>
+              )}
             </section>
           ))
         : page.phrases.length > 0 && (
@@ -53,18 +79,18 @@ export function WorkPageLayout({ page, extra }: WorkPageLayoutProps) {
                 <h2 className="font-serif text-2xl font-semibold text-ink dark:text-paper-100">
                   Ready-to-use phrases
                 </h2>
-                <p className="mt-1 text-sm text-ink-muted dark:text-paper-300">
-                  Register is labelled on every line — match internal vs client, and humble vs respectful, before
-                  you paste into email or say aloud.
-                </p>
               </ScrollReveal>
-              <div className="grid gap-4 md:grid-cols-2">
-                {page.phrases.map((phrase, i) => (
-                  <ScrollReveal key={phrase.id} index={i}>
-                    <PhraseCard phrase={phrase} />
-                  </ScrollReveal>
-                ))}
-              </div>
+              {phraseMode === "table" ? (
+                <WorkPhraseTable phrases={page.phrases} />
+              ) : (
+                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {page.phrases.map((phrase, i) => (
+                    <ScrollReveal key={phrase.id} index={i}>
+                      <PhraseCard phrase={phrase} />
+                    </ScrollReveal>
+                  ))}
+                </div>
+              )}
             </section>
           )}
 

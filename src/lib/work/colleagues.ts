@@ -5,21 +5,40 @@ export const colleaguesPage: WorkPageContent = {
   title: "Colleagues",
   glyph: "同",
   description: "Daily greetings, 報連相, asking for help, soft refusals, and listening cues.",
-  intro:
-    "Day-to-day work is less about grand etiquette than about rhythm: when to greet, what to report, how to ask without blocking someone, and how to hear a polite no.",
+  introLines: [
+    "Day-to-day work runs on rhythm: when to greet, what to report, how to ask without blocking someone.",
+    "Learn to hear a polite refusal without pushing the same idea again in the same meeting.",
+  ],
+  tldr: [
+    "Use the end-of-day greeting when leaving or when a shared task ends — not with clients by default.",
+    "Report small wins the same day; contact early when a deadline slips.",
+    "Consult before scope, spend, or client mail you could decide alone elsewhere.",
+    "Treat a soft difficulty phrase as a no unless a date is set.",
+  ],
   concepts: [
     {
       id: "otsukaresama",
       title: "End-of-day greeting",
       ruby: { kanji: "お疲れ様", reading: "おつかれさま" },
       romaji: "otsukaresama",
-      summary:
-        "お疲れ様です is the default closing signal in many offices — not only when you leave, but when a shared task ends or someone finishes a call.",
+      summaryLines: [
+        "Default closing signal in many offices — not only when you leave.",
+        "Also used when a shared task ends or someone finishes a call.",
+      ],
+      terms: [
+        {
+          id: "col-otsukare-term",
+          japanese: "お疲れ様です",
+          romaji: "otsukaresama desu",
+          meaning: "Thanks for your work / good work today",
+          usage: "Internal default; reply in kind. Use past tense when leaving for the day.",
+        },
+      ],
       whatToDo: [
         "Say it when leaving your floor if others are still there — not a whisper.",
         "Say it to teammates when you finish a joint task, even if you stay at your desk.",
-        "Reply お疲れ様です when someone says it to you; add お先に失礼します only when you leave before them.",
-        "With clients, use お疲れ様ではなく 本日はありがとうございました unless they use お疲れ様 first.",
+        "Reply when someone says it to you; add the leaving-first line only when you go before them.",
+        "With clients, use a thank-you-for-today line unless they used the office greeting first.",
       ],
     },
     {
@@ -27,8 +46,10 @@ export const colleaguesPage: WorkPageContent = {
       title: "Report, contact, consult",
       ruby: { kanji: "報連相", reading: "ほうれんそう" },
       romaji: "hōren-sō",
-      summary:
-        "報連相 means: report outcomes, contact before problems spread, consult before deciding alone. It is how trust is built with a Japanese manager.",
+      summaryLines: [
+        "Report outcomes, contact before problems spread, consult before deciding alone.",
+        "This is how trust is built with a Japanese manager.",
+      ],
       whatToDo: [
         "Report small completions — silence reads as nothing happened.",
         "Contact early when a deadline slips; bring one proposed fix, not only the problem.",
@@ -39,25 +60,52 @@ export const colleaguesPage: WorkPageContent = {
     {
       id: "help",
       title: "Asking for help without losing face",
-      summary:
-        "Asking is normal; how you ask should show you tried first and you respect their time.",
+      summaryLines: [
+        "Asking is normal; show you tried first and respect their time.",
+      ],
       whatToDo: [
         "Open with context in three lines: goal, what you tried, where you are stuck.",
-        "Offer a specific ask: 「10分ほどご相談可能でしょうか」 not 「わかりません」 alone.",
+        "Offer a specific time-bound ask — not an open-ended I do not understand.",
         "Take notes while they explain; summarise back in one sentence before you leave.",
-        "Thank them later in writing if they saved your deadline.",
+        "Thank them in writing if they saved your deadline.",
       ],
     },
     {
       id: "soft-no",
       title: "Refusing indirectly and hearing no",
-      summary:
-        "A flat いいえ is rare. 「ちょっと難しいですね」 often means no; 「検討します」 often means no unless a date is set.",
+      summaryLines: [
+        "A flat no is rare in meetings.",
+        "A difficulty phrase often means no; consider means no unless a date is set.",
+      ],
+      terms: [
+        {
+          id: "col-soft-no",
+          japanese: "ちょっと難しいですね",
+          ruby: [{ text: "難", reading: "むずか" }],
+          romaji: "chotto muzukashii desu ne",
+          meaning: "That is a little difficult (soft no)",
+        },
+        {
+          id: "col-kentou",
+          japanese: "検討します",
+          ruby: [{ text: "検討", reading: "けんとう" }],
+          romaji: "kentō shimasu",
+          meaning: "We will consider it (often no without a date)",
+        },
+        {
+          id: "col-aizuchi-term",
+          japanese: "相槌",
+          ruby: [{ text: "相槌", reading: "あいづち" }],
+          romaji: "aizuchi",
+          meaning: "Listening cues while someone speaks",
+          usage: "Short yes / understood responses on calls — silence sounds like disagreement.",
+        },
+      ],
       whatToDo: [
-        "When you must refuse extra work: acknowledge → reason briefly → offer alternative or timing.",
-        "When you hear ちょっと難しいですね: treat as no; do not push the same idea in the same meeting.",
-        "If you need a real answer: ask 「承知しました。別の方法で進めてもよろしいでしょうか。」",
-        "Use 相槌 (はい、ええ、うん) while listening — silence sounds like disagreement on phone calls.",
+        "When refusing extra work: acknowledge → brief reason → offer alternative or timing.",
+        "When you hear a soft difficulty phrase: treat as no; do not push the same idea in the same meeting.",
+        "If you need a real answer: ask whether another approach is acceptable.",
+        "Use listening cues while someone explains — silence sounds like disagreement on phone calls.",
       ],
     },
   ],
@@ -68,7 +116,7 @@ export const colleaguesPage: WorkPageContent = {
       ruby: [{ text: "失礼", reading: "しつれい" }],
       romaji: "Osaki ni shitsurei shimasu. Otsukaresama deshita.",
       english: "I will leave before you — thank you for your hard work today.",
-      register: "Internal · polite (です・ます)",
+      register: "internal-peer",
       usage: "Leaving the office while colleagues remain. Past tense でした is common at the end of the day.",
     },
     {
@@ -77,7 +125,7 @@ export const colleaguesPage: WorkPageContent = {
       ruby: [{ text: "報告", reading: "ほうこく" }],
       romaji: "○○ no ken, kanryō shimashita node go-hōkoku itashimasu.",
       english: "I am reporting that the ○○ matter is complete.",
-      register: "Internal · humble (team / upward)",
+      register: "internal-senior",
       usage: "Short status mail or desk-side report to your manager after finishing a task.",
     },
     {
@@ -86,7 +134,7 @@ export const colleaguesPage: WorkPageContent = {
       ruby: [{ text: "納期", reading: "のうき" }, { text: "後ろ倒", reading: "うしろだ" }],
       romaji: "Osore irimasu. ○○ no nōki ga ichinichi hodo ushiroda shi ni naru kanōsei ga gozaimasu.",
       english: "Sorry — the ○○ deadline may slip by about one day.",
-      register: "Internal · humble (team / upward)",
+      register: "internal-senior",
       usage: "Early 連絡 when you see a slip; follow with cause and proposed recovery in the next sentence.",
     },
     {
@@ -95,7 +143,7 @@ export const colleaguesPage: WorkPageContent = {
       ruby: [{ text: "教示", reading: "きょうじ" }],
       romaji: "O-isogashii tokoro osore irimasu. ○○ ni tsuite juppun hodo go-kyōji itadakemasu deshō ka.",
       english: "Sorry to bother you while busy — could you advise me on ○○ for about ten minutes?",
-      register: "Internal · humble (team / upward)",
+      register: "internal-senior",
       usage: "Desk or chat to a senior peer; bring your notes open on screen.",
     },
     {
@@ -104,7 +152,7 @@ export const colleaguesPage: WorkPageContent = {
       ruby: [{ text: "優先", reading: "ゆうせん" }, { text: "別日", reading: "べつじつ" }],
       romaji: "Mōshiwake gozaimasen. Honjitsu wa ○○ o yūsen sezaru o ezu, betsujitsu de taiō sasete itadakemasu deshō ka.",
       english: "I am sorry — I must prioritise ○○ today; could I handle your request on another day?",
-      register: "Internal · humble (team / upward)",
+      register: "internal-senior",
       usage: "When declining extra work from a senior; propose a date, do not leave open-ended.",
     },
     {
@@ -113,20 +161,20 @@ export const colleaguesPage: WorkPageContent = {
       ruby: [{ text: "承知", reading: "しょうち" }],
       romaji: "Hai, shōchi shimashita.",
       english: "Yes, understood.",
-      register: "Neutral · polite (either side)",
+      register: "internal-peer",
       usage: "Phone or meeting — frequent 相槌; shows you are following without interrupting.",
     },
   ],
   doDont: {
     do: [
-      "Report finished work the same day, even if it seems small.",
-      "Name the person who helped you when you report upward.",
-      "Listen for soft refusals and change approach instead of repeating.",
+      "Report finished work the same day.",
+      "Name who helped you when reporting upward.",
+      "Change approach when you hear a soft refusal.",
     ],
     dont: [
-      "Disappear until deadline day with bad news.",
-      "Say いいえ directly to a manager's face except in real emergencies.",
-      "Stay silent on calls while someone explains — they may think the line dropped.",
+      "Wait until deadline day with bad news.",
+      "Say a blunt no to a manager except in real emergencies.",
+      "Stay silent on calls while someone explains.",
     ],
   },
   sources: [
