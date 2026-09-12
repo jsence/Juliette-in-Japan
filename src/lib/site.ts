@@ -164,31 +164,50 @@ export const sections: SiteSection[] = [
     href: "/work",
     label: "Work",
     glyph: "働",
-    description: "How Japanese workplaces operate, from hierarchy and meetings to keigo and communication norms.",
+    description:
+      "Practical workplace behaviour: first days, colleagues, keigo, meetings, unwritten rules, social events and interviews.",
     subPages: [
       {
-        href: "/work/hierarchy",
-        label: "Hierarchy",
-        glyph: "位",
-        description: "Rank, seniority and how authority works in Japanese organisations.",
+        href: "/work/first-days",
+        label: "First days",
+        glyph: "初",
+        description: "Self-introduction, business cards, titles and morning assembly.",
       },
       {
-        href: "/work/meetings",
-        label: "Meetings",
-        glyph: "会",
-        description: "How meetings are run, from preparation to follow-up.",
+        href: "/work/colleagues",
+        label: "Colleagues",
+        glyph: "同",
+        description: "Daily greetings, 報連相, asking for help and reading a polite no.",
       },
       {
         href: "/work/keigo",
         label: "Keigo",
         glyph: "敬",
-        description: "Polite, humble and respectful language in professional settings.",
+        description: "Daily formulas for mail, phone, requests, apologies and reports.",
       },
       {
-        href: "/work/communication-codes",
-        label: "Communication codes",
-        glyph: "伝",
-        description: "Indirect speech, reading between the lines and written norms.",
+        href: "/work/meetings",
+        label: "Meetings",
+        glyph: "会",
+        description: "Seating, 根回し, consensus and 議事録.",
+      },
+      {
+        href: "/work/unwritten-rules",
+        label: "Unwritten rules",
+        glyph: "空",
+        description: "Reading the air, honne/tatemae and everyday hierarchy.",
+      },
+      {
+        href: "/work/social",
+        label: "Social",
+        glyph: "飲",
+        description: "Nomikai etiquette, pouring, topics and 二次会.",
+      },
+      {
+        href: "/work/interview",
+        label: "Interview",
+        glyph: "面",
+        description: "Common questions, self-PR, dress code and punctuality.",
       },
     ],
   },
@@ -238,3 +257,14 @@ export function getSection(id: string): SiteSection | undefined {
 export function getSectionByHref(href: string): SiteSection | undefined {
   return sections.find((s) => href === s.href || href.startsWith(s.href + "/"));
 }
+
+/** Tab navigation on Work guide pages (matches Language sub-nav style). */
+export const workNav: NavItem[] = [
+  { href: "/work/first-days", label: "First days", glyph: "初" },
+  { href: "/work/colleagues", label: "Colleagues", glyph: "同" },
+  { href: "/work/keigo", label: "Keigo", glyph: "敬" },
+  { href: "/work/meetings", label: "Meetings", glyph: "会" },
+  { href: "/work/unwritten-rules", label: "Unwritten", glyph: "空" },
+  { href: "/work/social", label: "Social", glyph: "飲" },
+  { href: "/work/interview", label: "Interview", glyph: "面" },
+];

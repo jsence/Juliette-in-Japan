@@ -1,24 +1,25 @@
 import type { Metadata } from "next";
 
-import { StubPage } from "@/components/StubPage";
+import { SeatingDiagram } from "@/components/work/SeatingDiagram";
+import { WorkPageLayout } from "@/components/work/WorkPageLayout";
+import { requireWorkPage } from "@/lib/work";
+
+const SLUG = "meetings";
+const page = requireWorkPage(SLUG);
 
 export const metadata: Metadata = {
-  title: "Meetings",
-  description: "How meetings are run in Japanese workplaces, from preparation to follow-up.",
+  title: page.title,
+  description: page.description,
 };
 
-export default function MeetingsPage() {
+export default function WorkMeetingsPage() {
   return (
-    <StubPage
-      title="Meetings"
-      glyph="会"
-      sectionHref="/work"
-      sectionLabel="Work"
-      intro={
-        <p>
-          Meeting culture in Japan — preparation, consensus-building, the role of silence and how
-          decisions are recorded and followed up.
-        </p>
+    <WorkPageLayout
+      page={page}
+      extra={
+        <section className="space-y-3">
+          <SeatingDiagram />
+        </section>
       }
     />
   );
